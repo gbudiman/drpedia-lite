@@ -1,0 +1,866 @@
+== Advantage Skill ==
+Baywalkers: Analyze Creature, Double-Tap, First Aide, Instruct, Literacy, Parry
+Diesel Jocks: Balance, Bolt Action, Forging the Future, Patch Job, Trade Ties, Melee Weapon - Standard
+Full Dead: Big Dig, Check Quality, Income, Lie, Literacy, Torture
+Genjian: Analyze Creature, Bow, Brawling, Lore - Mon Histories, Melee Weapon - Standard, Sailing, Throwing
+Iron Slaves: Brawling, Carry, Escape Bonds, Iron Fists, Refuse, Rescue, Scrounge
+Lascarians: Alert, Blind Fighting, Chase, Chop, Force Barricade, Melee Weapon - Small, Scrounge, Take Down
+Mericans: Bolt Action, Brawling, Melee Weapon - Large, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
+Nation of Accensor: Building Tomorrow, Challenge, Faith Healing, First Aide, Mind Resistance, Patch Job
+Natural Ones: Cure Toxins, Melee Weapon - Large, Melee Weapon - Small, Melee Weapon - Standard, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
+Pure Blood: Backstab, Bolt Action, Charisma, Cheat, Check Value, Income, Literacy
+Reclaimers: Balance, Carry, Charge, Melee Weapon - Standard, Hunter's Mark, Avoid
+The Red Star: Avoid, Barricade, Bomb Awareness, Brewing, Fearful Glare, Frightening Force, Melee Weapon - Large
+Retrogrades: Barricade, Cover of Night, Disguise, Escape Bonds, Feign Death, Melee Weapon - Standard, Scrounge
+Rovers: Bartender's Tongue, Check Your Sleeves, Head Shrink, Melee Weapon - Small, Refuse, Scrounge
+Saltwise: Sailing, Fishing, Lore - Animals - Aquatic, Melee Weapon - Small, Guild Membership, Lie, Escape Bonds
+Semper Mort: Brawling, Charisma, Chase, Iron Fists, Nerve Punch, Tie Binds
+Solestros: Income, Deep Pockets, Literacy, Charisma, Balance, Melee Weapon - Standard, Refuse
+Unborn of Teixiptla: Melee Weapon - Two Handed, Psionic Skill - Basic, Throwing - Javelins
+Vegasians: Backstab, Black Market Connections, Cheat, Entertain, Lie, Literacy
+Yorker: Barricade, Bomb Awareness, Chase, Entertain, Interfere, Melee Weapon - Standard
+
+== Innate Skill Prerequisite ==
+Iron Slaves: Iron Fists: Brawling
+
+== Open Skill ==
+Avoid 9 
+Barricade 9 
+Bolt Action 9 
+Brawling 9 
+Check Quality 9 
+Check Value 9 
+First Aide 9 
+Force Barricade 9 
+Literacy 6 
+Lore 6
+Melee Weapon - Small 6
+Melee Weapon - Standard 6
+Melee Weapon - Two Handed 6
+Parry 6
+Pistol Whip 9 
+Shield 6
+Teach 1 
+Throwing 6 
+Throwing - Javelins 6
+Tie Binds 6
+
+== Assassin ==
+Alert 3 
+Avoid 3 
+Backstab 3 
+Balance 3 
+Black Market Connections 6 Disguise
+Blinding 3 
+Choking Blow 3 
+Cover of Night 3 
+Disguise 3 
+Fade In A Crowd 3 
+Guild Membership 6 Backstab & Cover of Night
+Melee Weapon - Small 3 
+Murder Most Foul 6 Guild Membership
+Parry 3 
+Throwing 3 
+Vanish 3
+
+== Caravan Driver ==
+Bartender's Tongue 6 
+Bolt Action 3 
+Brawling 3 
+Charisma 3 
+Check Quality 3 
+Check Value 3 
+Feign Death 6 
+Income 3 
+Instruct 3 Teach
+Melee Weapon - Standard 3 
+Pistol Whip 3 
+Refuse 3 
+Teach 0 
+Trade Ties 3
+
+== Charlatan ==
+Alert 3 
+Avoid 6
+Beg For Life 6 Charisma
+Charisma 3 
+Cheat 3
+Cure Toxins 6 Educated
+Educated 3 Literacy
+Escape Bonds 6 Tie Binds
+Interrogate 3 
+Melee Weapon - Small 3 
+Mind Resistance 6 
+Tie Binds 3 
+Torture 3 
+Unlock 3
+
+== Cook ==
+Analyze Compound 3 
+Charisma 6
+Disguise Contents 3 Healthy Feast 
+Educated 3 Literacy
+Healthy Feast 3 Prepare Meal
+Income 3
+Instruct 3 Teach
+Literacy 3
+Nail 3 Throwing
+Prepare Meal 3 
+Rescue 3 
+Scrounge 6 
+Teach 0 
+Throwing 3
+
+== Distiller ==
+Analyze Compound 3
+Bartender's Tongue
+Brawling 3
+Brew Master 6 Brewing
+Brewing 6 Analyze Compound
+Check Quality 3 
+Cure Toxins 3
+Educated 6 Literacy
+Income 3 
+Literacy 3 
+Melee Weapon - Large 3 
+Melee Weapon - Standard 3 
+Scrounge 3 
+Teach 0
+
+== Doctor ==
+Bolt Action 3
+Check Status 6 Educated
+Cure Toxins 6 Literacy
+Educated 6 Literacy
+First Aide 3 
+Fix Limb 3 
+Income 3 
+Literacy 3 
+Mangle Limb 3
+Medical Assistance 6 Literacy
+Medical Genius 6 Medical Assistance
+Melee Weapon - Small 3 
+Sever 3 
+Teach 0 
+Torture 3
+
+== Engineer ==
+Barricade 3
+Check Quality 3
+Chop 6
+Florentine 6
+Force Barricade 3
+Forging the Future 6
+Income 3
+Literacy 3
+Melee Weapon - Small 3
+Patch Job 3
+Repair 6
+SCIENCE! 6
+Smelt 3
+Weld 6
+
+== Entertainer ==
+Balance 3
+Bartender's Tongue 6 Cheat
+Bolt Action 3 
+Bomb Awareness 3
+Cheat 6 Lie
+Check Value 3
+Disarming Blow 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Entertain 6
+Head Shrink 6 Entertain
+Income 3 
+Lie 3 
+Melee Weapon - Standard 3 
+Refuse 3 
+Throwing 3
+
+== Farmer ==
+Alert 3 
+Analyze Creature 3 
+Animal Handler 3 
+Brawling 6
+Brewing 3 Crop Tending
+Carry 3 
+Chase 3 
+Crop Tending 3 
+First Aide 3
+Income 3 Crop Tending
+Melee Weapon - Standard 3
+Take Down 6 Brawling
+Throwing 3
+
+== Fishmonger ==
+Alert 3 
+Analyze Creature 3 Fishing
+Avoid 6 
+Bow 3 
+Brawling 3 
+Cheat 3 
+Fishing 6 
+Lie 3 
+Melee Weapon - Two Handed 3 
+Nail 3 Throwing - Javelins | Bow
+Sailing 3 
+Throwing - Javelins 3 
+Tie Binds 3
+
+== Gambler ==
+Backstab 6 Melee Weapon - Small
+Bartender's Tongue 6 
+Black Market Connections 3 
+Brawling 3 
+Charisma 3 
+Cheat 3 
+Check Your Sleeves 6 
+Disarming Blow 3 
+Feign Death 3 
+Lie 3 
+Melee Weapon - Small 3 
+Pick Pockets 6 
+Throwing 3 
+Unlock 3
+
+== Guard ==
+Barricade 3 
+Blind Fighting 6
+Bounce 6 Shield
+Break Shield 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Break Weapon 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Carry 3
+Fearful Glare 3 
+Force Barricade 3 
+Interfere 3
+Knock Down 6 Shield
+Mangle Limb 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Melee Weapon - Standard 3
+Parry 3 
+Shield 3
+Wide Strike 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+
+== Gun Slinger ==
+Blinding 6 
+Bolt Action 3 
+Challenge 3
+Concentrated Fire 6 Bolt Action
+Destroy Shield 6 Bolt Action
+Destroy Weapon 6 Bolt Action
+Double-Tap 6 Bolt Action
+Fearful Glare 3
+Gun Aficionado 6 Bolt Action
+Pistol Whip 3 
+Scatter Shot 3 
+Sniped Shot 6 Gun Aficionado
+Teach 0 
+Throwing 3
+
+== Hook-Up ==
+Attach 3 
+Bartender's Tongue 6 
+Black Market Connections 6 Bartender's Tongue
+Building Tomorrow 6 
+Check Quality 3 
+Check Value 3 
+Fade In A Crowd 3 
+Income 6 
+Patch Job 3 
+Rescue 3 
+SCIENCE! 6 Patch Job
+Scrounge 6 
+Trade Ties 3 
+Trap Making 6 
+Unlock 3
+
+== Hunter ==
+Alert 3 
+Bow 6 
+Carry 3 
+Charge 3 
+Chase 3 
+Double-Tap 6 
+Frightening Force 6 
+Hunter's Mark 6 Alert & Chase
+Melee Weapon Expert 6 Melee Weapon - Large
+Melee Weapon - Large 3 
+Melee Weapon - Small 3 
+Melee Weapon - Standard 3 
+Nail 6 Throwing - Javelins
+Throwing - Javelins 3
+
+== Jones ==
+Attach 3 
+Balance 3
+Big Dig 3 Bomb Awareness
+Bolt Action 6 
+Bomb Awareness 3 
+Brawling 6
+Concentrated Fire 6 Disarming Shot
+Disarming Shot 3 Bolt Action
+Double-Tap 6 Disarming Shot
+Escape Bonds 3 
+Literacy 3
+Pistol Whip 6 Disarming Shot
+Scrounge 3 
+Teach 0
+Unlock 6 Bomb Awareness
+
+== Mad Scientist == 
+Black Market Connections 6 
+Bomb Awareness 6 Literacy
+Building Tomorrow 6 
+First Aide 3 
+Income 6 
+Literacy 3 
+Melee Weapon - Two Handed 3 
+Mind Resistance 6 
+Patch Job 3 
+Repair 3 
+SCIENCE! 6 Repair
+Scrounge 3 
+Teach 0 
+Torture 3
+
+== Martial Artist ==
+Avoid 6 
+Balance 3 
+Bow 3 
+Brawling 3 
+Carry 3
+Choking Blow 6 Brawling
+Escape Bonds 3 
+Iron Fists 6 Brawling
+Knockout 6 Iron Fists
+Literacy 3
+Nerve Punch 6 Brawling
+Take Down 3 Brawling
+Wide Strike 6 Brawling
+
+== Merchant ==
+Analyze Compound 3 
+Barricade 6 
+Bartender's Tongue 6 
+Beg For Life 6 Charisma
+Black Market Connections 6 
+Carry 3 
+Charisma 3 Lie
+Check Quality 3 
+Check Value 6 
+Check Your Sleeves 3 
+Disguise 6 
+Fade In A Crowd 3 
+Income 3 
+Lie 3
+
+== Officer ==
+Bolt Action 6 
+Brawling 3 
+Break Armor 3 
+Challenge 3
+Charge 6 Melee Weapon - Large
+Destroy Armor 6 
+Disarming Shot 6
+Fearful Glare 6 Break Armor
+Florentine 6 
+Frightening Force 6
+Instruct 3 Teach
+Literacy 3 
+Melee Weapon - Large 3 
+Teach 0
+
+== Politician ==
+Avoid 3 
+Backstab 6 Melee Weapon - Small
+Bartender's Tongue 6 
+Beg For Life 3 
+Charisma 3 
+Cheat 3 
+Check Your Sleeves 6 Cheat
+Educated 3 Literacy
+Entertain 6 
+Escape 3 
+Escape Bonds 3 
+Literacy 3 
+Melee Weapon - Small 3 
+Income 3 
+Lie 6 Income
+
+== Priest == 
+Avoid 3
+Barricade 6 Faith Healing
+Bless Weapon 3 Pray for Justice
+Call The Almighty 6 
+Carry 3 
+Charisma 3
+Educated 3 Literacy
+Escape 3 
+Faith Healing 6
+Holy Rites 3 Educated
+Interfere 3 
+Literacy 3 
+Mind Resistance 3
+Pray for Justice 6 Faith Healing
+Refuse 3
+
+== Primitive ==
+Analyze Creature 3 
+Avoid 6 
+Bounce 6 Shield
+Bow 3 
+Brawling 3 
+Challenge 6 
+Chase 3 
+Chop 3 
+Mangle Limb 6 
+Melee Weapon - Two Handed 3 
+Melee Weapon Expert 3 
+Shield 3 
+Throwing 3 
+Tie Binds 3 
+Wide Strike 6 Melee Weapon - Two Handed
+
+== Printer ==
+Bartender's Tongue 3 
+Black Market Connections 3 
+Bolt Action 3 
+Charisma 6 
+Educated 3 Literacy
+Escape 6 
+Fade In A Crowd 3 
+Income 3 
+Instruct 3 
+Literacy 3 
+Mind Resistance 3 Educated
+Teach 0 
+Transcribe 3 Literacy
+
+== Psionist ==
+Alert 6 
+Blind Fighting 6 
+Blinding 6 
+Chase 3 
+Double-Tap 6 
+Lie 3 
+Literacy 3 
+Melee Weapon - Small 3 
+Mind Resistance 3
+Psionic Skill - Basic 3
+Psionic Skill - Intermediate 6 Psionic Skill - Basic
+Psionic Skill - Advanced 6 Psionic Skill - Intermediate
+Refuse 3 
+Throwing 3
+
+== Publican ==
+Bartender's Tongue 3 Charisma
+Beg For Life 3 
+Charisma 3
+Check Quality 3 Trade Ties
+Check Your Sleeves 6 
+Deep Pockets 6
+Entertain 6 Charisma
+First Aide 3 
+Income 6 
+Literacy 3
+Medical Assistance 6 First Aide
+Melee Weapon - Small 3
+Pick Pockets 3
+Trade Ties 6 Deep Pockets
+
+== Pugilist ==
+Black Market Connections 6 
+Blind Fighting 6 Brawling
+Brawling 3 
+Challenge 6 
+Charge 3 
+First Aide 3 
+Income 3 
+Iron Fists 6 Brawling
+Knockout 6 Take Down
+Nerve Punch 3 
+Parry 3 Brawling
+Pick Pockets 6 
+Take Down 3 Brawling
+Teach 0 
+Torture 6
+
+== Ring Leader ==
+Attach 3 
+Black Market Connections 6 Charisma
+Blinding 3 
+Bolt Action 3 
+Charisma 6 
+Cheat 3 
+Check Value 3 
+Chop 3 
+Disguise 3 
+Income 3 
+Mangle Limb 6 Melee Weapon - Standard
+Melee Weapon - Standard 3 
+Scatter Shot 6 Bolt Action
+Trap Making 6
+
+== Sawbones ==
+Avoid 3 Rescue
+Black Market Connections 6 
+Brewing 6 Literacy
+Carry 3 
+Check Status 3 
+Cure Toxins 3 
+First Aide 3 
+Guild Membership 9 Black Market Connections & Interrogate
+Income 3 
+Interfere 3 Rescue
+Interrogate 6 Melee Weapon - Small
+Literacy 3 
+Mangle Limb 6 
+Medical Assistance 3 
+Melee Weapon - Small 3 
+Rescue 3 
+Sever 3 Melee Weapon - Small
+
+== Scavenger ==
+Analyze Creature 3 
+Avoid 3 
+Barricade 3 
+Beg For Life 3 
+Brawling 3 
+Check Quality 3 
+Check Value 3 
+Chop 3 
+Cover of Night 6 
+Escape Bonds 3 
+Feign Death 3 
+Melee Weapon - Two Handed 3
+Patch Job 6 Chop
+Scrounge 3
+
+== Scoundrel ==
+Attach 3 
+Backstab 6 Melee Weapon - Small
+Black Market Connections 6 
+Blinding 6 
+Bolt Action 3 
+Brawling 3 
+Charisma 3 
+Cheat 6 Charisma
+Choking Blow 3 
+Disarming Blow 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Guild Membership 6 Backstab & Black Market Connections
+Interrogate 3 
+Lie 3 
+Melee Weapon - Small 3
+
+== Sniper ==
+Alert 3 
+Attach 3 
+Balance 3 
+Bolt Action 3
+Concentrated Fire 6 Bolt Action
+Cover of Night 6 
+Destroy Shield 3 
+Destroy Weapon 3 
+Disarming Shot 3
+Guild Membership 6 Murder Most Foul
+Gun Aficionado 6 Concentrated Fire
+Murder Most Foul 6 Sniped Shot
+Sniped Shot 6 Concentrated Fire
+Vanish 3
+
+== Soldier ==
+Avoid 3 
+Break Shield 6 
+Charge 6 
+Double-Tap 6 
+Florentine 6
+Force Barricade 6 Charge
+Interfere 3
+Melee Weapon Expert 6 Melee Weapon - Standard & Melee Weapon - Large
+Melee Weapon - Large 3
+Melee Weapon - Standard 3
+Nail 3
+Sever 3
+Shield 3 
+Throwing - Javelins 3
+
+== Spy ==
+Balance 3 
+Bartender's Tongue 6 
+Blinding 3 
+Chase 3 
+Cover of Night 6 
+Disguise 6 
+Escape 3 
+Escape Bonds 3 
+Fade In A Crowd 6 
+Feign Death 3 
+Guild Membership 6 Unlock & Lie
+Income 3 
+Lie 3 
+Scrounge 6
+Unlock 3
+
+== Teacher ==
+Analyze Compound 3 Literacy
+Analyze Creature 3 Literacy
+Check Quality 3 Literacy
+Check Status 3 Literacy
+Check Your Sleeves 3
+Educated 3 Literacy
+Feign Death 6
+Head Shrink 6
+Instruct 3 Literacy
+Literacy 3
+Lore 3
+Patch Job 3 Educated
+Refuse 6 Check Your Sleeves
+Teach 0
+
+== Thief ==
+Avoid 6 
+Attach 3 
+Blinding 6
+Black Market Connections 6 Pick Pockets & Lie
+Disguise 6 
+Escape 3 
+Escape Bonds 6 
+Fade In A Crowd 6 
+Feign Death 3 
+Lie 3 
+Melee Weapon - Small 3 
+Pick Pockets 6 
+Scrounge 3 
+Trap Making 6 
+Unlock 3
+
+== Thug ==
+Barricade 3 
+Bolt Action 6 
+Brawling 3 
+Carry 3 
+Force Barricade 3 
+Frightening Force 6
+Melee Weapon Expert 3 Melee Weapon - Standard & Melee Weapon - Large
+Melee Weapon - Large 3
+Melee Weapon - Small 3
+Melee Weapon - Standard 3
+Patch Job 3
+Sever 6
+Shield 3
+Take Down 3 Brawling
+
+== Tinker ==
+Analyze Compound 3
+Building Tomorrow 6 Literacy
+Check Quality 3
+Chop 3
+Educated 3 Literacy
+Improved Armor/Shield 6 Educated
+Improved Pistol/Bow 6 Educated
+Improved Weapon 6 Educated
+Income 3
+Literacy 3
+Master Craftsman 6 Improved Armor/Shield & Improved Pistol/Bow & Improved Weapon
+Patch Job 3 
+Repair 3
+SCIENCE! 6 Educated
+
+== Skill List ==
+Alert
+Analyze Compound 
+Analyze Creature 
+Animal Handler 
+Attach
+Avoid
+Backstab
+Balance 
+Bartender's Tongue 
+Barricade
+Beg For Life
+Big Dig
+Black Market Connections
+Bless Weapon
+Blind Fighting 
+Blinding
+Bolt Action
+Bomb Awareness 
+Bounce
+Bow
+Brawling
+Break Armor
+Break Shield
+Break Weapon
+Brew Master 
+Brewing
+Building Tomorrow 
+Call The Almighty 
+Carry
+Challenge
+Charge
+Charisma
+Chase
+Cheat
+Check Quality
+Check Status
+Check Value
+Check Your Sleeves 
+Choking Blow
+Chop
+Concentrated Fire 
+Cover of Night 
+Crop Tending
+Cure Toxins
+Deep Pockets 
+Destroy Armor
+Destroy Shield
+Destroy Weapon 
+Disarming Blow 
+Disarming Shot 
+Disguise
+Disguise Contents 
+Double-Tap 
+Educated 
+Entertain
+Escape
+Escape Bonds
+Fade In A Crowd
+Faith Healing
+Fearful Glare
+Feign Death
+First Aide
+Fishing
+Fix Limb 
+Florentine
+Force Barricade 
+Forging the Future 
+Frightening Force 
+Guild Membership
+Gun Aficionado
+Head Shrink 
+Healthy Feast
+Holy Rites 
+Hunter's Mark 
+Improved Armor/Shield
+Improved Pistol/Bow 
+Improved Weapon 
+Income
+Instruct
+Interfere 
+Interrogate 
+Iron Fists 
+Knock Down 
+Knockout 
+Lie 
+Literacy 
+Lore
+Lore - Local Area
+Lore - Animals - Aquatic
+Lore - Animals - Aviary
+Lore - Animals - Mutated
+Lore - Animals - Subterranean
+Lore - Animals - Terra Firma
+Lore - Faith - Church of Darwin
+Lore - Faith - Cult of Fallow Hopes
+Lore - Faith - Final Knight
+Lore - Faith - Light of Hedon
+Lore - Faith - Minor Cults and Sects
+Lore - Faith - Nuclear Family
+Lore - Faith - Sainthood of Ashes
+Lore - Faith - Telling Visions
+Lore - Faith - Tribes of the Seasons
+Lore - Grave Mind
+Lore - History - Cinema and Entertainment Television
+Lore - History - Fictional Literature
+Lore - History - Music
+Lore - Medical - Diseases and Plagues
+Lore - Medical - Grave Mind Infection
+Lore - Medical - Grave Robber Processes
+Lore - Metallurgy
+Lore - Mining
+Lore - Mon Histories
+Lore - Nature - Herbs
+Lore - Nature - Minerals and Refined Materials
+Lore - Pre-Fall History Ancient
+Lore - Pre-Fall History Cultural
+Lore - Pre-Fall History Modern
+Lore - Pre-Fall History Religion
+Lore - Meditation
+Lore - Raider
+Lore - Slaver Communities
+Lore - Strain - Nation of Accensor
+Lore - Strain - Baywalker
+Lore - Strain - Diesel Jock
+Lore - Strain - Full Dead
+Lore - Strain - Genjian
+Lore - Strain - Iron Slave
+Lore - Strain - Lascarian
+Lore - Strain - Merican
+Lore - Strain - Natural One
+Lore - Strain - Pure Blood
+Lore - Strain - Reclaimers
+Lore - Strain - Red Star
+Lore - Strain - Remnant
+Lore - Strain - Retrograde
+Lore - Strain - Rover
+Lore - Strain - Salt Wise
+Lore - Strain - Solestros
+Lore - Strain - Unborn of Teixiptla
+Lore - Strain - Vegasians
+Lore - Strain - Yorker
+Lore - Tech - Combustion Power
+Lore - Tech - Natural Power
+Lore - Tech - Nuclear Power
+Lore - Zombie
+Lore - Techno Savant - Complex Electronics
+Lore - Techno Savant - Doomsday Device
+Lore - Techno Savant - Tesla Electronics
+Lore - Techno Savant - Esoteric Cultural Anomalies
+Lore - Medicine - Biological Warfare
+Lore - Tech - Structural Anomalies
+Lore - Tech - Gizmos
+Mangle Limb
+Master Craftsman
+Medical Assistance
+Medical Genius
+Melee Weapon Expert
+Melee Weapon - Large
+Melee Weapon - Small
+Melee Weapon - Standard
+Melee Weapon - Two Handed
+Mind Resistance 
+Murder Most Foul 
+Nail
+Nerve Punch
+Parry
+Patch Job
+Pick Pockets
+Pistol Whip
+Prepare Meal
+Pray for Justice 
+Psionic Skill - Basic 
+Psionic Skill - Intermediate
+Psionic Skill - Advanced
+Refuse
+Repair
+Rescue
+Sailing
+Scatter Shot
+SCIENCE!
+Scrounge
+Sever
+Shield
+Smelt
+Sniped Shot
+Society Membership
+Take Down
+Teach
+Throwing
+Throwing - Javelins 
+Tie Binds
+Torture
+Trade Ties 
+Transcribe
+Trap Making
+Unlock
+Vanish
+Weld
+Wide Strike
