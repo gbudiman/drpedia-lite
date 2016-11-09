@@ -1,16 +1,25 @@
+require 'test/unit/assertions'
+
 class Validator
+  include Test::Unit::Assertions
   def initialize skill_list:, skill_cat:, strains:, professions:
     @skill_list = skill_list
     @skill_cat = skill_cat
     @strains = strains
     @professions = professions
 
+    validate_non_empty
     validate_skill_name_matches
-    #validate_professions
-    #validate_strains
   end
 
 private
+  def validate_non_empty
+    assert(@skill_list.length > 0, "Empty skill list")
+    assert(@skill_cat.length > 0, "Empty processed skills")
+    assert(@strains.length > 0, "Empty strains")
+    assert(@professions.length > 0, "Empty professions")
+  end
+
   def validate_skill_name_matches
     mismatches = Array.new
     @skill_cat.each do |skill_name, sdata|
@@ -32,7 +41,7 @@ private
           is_in_profession?(stype)
           if stdata[:preq]
             stdata[:preq][:list].each do |pskill, _junk|
-
+              is_in_list?(pskill)
             end
           end
         end
