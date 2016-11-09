@@ -13,6 +13,7 @@ class RawReader
     f = nil
     @skill_list = Hash.new
     @skill_cat = Hash.new
+    @skill_preqs = Hash.new
 
     begin
       f = File.read(filepath)
@@ -56,7 +57,7 @@ private
 
   def extract_profession_name line:
     if line =~ /== ([\w\s]+) ==/
-      return $1.strip
+      return $1.strip.to_sym
     end
   end
 
@@ -80,18 +81,18 @@ private
   end
 
   def process_open_skills line:
-    line =~ /([\w\s]+)(\d+)/
-    skill = $1.strip
+    line =~ /([\w\s\-]+)(\d+)/
+    skill = $1.strip.to_sym
     cost = $2.to_i
 
     smart_insert open_skills: { skill: skill, cost: cost }
   end
 
   def process_profession_skills line:, profession:
-    line =~ /([\w\s]+)(\d+)(.+)/
+    line =~ /([\w\s\-]+)(\d+)(.+)/
     return unless $1
 
-    skill = $1.strip
+    skill = $1.strip.to_sym
     cost = $2.to_i
 
     preq_string = $3
@@ -101,7 +102,11 @@ private
     preq ||= { predicate: nil, list: Hash.new }
     preq_string.split(/[\|\&]/).each do |prerequisite|
       preq[:predicate] = predicate == '|' ? :or : :and
-      preq[:list][prerequisite.strip] = true if prerequisite.strip.length > 0
+      preq[:list][prerequisite.strip.to_sym] = true if prerequisite.strip.length > 0
+    end
+
+    if preq[:list].length == 0
+      preq = nil
     end
 
     smart_insert profession_skills: { skill: skill, profession: profession, cost: cost, preq: preq }
@@ -125,8 +130,17 @@ private
       @skill_cat[open_skills[:skill]] ||= Hash.new
       @skill_cat[open_skills[:skill]][:open] = open_skills[:cost]
     elsif profession_skills
-      @skill_cat[profession_skills[:skill]] ||= Hash.new
-      @skill_cat[profession_skills[:skill]][profession_skills[:profession].to_sym] = profession_skills[:cost]
+      skill = profession_skills[:skill]
+      profession = profession_skills[:profession]
+      cost = profession_skills[:cost]
+      preq = profession_skills[:preq]
+
+      @skill_cat[skill] ||= Hash.new
+      @skill_cat[skill][profession] = {
+        cost: cost,
+        preq: preq
+      }
+
     end
   end
 end
