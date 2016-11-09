@@ -3,11 +3,12 @@ require 'set'
 class RawReader
   attr_reader :skill_list, :skill_cat
   STATE_TRANSITION = {
-    :undef      => { pattern: /== Advantage Skill ==/,    next: :innate },
-    :innate     => { pattern: /== Open Skill ==/,         next: :open },
-    :open       => { pattern: /==/,                       next: :profession },
-    :profession => { pattern: /== Skill List ==/,         next: :list },
-    :list       => { pattern: /./,                        next: :list }
+    :undef        => { pattern: /== Advantage Skill ==/,              next: :innate },
+    :innate       => { pattern: /== Innate Skill Prerequisite ==/,    next: :innate_preq },
+    :innate_preq  => { pattern: /== Open Skill ==/,                   next: :open}, 
+    :open         => { pattern: /==/,                                 next: :profession },
+    :profession   => { pattern: /== Skill List ==/,                   next: :list },
+    :list         => { pattern: /./,                                  next: :list }
   }
 
   def initialize filepath:
@@ -24,6 +25,8 @@ class RawReader
     end
 
     split_by_sections(raw: f)
+
+    ap @skill_cat
   end
 
 private
@@ -63,6 +66,7 @@ private
 
     case state
     when :innate then process_innate_skills line: line
+    when :innate_preq then process_innate_preqs line: line
     when :open then process_open_skills line: line
     when :profession then process_profession_skills line: line, profession: profession
     when :list then process_list_skills line: line
@@ -75,6 +79,16 @@ private
     skills = innate_skill[1].split(/,/)
 
     smart_insert strain: strain, skills: skills
+  end
+
+  def process_innate_preqs line:
+    clusters = line.split(/:/)
+    strain = clusters[0].strip.to_sym
+    skill = clusters[1].strip.to_sym
+    preqs = process_preq_cluster cluster: clusters[2]
+
+    @skill_cat[skill][:innate_preq] ||= Hash.new
+    @skill_cat[skill][:innate_preq][strain] = preqs
   end
 
   def process_open_skills line:
@@ -91,8 +105,13 @@ private
 
     skill = $1.strip.to_sym
     cost = $2.to_i
+    preq = process_preq_cluster cluster: $3
 
-    preq_string = $3
+    smart_insert profession_skills: { skill: skill, profession: profession, cost: cost, preq: preq }
+  end
+
+  def process_preq_cluster cluster:
+    preq_string = cluster
     preq_string =~ /([\|\&])/
     predicate = $1.strip if $1
 
@@ -106,7 +125,7 @@ private
       preq = nil
     end
 
-    smart_insert profession_skills: { skill: skill, profession: profession, cost: cost, preq: preq }
+    return preq
   end
 
   def process_list_skills line:

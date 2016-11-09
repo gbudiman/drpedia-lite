@@ -20,6 +20,9 @@ Unborn of Teixiptla: Melee Weapon - Two Handed, Psionic Skill - Basic, Throwing 
 Vegasians: Backstab, Black Market Connections, Cheat, Entertain, Lie, Literacy
 Yorker: Barricade, Bomb Awareness, Chase, Entertain, Interfere, Melee Weapon - Standard
 
+== Innate Skill Prerequisite ==
+Iron Slaves: Iron Fists: Brawling
+
 == Open Skill ==
 Avoid 9 
 Barricade 9 
