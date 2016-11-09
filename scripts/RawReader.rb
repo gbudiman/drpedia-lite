@@ -1,7 +1,7 @@
 require 'set'
 
 class RawReader
-  attr_reader :skill_list, :skill_cat
+  attr_reader :skill_list, :skill_cat, :strains, :professions
   STATE_TRANSITION = {
     :undef        => { pattern: /== Advantage Skill ==/,              next: :innate },
     :innate       => { pattern: /== Innate Skill Prerequisite ==/,    next: :innate_preq },
@@ -15,6 +15,8 @@ class RawReader
     f = nil
     @skill_list = Hash.new
     @skill_cat = Hash.new
+    @strains = Set.new
+    @professions = Set.new
 
     begin
       f = File.read(filepath)
@@ -26,7 +28,7 @@ class RawReader
 
     split_by_sections(raw: f)
 
-    ap @skill_cat
+    #ap @skill_cat
   end
 
 private
@@ -75,7 +77,7 @@ private
 
   def process_innate_skills line:
     innate_skill = line.split(/:/)
-    strain = innate_skill[0]
+    strain = innate_skill[0].to_sym
     skills = innate_skill[1].split(/,/)
 
     smart_insert strain: strain, skills: skills
@@ -134,6 +136,7 @@ private
 
   def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil
     if strain and skills
+      strains.add strain
       skills.each do |_skill|
         skill = _skill.strip.to_sym
         @skill_cat[skill] ||= Hash.new
@@ -150,6 +153,7 @@ private
       profession = profession_skills[:profession]
       cost = profession_skills[:cost]
       preq = profession_skills[:preq]
+      professions.add profession
 
       @skill_cat[skill] ||= Hash.new
       @skill_cat[skill][profession] = {
