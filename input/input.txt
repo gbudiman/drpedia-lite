@@ -3,7 +3,7 @@ Baywalkers: Analyze Creature, Double-Tap, First Aide, Instruct, Literacy, Parry
 Diesel Jocks: Balance, Bolt Action, Forging the Future, Patch Job, Trade Ties, Melee Weapon - Standard
 Full Dead: Big Dig, Check Quality, Income, Lie, Literacy, Torture
 Genjian: Analyze Creature, Bow, Brawling, Lore - Mon Histories, Melee Weapon - Standard, Sailing, Throwing
-Iron Slaves: Brawling, Carry, Escape Bonds, Iron Fists (Pre-Req: Brawling) Refuse, Rescue, Scrounge
+Iron Slaves: Brawling, Carry, Escape Bonds, Iron Fists, Refuse, Rescue, Scrounge
 Lascarians: Alert, Blind Fighting, Chase, Chop, Force Barricade, Melee Weapon - Small, Scrounge, Take Down
 Mericans: Bolt Action, Brawling, Melee Weapon - Large, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
 Nation of Accensor: Building Tomorrow, Challenge, Faith Healing, First Aide, Mind Resistance, Patch Job
@@ -13,7 +13,7 @@ Reclaimers: Balance, Carry, Charge, Melee Weapon - Standard, Hunter's Mark, Avoi
 The Red Star: Avoid, Barricade, Bomb Awareness, Brewing, Fearful Glare, Frightening Force, Melee Weapon - Large
 Retrogrades: Barricade, Cover of Night, Disguise, Escape Bonds, Feign Death, Melee Weapon - Standard, Scrounge
 Rovers: Bartender's Tongue, Check Your Sleeves, Head Shrink, Melee Weapon - Small, Refuse, Scrounge
-Saltwise: Sailing, Fishing, Lore - Aquatic, Melee Weapon - Small, Guild Membership, Lie, Escape Bonds
+Saltwise: Sailing, Fishing, Lore - Animals - Aquatic, Melee Weapon - Small, Guild Membership, Lie, Escape Bonds
 Semper Mort: Brawling, Charisma, Chase, Iron Fists, Nerve Punch, Tie Binds
 Solestros: Income, Deep Pockets, Literacy, Charisma, Balance, Melee Weapon - Standard, Refuse
 Unborn of Teixiptla: Melee Weapon - Two Handed, Psionic Skill - Basic, Throwing - Javelins
@@ -749,6 +749,71 @@ Knockout
 Lie 
 Literacy 
 Lore
+Lore - Local Area
+Lore - Animals - Aquatic
+Lore - Animals - Aviary
+Lore - Animals - Mutated
+Lore - Animals - Subterranean
+Lore - Animals - Terra Firma
+Lore - Faith - Church of Darwin
+Lore - Faith - Cult of Fallow Hopes
+Lore - Faith - Final Knight
+Lore - Faith - Light of Hedon
+Lore - Faith - Minor Cults and Sects
+Lore - Faith - Nuclear Family
+Lore - Faith - Sainthood of Ashes
+Lore - Faith - Telling Visions
+Lore - Faith - Tribes of the Seasons
+Lore - Grave Mind
+Lore - History - Cinema and Entertainment Television
+Lore - History - Fictional Literature
+Lore - History - Music
+Lore - Medical - Diseases and Plagues
+Lore - Medical - Grave Mind Infection
+Lore - Medical - Grave Robber Processes
+Lore - Metallurgy
+Lore - Mining
+Lore - Mon Histories
+Lore - Nature - Herbs
+Lore - Nature - Minerals and Refined Materials
+Lore - Pre-Fall History Ancient
+Lore - Pre-Fall History Cultural
+Lore - Pre-Fall History Modern
+Lore - Pre-Fall History Religion
+Lore - Meditation
+Lore - Raider
+Lore - Slaver Communities
+Lore - Strain - Nation of Accensor
+Lore - Strain - Baywalker
+Lore - Strain - Diesel Jock
+Lore - Strain - Full Dead
+Lore - Strain - Genjian
+Lore - Strain - Iron Slave
+Lore - Strain - Lascarian
+Lore - Strain - Merican
+Lore - Strain - Natural One
+Lore - Strain - Pure Blood
+Lore - Strain - Reclaimers
+Lore - Strain - Red Star
+Lore - Strain - Remnant
+Lore - Strain - Retrograde
+Lore - Strain - Rover
+Lore - Strain - Salt Wise
+Lore - Strain - Solestros
+Lore - Strain - Unborn of Teixiptla
+Lore - Strain - Vegasians
+Lore - Strain - Yorker
+Lore - Tech - Combustion Power
+Lore - Tech - Natural Power
+Lore - Tech - Nuclear Power
+Lore - Zombie
+Lore - Techno Savant - Complex Electronics
+Lore - Techno Savant - Doomsday Device
+Lore - Techno Savant - Tesla Electronics
+Lore - Techno Savant - Esoteric Cultural Anomalies
+Lore - Medicine - Biological Warfare
+Lore - Tech - Structural Anomalies
+Lore - Tech - Gizmos
 Mangle Limb
 Master Craftsman
 Medical Assistance

@@ -1,6 +1,7 @@
 require 'set'
 
 class RawReader
+  attr_reader :skill_list, :skill_cat
   STATE_TRANSITION = {
     :undef      => { pattern: /== Advantage Skill ==/,    next: :innate },
     :innate     => { pattern: /== Open Skill ==/,         next: :open },
@@ -13,7 +14,6 @@ class RawReader
     f = nil
     @skill_list = Hash.new
     @skill_cat = Hash.new
-    @skill_preqs = Hash.new
 
     begin
       f = File.read(filepath)
@@ -24,9 +24,6 @@ class RawReader
     end
 
     split_by_sections(raw: f)
-
-    ap @skill_list
-    ap @skill_cat
   end
 
 private
@@ -81,7 +78,7 @@ private
   end
 
   def process_open_skills line:
-    line =~ /([\w\s\-]+)(\d+)/
+    line =~ /([\w\s\-\']+)(\d+)/
     skill = $1.strip.to_sym
     cost = $2.to_i
 
@@ -89,7 +86,7 @@ private
   end
 
   def process_profession_skills line:, profession:
-    line =~ /([\w\s\-]+)(\d+)(.+)/
+    line =~ /([\w\s\-\'\!\:]+)(\d+)(.+)/
     return unless $1
 
     skill = $1.strip.to_sym
