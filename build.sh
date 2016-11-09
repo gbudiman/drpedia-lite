@@ -1,1 +1,1 @@
-ruby scripts/Builder.rb 'input/input.txt'
+ruby scripts/Builder.rb 'input/input.txt' 'output/'

@@ -27,11 +27,18 @@ class RawReader
     end
 
     split_by_sections(raw: f)
+    post_process_sets
 
     #ap @skill_cat
   end
 
 private
+  def post_process_sets
+    @skill_cat.each do |_junk, data|
+      data[:innate] = data[:innate].to_a
+    end
+  end
+
   def split_by_sections raw:
     state = :undef
     profession = :undef
