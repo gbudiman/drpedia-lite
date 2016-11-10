@@ -1,5 +1,4 @@
 require 'ap'
-require 'trollop'
 require 'json'
 require_relative 'RawReader.rb'
 require_relative 'Validator.rb'
