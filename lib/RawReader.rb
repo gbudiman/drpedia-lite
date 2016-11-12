@@ -109,12 +109,12 @@ private
   end
 
   def process_profession_skills line:, profession:
-    line =~ /([\w\s\-\'\!\:]+)(\d+)(.+)/
+    line =~ /([\w\s\-\'\!\:]+)(\d+)(.?)/
     return unless $1
 
     skill = $1.strip.to_sym
     cost = $2.to_i
-    preq = process_preq_cluster cluster: $3
+    preq = process_preq_cluster cluster: ($3 || '')
 
     smart_insert profession_skills: { skill: skill, profession: profession, cost: cost, preq: preq }
   end
