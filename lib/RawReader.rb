@@ -65,7 +65,7 @@ private
   end
 
   def extract_profession_name line:
-    if line =~ /== ([\w\s]+) ==/
+    if line =~ /== ([\w\s\-]+) ==/
       return $1.strip.to_sym
     end
   end
