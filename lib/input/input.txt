@@ -10,6 +10,7 @@ Nation of Accensor: Building Tomorrow, Challenge, Faith Healing, First Aide, Min
 Natural Ones: Cure Toxins, Melee Weapon - Large, Melee Weapon - Small, Melee Weapon - Standard, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
 Pure Blood: Backstab, Bolt Action, Charisma, Cheat, Check Value, Income, Literacy
 Reclaimers: Balance, Carry, Charge, Melee Weapon - Standard, Hunter's Mark, Avoid
+Remnants: 
 The Red Star: Avoid, Barricade, Bomb Awareness, Brewing, Fearful Glare, Frightening Force, Melee Weapon - Large
 Retrogrades: Barricade, Cover of Night, Disguise, Escape Bonds, Feign Death, Melee Weapon - Standard, Scrounge
 Rovers: Bartender's Tongue, Check Your Sleeves, Head Shrink, Melee Weapon - Small, Refuse, Scrounge

@@ -145,6 +145,7 @@ private
     if strain and skills
       strains.add strain
       skills.each do |_skill|
+        next if _skill.strip.length == 0
         skill = _skill.strip.to_sym
         @skill_cat[skill] ||= Hash.new
         @skill_cat[skill][:innate] ||= Set.new
