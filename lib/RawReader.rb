@@ -109,7 +109,7 @@ private
   end
 
   def process_profession_skills line:, profession:
-    line =~ /([\w\s\-\'\!\:]+)(\d+)(.*)/
+    line =~ /([\w\s\-\'\!\:\/]+)(\d+)(.*)/
     return unless $1
 
     skill = $1.strip.to_sym
