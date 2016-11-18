@@ -138,7 +138,9 @@ private
   end
 
   def process_list_skills line:
-    @skill_list[line.strip.to_sym] = true
+    skill_code = line[0..1]
+    skill_name = line[3..-1].strip.to_sym
+    @skill_list[skill_name] = skill_code
   end
 
   def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil

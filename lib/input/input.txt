@@ -666,202 +666,202 @@ Repair 3
 SCIENCE! 6 Educated
 
 == Skill List ==
-Alert
-Analyze Compound 
-Analyze Creature 
-Animal Handler 
-Attach
-Avoid
-Backstab
-Balance 
-Bartender's Tongue 
-Barricade
-Beg For Life
-Big Dig
-Black Market Connections
-Bless Weapon
-Blind Fighting 
-Blinding
-Bolt Action
-Bomb Awareness 
-Bounce
-Bow
-Brawling
-Break Armor
-Break Shield
-Break Weapon
-Brew Master 
-Brewing
-Building Tomorrow 
-Call The Almighty 
-Carry
-Challenge
-Charge
-Charisma
-Chase
-Cheat
-Check Quality
-Check Status
-Check Value
-Check Your Sleeves 
-Choking Blow
-Chop
-Concentrated Fire 
-Cover of Night 
-Crop Tending
-Cure Toxins
-Deep Pockets 
-Destroy Armor
-Destroy Shield
-Destroy Weapon 
-Disarming Blow 
-Disarming Shot 
-Disguise
-Disguise Contents 
-Double-Tap 
-Educated 
-Entertain
-Escape
-Escape Bonds
-Fade In A Crowd
-Faith Healing
-Fearful Glare
-Feign Death
-First Aide
-Fishing
-Fix Limb 
-Florentine
-Force Barricade 
-Forging the Future 
-Frightening Force 
-Guild Membership
-Gun Aficionado
-Head Shrink 
-Healthy Feast
-Holy Rites 
-Hunter's Mark 
-Improved Armor/Shield
-Improved Pistol/Bow 
-Improved Weapon 
-Income
-Instruct
-Interfere 
-Interrogate 
-Iron Fists 
-Knock Down 
-Knockout 
-Lie 
-Literacy 
-Lore
-Lore - Local Area
-Lore - Animals - Aquatic
-Lore - Animals - Aviary
-Lore - Animals - Mutated
-Lore - Animals - Subterranean
-Lore - Animals - Terra Firma
-Lore - Faith - Church of Darwin
-Lore - Faith - Cult of Fallow Hopes
-Lore - Faith - Final Knight
-Lore - Faith - Light of Hedon
-Lore - Faith - Minor Cults and Sects
-Lore - Faith - Nuclear Family
-Lore - Faith - Sainthood of Ashes
-Lore - Faith - Telling Visions
-Lore - Faith - Tribes of the Seasons
-Lore - Grave Mind
-Lore - History - Cinema and Entertainment Television
-Lore - History - Fictional Literature
-Lore - History - Music
-Lore - Medical - Diseases and Plagues
-Lore - Medical - Grave Mind Infection
-Lore - Medical - Grave Robber Processes
-Lore - Metallurgy
-Lore - Mining
-Lore - Mon Histories
-Lore - Nature - Herbs
-Lore - Nature - Minerals and Refined Materials
-Lore - Pre-Fall History Ancient
-Lore - Pre-Fall History Cultural
-Lore - Pre-Fall History Modern
-Lore - Pre-Fall History Religion
-Lore - Meditation
-Lore - Raider
-Lore - Slaver Communities
-Lore - Strain - Nation of Accensor
-Lore - Strain - Baywalker
-Lore - Strain - Diesel Jock
-Lore - Strain - Full Dead
-Lore - Strain - Genjian
-Lore - Strain - Iron Slave
-Lore - Strain - Lascarian
-Lore - Strain - Merican
-Lore - Strain - Natural One
-Lore - Strain - Pure Blood
-Lore - Strain - Reclaimers
-Lore - Strain - Red Star
-Lore - Strain - Remnant
-Lore - Strain - Retrograde
-Lore - Strain - Rover
-Lore - Strain - Salt Wise
-Lore - Strain - Solestros
-Lore - Strain - Unborn of Teixiptla
-Lore - Strain - Vegasians
-Lore - Strain - Yorker
-Lore - Tech - Combustion Power
-Lore - Tech - Natural Power
-Lore - Tech - Nuclear Power
-Lore - Zombie
-Lore - Techno Savant - Complex Electronics
-Lore - Techno Savant - Doomsday Device
-Lore - Techno Savant - Tesla Electronics
-Lore - Techno Savant - Esoteric Cultural Anomalies
-Lore - Medicine - Biological Warfare
-Lore - Tech - Structural Anomalies
-Lore - Tech - Gizmos
-Mangle Limb
-Master Craftsman
-Medical Assistance
-Medical Genius
-Melee Weapon Expert
-Melee Weapon - Large
-Melee Weapon - Small
-Melee Weapon - Standard
-Melee Weapon - Two Handed
-Mind Resistance 
-Murder Most Foul 
-Nail
-Nerve Punch
-Parry
-Patch Job
-Pick Pockets
-Pistol Whip
-Prepare Meal
-Pray for Justice 
-Psionic Skill - Basic 
-Psionic Skill - Intermediate
-Psionic Skill - Advanced
-Refuse
-Repair
-Rescue
-Sailing
-Scatter Shot
-SCIENCE!
-Scrounge
-Sever
-Shield
-Smelt
-Sniped Shot
-Society Membership
-Take Down
-Teach
-Throwing
-Throwing - Javelins 
-Tie Binds
-Torture
-Trade Ties 
-Transcribe
-Trap Making
-Unlock
-Vanish
-Weld
-Wide Strike
+AA Alert
+AB Analyze Compound
+AC Analyze Creature
+AD Animal Handler
+AE Attach
+AF Avoid
+AG Backstab
+AH Balance
+AI Bartender's Tongue
+AJ Barricade
+AK Beg For Life
+AL Big Dig
+AM Black Market Connections
+AN Bless Weapon
+AO Blind Fighting
+AP Blinding
+AQ Bolt Action
+AR Bomb Awareness
+AS Bounce
+AT Bow
+AU Brawling
+AV Break Armor
+AW Break Shield
+AX Break Weapon
+AY Brew Master
+AZ Brewing
+BA Building Tomorrow
+BB Call The Almighty
+BC Carry
+BD Challenge
+BE Charge
+BF Charisma
+BG Chase
+BH Cheat
+BI Check Quality
+BJ Check Status
+BK Check Value
+BL Check Your Sleeves
+BM Choking Blow
+BN Chop
+BO Concentrated Fire
+BP Cover of Night
+BQ Crop Tending
+BR Cure Toxins
+BS Deep Pockets
+BT Destroy Armor
+BU Destroy Shield
+BV Destroy Weapon
+BW Disarming Blow
+BX Disarming Shot
+BY Disguise
+BZ Disguise Contents
+CA Double-Tap
+CB Educated
+CC Entertain
+CD Escape
+CE Escape Bonds
+CF Fade In A Crowd
+CG Faith Healing
+CH Fearful Glare
+CI Feign Death
+CJ First Aide
+CK Fishing
+CL Fix Limb
+CM Florentine
+CN Force Barricade
+CO Forging the Future
+CP Frightening Force
+CQ Guild Membership
+CR Gun Aficionado
+CS Head Shrink
+CT Healthy Feast
+CU Holy Rites
+CV Hunter's Mark
+CW Improved Armor/Shield
+CX Improved Pistol/Bow
+CY Improved Weapon
+CZ Income
+DA Instruct
+DB Interfere
+DC Interrogate
+DD Iron Fists
+DE Knock Down
+DF Knockout
+DG Lie
+DH Literacy
+DI Lore
+DJ Lore - Local Area
+DK Lore - Animals - Aquatic
+DL Lore - Animals - Aviary
+DM Lore - Animals - Mutated
+DN Lore - Animals - Subterranean
+DO Lore - Animals - Terra Firma
+DP Lore - Faith - Church of Darwin
+DQ Lore - Faith - Cult of Fallow Hopes
+DR Lore - Faith - Final Knight
+DS Lore - Faith - Light of Hedon
+DT Lore - Faith - Minor Cults and Sects
+DU Lore - Faith - Nuclear Family
+DV Lore - Faith - Sainthood of Ashes
+DW Lore - Faith - Telling Visions
+DX Lore - Faith - Tribes of the Seasons
+DY Lore - Grave Mind
+DZ Lore - History - Cinema and Entertainment Television
+EA Lore - History - Fictional Literature
+EB Lore - History - Music
+EC Lore - Medical - Diseases and Plagues
+ED Lore - Medical - Grave Mind Infection
+EE Lore - Medical - Grave Robber Processes
+EF Lore - Metallurgy
+EG Lore - Mining
+EH Lore - Mon Histories
+EI Lore - Nature - Herbs
+EJ Lore - Nature - Minerals and Refined Materials
+EK Lore - Pre-Fall History Ancient
+EL Lore - Pre-Fall History Cultural
+EM Lore - Pre-Fall History Modern
+EN Lore - Pre-Fall History Religion
+EO Lore - Meditation
+EP Lore - Raider
+EQ Lore - Slaver Communities
+ER Lore - Strain - Nation of Accensor
+ES Lore - Strain - Baywalker
+ET Lore - Strain - Diesel Jock
+EU Lore - Strain - Full Dead
+EV Lore - Strain - Genjian
+EW Lore - Strain - Iron Slave
+EX Lore - Strain - Lascarian
+EY Lore - Strain - Merican
+EZ Lore - Strain - Natural One
+FA Lore - Strain - Pure Blood
+FB Lore - Strain - Reclaimers
+FC Lore - Strain - Red Star
+FD Lore - Strain - Remnant
+FE Lore - Strain - Retrograde
+FF Lore - Strain - Rover
+FG Lore - Strain - Salt Wise
+FH Lore - Strain - Solestros
+FI Lore - Strain - Unborn of Teixiptla
+FJ Lore - Strain - Vegasians
+FK Lore - Strain - Yorker
+FL Lore - Tech - Combustion Power
+FM Lore - Tech - Natural Power
+FN Lore - Tech - Nuclear Power
+FO Lore - Zombie
+FP Lore - Techno Savant - Complex Electronics
+FQ Lore - Techno Savant - Doomsday Device
+FR Lore - Techno Savant - Tesla Electronics
+FS Lore - Techno Savant - Esoteric Cultural Anomalies
+FT Lore - Medicine - Biological Warfare
+FU Lore - Tech - Structural Anomalies
+FV Lore - Tech - Gizmos
+FW Mangle Limb
+FX Master Craftsman
+FY Medical Assistance
+FZ Medical Genius
+GA Melee Weapon Expert
+GB Melee Weapon - Large
+GC Melee Weapon - Small
+GD Melee Weapon - Standard
+GE Melee Weapon - Two Handed
+GF Mind Resistance
+GG Murder Most Foul
+GH Nail
+GI Nerve Punch
+GJ Parry
+GK Patch Job
+GL Pick Pockets
+GM Pistol Whip
+GN Prepare Meal
+GO Pray for Justice
+GP Psionic Skill - Basic
+GQ Psionic Skill - Intermediate
+GR Psionic Skill - Advanced
+GS Refuse
+GT Repair
+GU Rescue
+GV Sailing
+GW Scatter Shot
+GX SCIENCE!
+GY Scrounge
+GZ Sever
+HA Shield
+HB Smelt
+HC Sniped Shot
+HD Society Membership
+HE Take Down
+HF Teach
+HG Throwing
+HH Throwing - Javelins
+HI Tie Binds
+HJ Torture
+HK Trade Ties
+HL Transcribe
+HM Trap Making
+HN Unlock
+HO Vanish
+HP Weld
+HQ Wide Strike
