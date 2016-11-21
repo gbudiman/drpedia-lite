@@ -2,8 +2,9 @@ require 'test/unit/assertions'
 
 class Validator
   include Test::Unit::Assertions
-  def initialize skill_list:, skill_cat:, strains:, professions:
+  def initialize skill_list:, skill_group:, skill_cat:, strains:, professions:
     @skill_list = skill_list
+    @skill_group = skill_group
     @skill_cat = skill_cat
     @strains = strains
     @professions = professions
@@ -50,7 +51,7 @@ private
   end
 
   def is_in_list? _x
-    if @skill_list[_x] == nil
+    if @skill_list[_x] == nil && @skill_group[_x] == nil
       puts "mismatched skill: #{_x}"
       return false
     end

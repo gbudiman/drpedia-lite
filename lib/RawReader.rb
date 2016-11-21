@@ -1,14 +1,16 @@
 require 'set'
 
 class RawReader
-  attr_reader :skill_list, :skill_cat, :strains, :professions
+  attr_reader :skill_list, :skill_cat, :strains, :professions, :strain_restrictions, :skill_group
   STATE_TRANSITION = {
-    :undef        => { pattern: /== Advantage Skill ==/,              next: :innate },
-    :innate       => { pattern: /== Innate Skill Prerequisite ==/,    next: :innate_preq },
-    :innate_preq  => { pattern: /== Open Skill ==/,                   next: :open}, 
-    :open         => { pattern: /==/,                                 next: :profession },
-    :profession   => { pattern: /== Skill List ==/,                   next: :list },
-    :list         => { pattern: /./,                                  next: :list }
+    :undef        => { pattern: /== Advantage Skill ==/,                 next: :innate },
+    :innate       => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
+    :innate_preq  => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
+    :strain_rtrs  => { pattern: /== Open Skill ==/,                      next: :open }, 
+    :open         => { pattern: /==/,                                    next: :profession },
+    :profession   => { pattern: /== Skill Group ==/,                      next: :skill_group },
+    :skill_group  => { pattern: /== Skill List ==/,                     next: :list },
+    :list         => { pattern: /./,                                     next: :list }
   }
 
   def initialize filepath:
@@ -16,6 +18,8 @@ class RawReader
     @skill_list = Hash.new
     @skill_cat = Hash.new
     @strains = Set.new
+    @strain_restrictions = Hash.new
+    @skill_group = Hash.new
     @professions = Set.new
 
     begin
@@ -76,8 +80,10 @@ private
     case state
     when :innate then process_innate_skills line: line
     when :innate_preq then process_innate_preqs line: line
+    when :strain_rtrs then process_strain_restrictions line: line
     when :open then process_open_skills line: line
     when :profession then process_profession_skills line: line, profession: profession
+    when :skill_group then process_skill_group line: line
     when :list then process_list_skills line: line
     end
   end
@@ -98,6 +104,24 @@ private
 
     @skill_cat[skill][:innate_preq] ||= Hash.new
     @skill_cat[skill][:innate_preq][strain] = preqs
+  end
+
+  def process_strain_restrictions line:
+    clusters = line.split(/:/)
+    strain = clusters[0].strip.to_sym
+
+    if !@strains.include?(strain)
+      raise KeyError, "Can't add profession restriction to non-excisting strain: #{strain}"
+    end
+
+    @strain_restrictions[strain] ||= Hash.new
+    clusters[1].split(/,/).each do |x| 
+      @strain_restrictions[strain][x.strip.to_sym] = true
+    end
+  end
+
+  def process_skill_group line:
+    @skill_group[line.strip.to_sym] = Hash.new
   end
 
   def process_open_skills line:
@@ -139,13 +163,18 @@ private
 
   def process_list_skills line:
     skill_code = line[0..1]
-    skill_name = line[3..-1].strip.to_sym
+    skill_clusters = line[3..-1].split(/\,/)
+    skill_name = skill_clusters[0].strip.to_sym
+
     @skill_list[skill_name] = skill_code
+    if skill_clusters[1]
+      @skill_group[skill_clusters[1].strip.to_sym][skill_name] = true
+    end
   end
 
   def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil
     if strain and skills
-      strains.add strain
+      @strains.add strain
       skills.each do |_skill|
         next if _skill.strip.length == 0
         skill = _skill.strip.to_sym

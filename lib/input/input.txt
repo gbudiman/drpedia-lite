@@ -1,14 +1,14 @@
 == Advantage Skill ==
 Baywalkers: Analyze Creature, Double-Tap, First Aide, Instruct, Literacy, Parry
 Diesel Jocks: Balance, Bolt Action, Forging the Future, Patch Job, Trade Ties, Melee Weapon - Standard
-Full Dead: Big Dig, Check Quality, Income, Lie, Literacy, Torture
+Full Dead: Big Dig, Check Quality, Income I, Income II, Income III, Income IV, Income V, Lie, Literacy, Torture
 Genjian: Analyze Creature, Bow, Brawling, Lore - Mon Histories, Melee Weapon - Standard, Sailing, Throwing
 Iron Slaves: Brawling, Carry, Escape Bonds, Iron Fists, Refuse, Rescue, Scrounge
 Lascarians: Alert, Blind Fighting, Chase, Chop, Force Barricade, Melee Weapon - Small, Scrounge, Take Down
 Mericans: Bolt Action, Brawling, Melee Weapon - Large, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
 Nation of Accensor: Building Tomorrow, Challenge, Faith Healing, First Aide, Mind Resistance, Patch Job
 Natural Ones: Cure Toxins, Melee Weapon - Large, Melee Weapon - Small, Melee Weapon - Standard, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
-Pure Blood: Backstab, Bolt Action, Charisma, Cheat, Check Value, Income, Literacy
+Pure Blood: Backstab, Bolt Action, Charisma, Cheat, Check Value, Income I, Income II, Income III, Income IV, Income V, Literacy
 Reclaimers: Balance, Carry, Charge, Melee Weapon - Standard, Hunter's Mark, Avoid
 The Red Star: Avoid, Barricade, Bomb Awareness, Brewing, Fearful Glare, Frightening Force, Melee Weapon - Large
 Remnants: 
@@ -16,13 +16,16 @@ Retrogrades: Barricade, Cover of Night, Disguise, Escape Bonds, Feign Death, Mel
 Rovers: Bartender's Tongue, Check Your Sleeves, Head Shrink, Melee Weapon - Small, Refuse, Scrounge
 Saltwise: Sailing, Fishing, Lore - Animals - Aquatic, Melee Weapon - Small, Guild Membership, Lie, Escape Bonds
 Semper Mort: Brawling, Charisma, Chase, Iron Fists, Nerve Punch, Tie Binds
-Solestros: Income, Deep Pockets, Literacy, Charisma, Balance, Melee Weapon - Standard, Refuse
+Solestros: Income I, Income II, Income III, Income IV, Income V, Deep Pockets, Literacy, Charisma, Balance, Melee Weapon - Standard, Refuse
 Unborn of Teixiptla: Melee Weapon - Two Handed, Psionic Skill - Basic, Throwing - Javelins
 Vegasians: Backstab, Black Market Connections, Cheat, Entertain, Lie, Literacy
 Yorker: Barricade, Bomb Awareness, Chase, Entertain, Interfere, Melee Weapon - Standard
 
 == Innate Skill Prerequisite ==
 Iron Slaves: Iron Fists: Brawling
+
+== Strain Profession Restriction ==
+Mericans: Martial Artist, Spy
 
 == Open Skill ==
 Avoid 9 
@@ -72,7 +75,11 @@ Charisma 3
 Check Quality 3 
 Check Value 3 
 Feign Death 6 
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Instruct 3 Teach
 Melee Weapon - Standard 3 
 Pistol Whip 3 
@@ -102,7 +109,11 @@ Charisma 6
 Disguise Contents 3 Healthy Feast 
 Educated 3 Literacy
 Healthy Feast 3 Prepare Meal
-Income 3
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Instruct 3 Teach
 Literacy 3
 Nail 3 Throwing
@@ -121,7 +132,11 @@ Brewing 6 Analyze Compound
 Check Quality 3 
 Cure Toxins 3
 Educated 6 Literacy
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Literacy 3 
 Melee Weapon - Large 3 
 Melee Weapon - Standard 3 
@@ -135,7 +150,11 @@ Cure Toxins 6 Literacy
 Educated 6 Literacy
 First Aide 3 
 Fix Limb 3 
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Literacy 3 
 Mangle Limb 3
 Medical Assistance 6 Literacy
@@ -152,7 +171,11 @@ Chop 6
 Florentine 6
 Force Barricade 3
 Forging the Future 6
-Income 3
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Literacy 3
 Melee Weapon - Small 3
 Patch Job 3
@@ -171,7 +194,11 @@ Check Value 3
 Disarming Blow 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
 Entertain 6
 Head Shrink 6 Entertain
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Lie 3 
 Melee Weapon - Standard 3 
 Refuse 3 
@@ -187,7 +214,11 @@ Carry 3
 Chase 3 
 Crop Tending 3 
 First Aide 3
-Income 3 Crop Tending
+Income I 3 Crop Tending
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Melee Weapon - Standard 3
 Take Down 6 Brawling
 Throwing 3
@@ -264,7 +295,11 @@ Building Tomorrow 6
 Check Quality 3 
 Check Value 3 
 Fade In A Crowd 3 
-Income 6 
+Income I 6
+Income II 6 Income I
+Income III 6 Income II
+Income IV 6 Income III
+Income V 6 Income IV
 Patch Job 3 
 Rescue 3 
 SCIENCE! 6 Patch Job
@@ -311,7 +346,11 @@ Black Market Connections 6
 Bomb Awareness 6 Literacy
 Building Tomorrow 6 
 First Aide 3 
-Income 6 
+Income I 6
+Income II 6 Income I
+Income III 6 Income II
+Income IV 6 Income III
+Income V 6 Income IV
 Literacy 3 
 Melee Weapon - Two Handed 3 
 Mind Resistance 6 
@@ -350,7 +389,11 @@ Check Value 6
 Check Your Sleeves 3 
 Disguise 6 
 Fade In A Crowd 3 
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV 
 Lie 3
 
 == Officer ==
@@ -383,8 +426,12 @@ Escape 3
 Escape Bonds 3 
 Literacy 3 
 Melee Weapon - Small 3 
-Income 3 
-Lie 6 Income
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Lie 6 Income I
 
 == Priest == 
 Avoid 3
@@ -428,7 +475,11 @@ Charisma 6
 Educated 3 Literacy
 Escape 6 
 Fade In A Crowd 3 
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Instruct 3 
 Literacy 3 
 Mind Resistance 3 Educated
@@ -460,7 +511,11 @@ Check Your Sleeves 6
 Deep Pockets 6
 Entertain 6 Charisma
 First Aide 3 
-Income 6 
+Income I 6
+Income II 6 Income I
+Income III 6 Income II
+Income IV 6 Income III
+Income V 6 Income IV
 Literacy 3
 Medical Assistance 6 First Aide
 Melee Weapon - Small 3
@@ -474,7 +529,11 @@ Brawling 3
 Challenge 6 
 Charge 3 
 First Aide 3 
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Iron Fists 6 Brawling
 Knockout 6 Take Down
 Nerve Punch 3 
@@ -494,7 +553,11 @@ Cheat 3
 Check Value 3 
 Chop 3 
 Disguise 3 
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Mangle Limb 6 Melee Weapon - Standard
 Melee Weapon - Standard 3 
 Scatter Shot 6 Bolt Action
@@ -509,7 +572,11 @@ Check Status 3
 Cure Toxins 3 
 First Aide 3 
 Guild Membership 9 Black Market Connections & Interrogate
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Interfere 3 Rescue
 Interrogate 6 Melee Weapon - Small
 Literacy 3 
@@ -595,7 +662,11 @@ Escape Bonds 3
 Fade In A Crowd 6 
 Feign Death 3 
 Guild Membership 6 Unlock & Lie
-Income 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Lie 3 
 Scrounge 6
 Unlock 3
@@ -658,12 +729,23 @@ Educated 3 Literacy
 Improved Armor/Shield 6 Educated
 Improved Pistol/Bow 6 Educated
 Improved Weapon 6 Educated
-Income 3
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
 Literacy 3
 Master Craftsman 6 Improved Armor/Shield & Improved Pistol/Bow & Improved Weapon
 Patch Job 3 
 Repair 3
 SCIENCE! 6 Educated
+
+== Skill Group ==
+Lore
+Psionic Skill - Basic
+Psionic Skill - Intermediate
+Psionic Skill - Advanced
+Income
 
 == Skill List ==
 AA Alert
@@ -743,7 +825,11 @@ CV Hunter's Mark
 CW Improved Armor/Shield
 CX Improved Pistol/Bow
 CY Improved Weapon
-CZ Income
+CZ Income I, Income
+PA Income II, Income
+PB Income III, Income
+PC Income IV, Income
+PD Income V, Income
 DA Instruct
 DB Interfere
 DC Interrogate
@@ -752,61 +838,60 @@ DE Knock Down
 DF Knockout
 DG Lie
 DH Literacy
-DI Lore
-DJ Lore - Local Area
-DK Lore - Animals - Aquatic
-DL Lore - Animals - Aviary
-DM Lore - Animals - Mutated
-DN Lore - Animals - Subterranean
-DO Lore - Animals - Terra Firma
-DP Lore - Faith - Church of Darwin
-DQ Lore - Faith - Cult of Fallow Hopes
-DR Lore - Faith - Final Knight
-DS Lore - Faith - Light of Hedon
-DT Lore - Faith - Minor Cults and Sects
-DU Lore - Faith - Nuclear Family
-DV Lore - Faith - Sainthood of Ashes
-DW Lore - Faith - Telling Visions
-DX Lore - Faith - Tribes of the Seasons
-DY Lore - Grave Mind
-DZ Lore - History - Cinema and Entertainment Television
-EA Lore - History - Fictional Literature
-EB Lore - History - Music
-EC Lore - Medical - Diseases and Plagues
-ED Lore - Medical - Grave Mind Infection
-EE Lore - Medical - Grave Robber Processes
-EF Lore - Metallurgy
-EG Lore - Mining
-EH Lore - Mon Histories
-EI Lore - Nature - Herbs
-EJ Lore - Nature - Minerals and Refined Materials
-EK Lore - Pre-Fall History Ancient
-EL Lore - Pre-Fall History Cultural
-EM Lore - Pre-Fall History Modern
-EN Lore - Pre-Fall History Religion
-EO Lore - Meditation
-EP Lore - Raider
-EQ Lore - Slaver Communities
-ER Lore - Strain - Nation of Accensor
-ES Lore - Strain - Baywalker
-ET Lore - Strain - Diesel Jock
-EU Lore - Strain - Full Dead
-EV Lore - Strain - Genjian
-EW Lore - Strain - Iron Slave
-EX Lore - Strain - Lascarian
-EY Lore - Strain - Merican
-EZ Lore - Strain - Natural One
-FA Lore - Strain - Pure Blood
-FB Lore - Strain - Reclaimers
-FC Lore - Strain - Red Star
-FD Lore - Strain - Remnant
-FE Lore - Strain - Retrograde
-FF Lore - Strain - Rover
-FG Lore - Strain - Salt Wise
-FH Lore - Strain - Solestros
-FI Lore - Strain - Unborn of Teixiptla
-FJ Lore - Strain - Vegasians
-FK Lore - Strain - Yorker
+DJ Lore - Local Area, Lore
+DK Lore - Animals - Aquatic, Lore
+DL Lore - Animals - Aviary, Lore
+DM Lore - Animals - Mutated, Lore
+DN Lore - Animals - Subterranean, Lore
+DO Lore - Animals - Terra Firma, Lore
+DP Lore - Faith - Church of Darwin, Lore
+DQ Lore - Faith - Cult of Fallow Hopes, Lore
+DR Lore - Faith - Final Knight, Lore
+DS Lore - Faith - Light of Hedon, Lore
+DT Lore - Faith - Minor Cults and Sects, Lore
+DU Lore - Faith - Nuclear Family, Lore
+DV Lore - Faith - Sainthood of Ashes, Lore
+DW Lore - Faith - Telling Visions, Lore
+DX Lore - Faith - Tribes of the Seasons, Lore
+DY Lore - Grave Mind, Lore
+DZ Lore - History - Cinema and Entertainment Television, Lore
+EA Lore - History - Fictional Literature, Lore
+EB Lore - History - Music, Lore
+EC Lore - Medical - Diseases and Plagues, Lore
+ED Lore - Medical - Grave Mind Infection, Lore
+EE Lore - Medical - Grave Robber Processesv
+EF Lore - Metallurgy, Lore
+EG Lore - Mining, Lore
+EH Lore - Mon Histories, Lore
+EI Lore - Nature - Herbs, Lore
+EJ Lore - Nature - Minerals and Refined Materials, Lore
+EK Lore - Pre-Fall History Ancient, Lore
+EL Lore - Pre-Fall History Cultural, Lore
+EM Lore - Pre-Fall History Modern, Lore
+EN Lore - Pre-Fall History Religion, Lore
+EO Lore - Meditation, Lore
+EP Lore - Raider, Lore
+EQ Lore - Slaver Communities, Lore
+ER Lore - Strain - Nation of Accensor, Lore
+ES Lore - Strain - Baywalker, Lore
+ET Lore - Strain - Diesel Jock, Lore
+EU Lore - Strain - Full Dead, Lore
+EV Lore - Strain - Genjian, Lore
+EW Lore - Strain - Iron Slave, Lore
+EX Lore - Strain - Lascarian, Lore
+EY Lore - Strain - Merican, Lore
+EZ Lore - Strain - Natural One, Lore
+FA Lore - Strain - Pure Blood, Lore
+FB Lore - Strain - Reclaimers, Lore
+FC Lore - Strain - Red Star, Lore
+FD Lore - Strain - Remnant, Lore
+FE Lore - Strain - Retrograde, Lore
+FF Lore - Strain - Rover, Lore
+FG Lore - Strain - Salt Wise, Lore
+FH Lore - Strain - Solestros, Lore
+FI Lore - Strain - Unborn of Teixiptla, Lore
+FJ Lore - Strain - Vegasians, Lore
+FK Lore - Strain - Yorker, Lore
 FL Lore - Tech - Combustion Power
 FM Lore - Tech - Natural Power
 FN Lore - Tech - Nuclear Power
@@ -837,9 +922,37 @@ GL Pick Pockets
 GM Pistol Whip
 GN Prepare Meal
 GO Pray for Justice
-GP Psionic Skill - Basic
-GQ Psionic Skill - Intermediate
-GR Psionic Skill - Advanced
+PE Jolt, Psionic Skill - Basic
+PF Limited Telekinesis, Psionic Skill - Basic
+PG Memory Lapse, Psionic Skill - Basic
+PH Mind Push, Psionic Skill - Basic
+PI Nightmare, Psionic Skill - Basic
+PJ Paralysis, Psionic Skill - Basic
+PK Pyro, Psionic Skill - Basic
+PL Seeing Double, Psionic Skill - Basic
+PM Slowed Steps, Psionic Skill - Basic
+PN Toys in the Attic, Psionic Skill - Basic
+PO Tranquility, Psionic Skill - Basic
+PQ Trickster’s Mind, Psionic Skill - Basic
+PR Berserker Mind, Psionic Skill - Intermediate 
+PS Body Lock, Psionic Skill - Intermediate
+PT Body of Mind, Psionic Skill - Intermediate
+PU Body Puppet, Psionic Skill - Intermediate 
+PV Echoes, Psionic Skill - Intermediate
+PW Engulf, Psionic Skill - Intermediate
+PX Living Death, Psionic Skill - Intermediate 
+PY Major Telekinesis, Psionic Skill - Intermediate
+PZ Propulsion, Psionic Skill - Intermediate
+QA Psionic Surgeon, Psionic Skill - Intermediate
+QB Sense of Sins, Psionic Skill - Intermediate
+QC Whisper Walk, Psionic Skill - Intermediate
+QD Maelstrom, Psionic Skill - Advanced
+QE Mental Armor, Psionic Skill - Advanced 
+QF Mental Glossary, Psionic Skill - Advanced 
+QG Mind of a Killer, Psionic Skill - Advanced 
+QH Mind Shield, Psionic Skill - Advanced 
+QI Psychic Cleanse, Psionic Skill - Advanced 
+QJ Sundered Mind, Psionic Skill - Advanced
 GS Refuse
 GT Repair
 GU Rescue
