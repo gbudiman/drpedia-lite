@@ -497,8 +497,8 @@ Literacy 3
 Melee Weapon - Small 3 
 Mind Resistance 3
 Psionic Skill - Basic 3
-Psionic Skill - Intermediate 6 Psionic Skill - Basic
-Psionic Skill - Advanced 6 Psionic Skill - Intermediate
+Psionic Skill - Intermediate 6
+Psionic Skill - Advanced 6
 Refuse 3 
 Throwing 3
 
