@@ -2,15 +2,25 @@ require 'test/unit/assertions'
 
 class Validator
   include Test::Unit::Assertions
-  def initialize skill_list:, skill_group:, skill_cat:, strains:, professions:
+  def initialize skill_list:, 
+                 skill_group:, 
+                 skill_cat:, 
+                 strains:, 
+                 professions:, 
+                 strain_stats:, 
+                 strain_specs:
     @skill_list = skill_list
     @skill_group = skill_group
     @skill_cat = skill_cat
     @strains = strains
     @professions = professions
+    @strain_stats = strain_stats
+    @strain_specs = strain_specs
 
     validate_non_empty
     validate_skill_name_matches
+    validate_stats
+    validate_strain_specs
   end
 
 private
@@ -19,6 +29,28 @@ private
     assert(@skill_cat.length > 0, "Empty processed skills")
     assert(@strains.length > 0, "Empty strains")
     assert(@professions.length > 0, "Empty professions")
+  end
+
+  def validate_strain_specs
+    cumulative_strain_specs = Hash.new
+
+    @strain_specs.each do |strain, specs|
+      is_in_strain?(strain)
+      specs[:advantages].concat(specs[:disadvantages]).each do |spec|
+        assert(cumulative_strain_specs[spec] == nil,
+               "Duplicate strain-specific skill: [#{strain}] [#{spec}]")
+
+        cumulative_strain_specs[spec] = true
+      end
+    end
+  end
+
+  def validate_stats
+    @strain_stats.each do |strain, stats|
+      is_in_strain?(strain)
+      assert(stats.keys.sort == [:hp, :mp, :infection].sort, 
+             "Strain stats must contain HP, MP and Infection")
+    end
   end
 
   def validate_skill_name_matches
@@ -32,7 +64,7 @@ private
 
       sdata.each do |stype, stdata|
         case stype
-        when :innate
+        when :innate, :innate_disadvantage
           stdata.each do |strain|
             is_in_strain?(strain)
           end

@@ -21,11 +21,68 @@ Unborn of Teixiptla: Melee Weapon - Two Handed, Psionic Skill - Basic, Throwing 
 Vegasians: Backstab, Black Market Connections, Cheat, Entertain, Lie, Literacy
 Yorker: Barricade, Bomb Awareness, Chase, Entertain, Interfere, Melee Weapon - Standard
 
+== Disadvantage Skill ==
+Natural Ones: Bolt Action
+
 == Innate Skill Prerequisite ==
 Iron Slaves: Iron Fists: Brawling
 
 == Strain Profession Restriction ==
+Baywalkers: Sawbones, Primitive, Thug
+Diesel Jocks: Farmer, Politician, Publican
+Lascarians: Charlatan, Entertainer, Gambler, Hook-Up, Merchant, Officer, Politician, Ring Leader
 Mericans: Martial Artist, Spy
+The Red Star: Caravan Driver, Charlatan, Entertainer, Gambler, Priest
+Semper Mort: Pugilist
+Unborn of Teixiptla: Engineer, Mad Scientist, Psionist
+Vegasians: Guard, Gun Slinger, Martial Artist, Officer
+Yorker: Charlatan, Officer, Politician
+
+== Strain Stats ==
+Baywalkers: 8, 10, 4
+Diesel Jocks: 10, 10, 3
+Full Dead: 20, 10, 1
+Genjian: 6, 6, 5
+Iron Slaves: 7, 4, 4
+Lascarians: 10, 5, 5
+Mericans: 13, 10, 2
+Nation of Accensor: 8, 8, 5
+Natural Ones: 10, 6, 4
+Pure Blood: 6, 12, 3
+Reclaimers: 8, 13, 2
+The Red Star: 6, 6, 6
+Remnants: 5, 5, 6
+Retrogrades: 10, 10, 4
+Rovers: 8, 8, 4
+Saltwise: 13, 8, 3
+Semper Mort: 10, 10, 3
+Solestros: 6, 6, 4
+Unborn of Teixiptla: 4, 4, 7
+Vegasians: 5, 10, 5
+Yorker: 15, 5, 4
+
+== Strain Specific Skills ==
+Baywalkers: Fast Learner, Old Wounds | Toxic Shock, A Tale of Two Cities, Too Clever
+Diesel Jocks: Need of Food | Road Bound, Endless Miles of Road
+Full Dead: Gnaw, Legion | One of Us, Grave Mind, Diverse Background
+Genjian: Social Observer, Know Your Enemy | The Long Walk, Honor Bound
+Iron Slaves: Able Helper, Strong Back | Bioluminescent, Humble Roots
+Lascarians: Cannibalism | Light Sensitivity, Savage Culture
+Mericans: Merican Mob | Social Pariah, Yeeee-Haaaaw!
+Nation of Accensor: Meditation, Blessed Life | Code of Ethics, First In Last Out
+Natural Ones: Natural Aim | Shun the Boomstick, Xenophobic, Backward
+Pure Blood: Investment | Weakness to Radiation, Peacocks
+Reclaimers: Dead Nerves | Selective Breeding
+The Red Star: Collective Pride | Reject Free Enterprise, Opiate of the Masses
+Remnants: Dabbler | Rootless, Love Me, Not Like the Others
+Retrogrades: Half-Life | Rot Face, Unfriendly Face
+Rovers: Bond of Salt | Word of Bond
+Saltwise: Oceanic Masters, Water Breathers | Ocean Bound, Debts Owed
+Semper Mort: Hunter's Claws, Mortal Bonds, Blood is the Life | Curse of Slumber, Predator's Need, Twisted Hands
+Solestros: Middle Manager | Second in Command, Glass Ceiling
+Unborn of Teixiptla: Undead Hearts | Limited Potential, Called to the Grave
+Vegasians: Meat Market, Coward's Way Out (AKA Buddy Fucker) | Born Coward, Bad Rap, Shady Dealers
+Yorker: Pissed-Off Yorker | Commitment Issues, Angry Streak, Mean Streets
 
 == Open Skill ==
 Avoid 9 

@@ -1,16 +1,19 @@
 require 'set'
 
 class RawReader
-  attr_reader :skill_list, :skill_cat, :strains, :professions, :strain_restrictions, :skill_group
+  attr_reader :skill_list, :skill_cat, :strains, :professions, :strain_restrictions, :skill_group, :strain_stats, :strain_specs
   STATE_TRANSITION = {
-    :undef        => { pattern: /== Advantage Skill ==/,                 next: :innate },
-    :innate       => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
-    :innate_preq  => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
-    :strain_rtrs  => { pattern: /== Open Skill ==/,                      next: :open }, 
-    :open         => { pattern: /==/,                                    next: :profession },
-    :profession   => { pattern: /== Skill Group ==/,                      next: :skill_group },
-    :skill_group  => { pattern: /== Skill List ==/,                     next: :list },
-    :list         => { pattern: /./,                                     next: :list }
+    :undef         => { pattern: /== Advantage Skill ==/,                 next: :innate },
+    :innate        => { pattern: /== Disadvantage Skill ==/,              next: :strain_disadv },
+    :strain_disadv => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
+    :innate_preq   => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
+    :strain_rtrs   => { pattern: /== Strain Stats ==/,                    next: :strain_stats }, 
+    :strain_stats  => { pattern: /== Strain Specific Skills ==/,          next: :strain_specs },
+    :strain_specs  => { pattern: /== Open Skill ==/,                      next: :open },
+    :open          => { pattern: /==/,                                    next: :profession },
+    :profession    => { pattern: /== Skill Group ==/,                     next: :skill_group },
+    :skill_group   => { pattern: /== Skill List ==/,                      next: :list },
+    :list          => { pattern: /./,                                     next: :list }
   }
 
   def initialize filepath:
@@ -20,6 +23,8 @@ class RawReader
     @strains = Set.new
     @strain_restrictions = Hash.new
     @skill_group = Hash.new
+    @strain_specs = Hash.new
+    @strain_stats = Hash.new
     @professions = Set.new
 
     begin
@@ -40,6 +45,7 @@ private
   def post_process_sets
     @skill_cat.each do |_junk, data|
       data[:innate] = data[:innate].to_a
+      data[:innate_disadvantage] = data[:innate_disadvantage].to_a
     end
   end
 
@@ -79,8 +85,11 @@ private
 
     case state
     when :innate then process_innate_skills line: line
+    when :strain_disadv then process_innate_skills line: line, disadvantage: true
     when :innate_preq then process_innate_preqs line: line
     when :strain_rtrs then process_strain_restrictions line: line
+    when :strain_stats then process_strain_stats line: line
+    when :strain_specs then process_strain_specs line: line
     when :open then process_open_skills line: line
     when :profession then process_profession_skills line: line, profession: profession
     when :skill_group then process_skill_group line: line
@@ -88,12 +97,12 @@ private
     end
   end
 
-  def process_innate_skills line:
+  def process_innate_skills line:, disadvantage: false
     innate_skill = line.split(/:/)
     strain = innate_skill[0].to_sym
     skills = innate_skill[1].split(/,/)
 
-    smart_insert strain: strain, skills: skills
+    smart_insert strain: strain, skills: skills, disadvantage: disadvantage
   end
 
   def process_innate_preqs line:
@@ -118,6 +127,33 @@ private
     clusters[1].split(/,/).each do |x| 
       @strain_restrictions[strain][x.strip.to_sym] = true
     end
+  end
+
+  def process_strain_specs line:
+    clusters = line.split(/:/)
+    right_cluster = clusters[1].split(/\|/)
+
+    strain = clusters[0].strip.to_sym
+    adv = Array.new
+    dis = Array.new
+    right_cluster[0].split(/\,/).each { |x| adv.push(x.strip.to_sym )}
+    right_cluster[1].split(/\,/).each { |x| dis.push(x.strip.to_sym )}
+
+    @strain_specs[strain] = {
+      advantages: adv,
+      disadvantages: dis
+    }
+  end
+
+  def process_strain_stats line:
+    clusters = line.split(/:/)
+    right_cluster = clusters[1].split(/\,/)
+
+    @strain_stats[clusters[0].strip.to_sym] = {
+      hp: right_cluster[0].strip.to_i,
+      mp: right_cluster[1].strip.to_i,
+      infection: right_cluster[2].strip.to_i
+    }
   end
 
   def process_skill_group line:
@@ -172,7 +208,7 @@ private
     end
   end
 
-  def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil
+  def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil, disadvantage: false
     if strain and skills
       @strains.add strain
       skills.each do |_skill|
@@ -180,9 +216,15 @@ private
         skill = _skill.strip.to_sym
         @skill_cat[skill] ||= Hash.new
         @skill_cat[skill][:innate] ||= Set.new
-        skill_cat_innate = @skill_cat[skill][:innate]
+        @skill_cat[skill][:innate_disadvantage] ||= Set.new
 
-        skill_cat_innate.add strain.to_sym
+        if !disadvantage
+          skill_cat_innate = @skill_cat[skill][:innate]
+          skill_cat_innate.add strain.to_sym
+        else
+          skill_cat_innate = @skill_cat[skill][:innate_disadvantage]
+          skill_cat_innate.add strain.to_sym
+        end
       end
     elsif open_skills
       @skill_cat[open_skills[:skill]] ||= Hash.new
