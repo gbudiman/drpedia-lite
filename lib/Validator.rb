@@ -36,7 +36,7 @@ private
 
     @strain_specs.each do |strain, specs|
       is_in_strain?(strain)
-      specs[:advantages].concat(specs[:disadvantages]).each do |spec|
+      (specs[:advantages] + specs[:disadvantages]).each do |spec|
         assert(cumulative_strain_specs[spec] == nil,
                "Duplicate strain-specific skill: [#{strain}] [#{spec}]")
 
