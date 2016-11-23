@@ -27,6 +27,40 @@ Natural Ones: Bolt Action
 == Innate Skill Prerequisite ==
 Iron Slaves: Iron Fists: Brawling
 
+== Profession Concentration ==
+Combat: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Solider, Thug
+Civilized Society: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hookup, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
+Crafting and Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
+
+== Advanced Profession ==
+Apocatastian Templar: xp_sum(100) and stat_sum(hp_or_mp, 50) p(Priest) and p(Guard, Officer)
+Avontuur: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Gambler, Scavenger, Teacher, Jones)
+Bone Breaker: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Thug, Pugilist)
+Entrepreneur: not(s(The Red Star)) and xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Caravan Driver, Hook-Up, Merchant, Publican)
+Free Radical: s(Retrograde) and xp_sum(100) and stat_sum(hp_or_mp, 50)
+G-Man: (s(Pure Blood) or k(Lore - Strain - Pure Blood)) and xp_sum(100) and stat_sum(hp_or_mp, 50) and k(Literacy) and k(Lore - Pre-Fall History Modern) and k(Torture, Interrogate)
+Gear Head: xp_sum(100) and stat_sum(hp_or_mp, 50) and (p(Caravan Driver, Hook-Up, Merchant, Engineer, Mad Scientist) or s(Diesel Jock, Rover)) and k(Building Tomorrow, Brewing, Forging the Future)
+Grave Robber: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Doctor, Sawbones) and p(Scavenger, Thief, Assassin, Jones))
+Marksman: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Sniper, Gun Slinger)
+Mercenary: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Soldier, Guard, Officer, Hunter)
+Merican Ba-das: xp_sum(100) and stat_sum(hp, 50) and s(Merican) and p(Priest) and p(Guard, Officer, Gun Slinger, Hunter, Primitive, Pugilist, Soldier, Thug)
+Mind Killer: xp_sum(200) and stat_sum(hp_or_mp, 50) and k(Mind Resistance)
+Monk: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Martial Artist, Priest)
+Mountebank: xp_sum(100) and stat_sum(mp, 100) and p(Charlatan, Gambler, Merchant, Politician)
+Nephilim: xp_sum(200) and stat_sum(mp, 50) and s(Nation of Accensor, Remnant)
+Oni: xp_sum(100) and stat_sum(hp_or_mp, 50) and s(Red Star) and p(Priest) and p(Guard, Officer, Gun Slinger, Primitive, Soldier)
+Overlord: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Assassin, Doctor, Gambler, Mad Scientist, Ring Leader, Engineer) and p(Charlatan, Entertainer, Politician, Priest, Teacher)
+Reaper: xp_sum(100) and p(Gun Slinger, Hunter, Primitive, Soldier)
+Sage: xp_sum(100) and stat_sum(mp, 50) and p(Jones, Printer, Teacher) and k(lore(4))
+Saint: xp_sum(100) and (p(Cook, Doctor, Priest, Teacher) or s(Nation of Accensor)) and not(s(The Red Star))
+Shadow: xp_sum(200) and stat_sum(hp_or_mp, 50) and p(Assassin, Thief, Spy)
+Shepherd of the Land: xp_sum(200) and stat_sum(hp_or_mp, 100) and p(Cook, Brewer, Teacher, Entertainer, Farmer, Fishmonger)
+Survivor: xp_sum(200) and stat_sum(hp_and_mp, 100)
+Techno Savant: xp_sum(100) and stat_sum(hp_or_mp, 50) and p(Mad Scientist, Tinker, Engineer)
+Thought Bender: xp_sum(100) and stat_sum(mp, 50) and p(Psionist) and k(psionic(advanced, 2))
+Veteran: xp_sum(200) and k(Lore - Local Area)
+Villon: xp_sum(100) and p(Thief, Assassin, Spy)
+
 == Strain Profession Restriction ==
 Baywalkers: Sawbones, Primitive, Thug
 Diesel Jocks: Farmer, Politician, Publican
