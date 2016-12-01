@@ -1,7 +1,10 @@
 require 'set'
 
 class RawReader
-  attr_reader :skill_list, :skill_cat, :strains, :professions, :strain_restrictions, :skill_group, :strain_stats, :strain_specs
+  attr_reader :skill_list, :skill_cat, :skill_group, 
+              :strains, :strain_restrictions, :strain_stats, :strain_specs,
+              :professions, :profession_concentrations, :profession_advanced
+
   STATE_TRANSITION = {
     :undef         => { pattern: /== Advantage Skill ==/,                 next: :innate },
     :innate        => { pattern: /== Disadvantage Skill ==/,              next: :strain_disadv },
@@ -28,6 +31,10 @@ class RawReader
     @strain_specs = Hash.new
     @strain_stats = Hash.new
     @professions = Set.new
+    @profession_concentrations = Hash.new
+    @profession_advanced = Hash.new
+
+    @mutiline_state = nil
 
     begin
       f = File.read(filepath)
@@ -134,9 +141,27 @@ private
   end
 
   def process_profession_concentration line:
+    clusters = line.split(/:/)
+    right_cluster = clusters[1].split(/\,/)
+
+    @profession_concentrations[clusters[0].strip.to_sym] = right_cluster.collect{ |x| x.strip.to_sym }
   end
 
   def process_advanced_professions line:
+    if line.strip.length == 0
+      @multiline_state = nil
+    else
+      clusters = line.split(/:/)
+      case clusters.length
+      when 2
+        @multiline_state = clusters[0].strip.to_sym
+        @profession_advanced[@multiline_state] = ''
+      when 1
+        @profession_advanced[@multiline_state] += clusters[0]
+      else
+        raise RuntimeError, "#{clusters.length} clusters in multiline processing. Expected 1 or 2: #{line}"
+      end
+    end
   end
 
   def process_strain_specs line:

@@ -12,7 +12,9 @@ class Builder
                   strains: raw_reader.strains,
                   professions: raw_reader.professions,
                   strain_stats: raw_reader.strain_stats,
-                  strain_specs: raw_reader.strain_specs
+                  strain_specs: raw_reader.strain_specs,
+                  profession_concentrations: raw_reader.profession_concentrations,
+                  profession_advanced: raw_reader.profession_advanced
 
     File.open(File.join(base_output_path, 'strains.json'), 'w') { |f| f.write raw_reader.strains.to_a.to_json }
     File.open(File.join(base_output_path, 'professions.json'), 'w') { |f| f.write raw_reader.professions.to_a.to_json }
@@ -22,5 +24,7 @@ class Builder
     File.open(File.join(base_output_path, 'skill_list.json'), 'w') { |f| f.write raw_reader.skill_list.to_json }
     File.open(File.join(base_output_path, 'strain_stats.json'), 'w') { |f| f.write raw_reader.strain_stats.to_json }
     File.open(File.join(base_output_path, 'strain_specs.json'), 'w') { |f| f.write raw_reader.strain_specs.to_json }
+    File.open(File.join(base_output_path, 'profession_concentrations.json'), 'w') { |f| f.write raw_reader.profession_concentrations.to_json }
+    File.open(File.join(base_output_path, 'profession_advanced.json'), 'w') { |f| f.write raw_reader.profession_advanced.to_json }
   end
 end

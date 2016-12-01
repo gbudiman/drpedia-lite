@@ -8,7 +8,9 @@ class Validator
                  strains:, 
                  professions:, 
                  strain_stats:, 
-                 strain_specs:
+                 strain_specs:,
+                 profession_concentrations:,
+                 profession_advanced:
     @skill_list = skill_list
     @skill_group = skill_group
     @skill_cat = skill_cat
@@ -16,14 +18,26 @@ class Validator
     @professions = professions
     @strain_stats = strain_stats
     @strain_specs = strain_specs
+    @profession_concentrations = profession_concentrations
+    @profession_advanced = profession_advanced
 
     validate_non_empty
     validate_skill_name_matches
     validate_stats
     validate_strain_specs
+    validate_profession_concentrations
+    validate_profession_advanced
   end
 
 private
+  def validate_profession_concentrations
+    assert(@profession_concentrations.length > 0)
+  end
+
+  def validate_profession_advanced
+    assert(@profession_advanced.length > 0)
+  end
+
   def validate_non_empty
     assert(@skill_list.length > 0, "Empty skill list")
     assert(@skill_cat.length > 0, "Empty processed skills")
