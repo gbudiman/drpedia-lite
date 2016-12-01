@@ -6,7 +6,9 @@ class RawReader
     :undef         => { pattern: /== Advantage Skill ==/,                 next: :innate },
     :innate        => { pattern: /== Disadvantage Skill ==/,              next: :strain_disadv },
     :strain_disadv => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
-    :innate_preq   => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
+    :innate_preq   => { pattern: /== Profession Concentration ==/,        next: :prof_concent },
+    :prof_concent  => { pattern: /== Advanced Profession ==/,             next: :adv_prof },
+    :adv_prof      => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
     :strain_rtrs   => { pattern: /== Strain Stats ==/,                    next: :strain_stats }, 
     :strain_stats  => { pattern: /== Strain Specific Skills ==/,          next: :strain_specs },
     :strain_specs  => { pattern: /== Open Skill ==/,                      next: :open },
@@ -87,6 +89,8 @@ private
     when :innate then process_innate_skills line: line
     when :strain_disadv then process_innate_skills line: line, disadvantage: true
     when :innate_preq then process_innate_preqs line: line
+    when :prof_concent then process_profession_concentration line: line
+    when :adv_prof then process_advanced_professions line: line
     when :strain_rtrs then process_strain_restrictions line: line
     when :strain_stats then process_strain_stats line: line
     when :strain_specs then process_strain_specs line: line
@@ -127,6 +131,12 @@ private
     clusters[1].split(/,/).each do |x| 
       @strain_restrictions[strain][x.strip.to_sym] = true
     end
+  end
+
+  def process_profession_concentration line:
+  end
+
+  def process_advanced_professions line:
   end
 
   def process_strain_specs line:

@@ -102,7 +102,7 @@ Merican Ba-das:
 Mind Killer: 
   (and ((xp_sum 200) 
         (stat_sum hp_or_mp 50) 
-        (k Mind Resistance)))
+        (k "Mind Resistance")))
 
 Monk: 
   (and ((xp_sum 100)
@@ -140,7 +140,7 @@ Sage:
   (and ((xp_sum 100) 
         (stat_sum mp 50) 
         (p (Jones Printer Teacher)) 
-        (k (class_type lore 4))))
+        (k (lore_type 4))))
 Saint: 
   (and ((xp_sum 100)
         (or ((p (Cook Doctor Priest Teacher))  
@@ -164,7 +164,7 @@ Survivor:
 Techno Savant:
   (and ((xp_sum 100)
         (stat_sum hp_or_mp 50) 
-        (p (Mad Scientist Tinker Engineer))))
+        (p ("Mad Scientist" Tinker Engineer))))
 
 Thought Bender: 
   (and ((xp_sum 100)  
