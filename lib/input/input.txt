@@ -26,6 +26,18 @@ Natural Ones: Bolt Action
 
 == Innate Skill Prerequisite ==
 Iron Slaves: Iron Fists: Brawling
+Full Dead: Income II: Income I
+Full Dead: Income III: Income II
+Full Dead: Income IV: Income III
+Full Dead: Income V: Income IV
+Pure Blood: Income II: Income I
+Pure Blood: Income III: Income II
+Pure Blood: Income IV: Income III
+Pure Blood: Income V: Income IV
+Solestros: Income II: Income I
+Solestros: Income III: Income II
+Solestros: Income IV: Income III
+Solestros: Income V: Income IV
 
 == Profession Concentration ==
 Combat: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Solider, Thug
