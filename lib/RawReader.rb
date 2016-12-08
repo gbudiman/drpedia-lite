@@ -151,11 +151,14 @@ private
     if line.strip.length == 0
       @multiline_state = nil
     else
-      clusters = line.split(/:/)
+      # Force whitespace at end to the length count is correct
+      clusters = (line + ' ').split(/\:/)
+      
       case clusters.length
       when 2
         @multiline_state = clusters[0].strip.to_sym
         @profession_advanced[@multiline_state] = ''
+
       when 1
         @profession_advanced[@multiline_state] += clusters[0]
       else
