@@ -193,6 +193,199 @@ Villon:
   (and ((xp_sum 100) 
         (p (Thief Assassin Spy))))
 
+== Advanced Profession Skills ==
+
+== Apocatastian Templar ==
+Shroud of Faith 10
+Guardian of the Order 10
+Pillar of Strength 10
+The Lone Guard 10
+Wrath of the Just 10
+
+== Avontuur ==
+Trademark Item 10
+Dust and Bones 10 Trademark Item
+Side Kick 10
+Smuggler's Run 10 Trademark Item
+Don't Monologue 10 Brawling
+
+== Bone Breaker ==
+Last Word 10
+Echoing Pain 10 
+Strong Chin 10
+Tougher Than Metal 10
+Ring Out 10
+
+== Entrepreneur ==
+New Horizons 10
+Bankrolling 10
+Cornered Market 10
+New Design 10
+Mini-Mall 10
+
+== Free Radical ==
+Atom Smasher 10 
+Evolution 10 
+Healthy Green Glow 10 
+Jacob’s Broken Ladder 10 
+Share the Love 10 Evolution
+
+== G-Man ==
+Arrest Warrant 10 The Oath
+Bound By Law 10 The Oath
+Forensic Rituals 10 The Oath
+The Oath 10
+Trained Inquisitor 10 The Oath
+
+== Gear Head ==
+Eternal Forge 10 
+Internal Hearth 10 
+Hotrod Junkie 10 
+The Outside Chance 10 
+Servant of Iron 10
+
+== Grave Robber ==
+Trinkets of the Past 10 
+Replacement Parts 10
+Gene Splicer: Lung Expansion 5
+Gene Splicer: Thick Skin 5
+Gene Splicer: Eau de Zombie 5
+Gene Splicer: Ice Veins 5
+Gene Splicer: Infectus Mordus 5
+Last Dance 10
+
+== Marksman ==
+Magic Bullet 10
+Bullet Dodger 10
+Vital Fire 10
+Gun-Fu 10
+Ricochet 10 Gun-Fu
+
+== Mercenary ==
+Dispatch 10
+Hired Muscle 10
+In the Zone 10
+Interceptor 10
+Training Ground 10
+
+== Merican Ba-Das ==
+Rebel Yell 10 
+Cheeseburger and a Six Pack 10
+Hail of Bullets 10 
+Walk It Off 10 
+Dumb Luck 10
+
+== Mind Killer ==
+Psionic Dissidence 10
+Burning Call 10
+Fearless is the Still Mind 10
+The Culling Wall 10
+One True Reality 10
+
+== Monk ==
+Hundred Fist Strike 10
+Flesh of Iron 10
+Silent Introspection 10
+Shatter Strike 10 Brawling
+Air Strike 10 Brawling
+
+== Mountebank ==
+Mob Mentality 10
+Broken Mirrors 10
+Gilded Daisy 10 
+Hung Jury 10
+Windfall 10
+
+== Nephilim ==
+The Change 10
+Avenging Angel 10 The Change
+Wrath 10 The Change & Brawling
+Broken Coils 10 The Change
+Meaning of Death 10 The Change & Wrath
+
+== Oni ==
+Memories of Many 10 Memories of Many
+Guardian Spirit 10 Memories of Many
+Walking Reminder 10 Memories of Many
+Shared Strength 10 Memories of Many
+Red Menace 10 Memories of Many
+
+== Overlord ==
+Henchman 10
+Lair of Solitude 10
+Criminal Network 10
+Deus ex Machina 10 
+Raise the Standard 10
+
+== Reaper ==
+Aura of Hate 10
+Necessary Violence 10
+Killing Zone 10
+Dark Intentions 10 
+Sociopath Stalk 10
+
+== Sage ==
+House of Cards 10
+Simple Deduction 10
+Leap of Reason 10 Simple Deduction
+Strategy 10 
+Pure Genius 10 Educated
+
+== Saint ==
+Inner Peace 10
+Life Giver 10
+Live Again 10
+Miracle Worker 10
+The Final Cause 10 Live Again
+
+== Shadow ==
+Unseen Hands 10
+Lurking Threat 10
+Inner Circle 10 Guild Member
+Sandman 10
+Never Here 10
+
+== Shepherd of the Land ==
+Breaking Point 10 
+Gossip Hound 10 
+Gracious Guest 10 
+Helping Hand 10 
+More To Give 10
+
+== Survivor ==
+Calloused Hands 10
+Scarred Bones 10
+Jaded World View 10
+Iron Kidney 10
+Pack Mule 10
+
+== Techno Savant ==
+Elementary! 10 
+Eureka! 10 Elementary!
+Brilliant! 10 
+Genius! 10 
+Excelsior! 10 Elementary!
+
+== Thought Bender ==
+Shattered Psyche 10
+Duality 10 Shattered Psyche
+Grave Mind 10 Shattered Psyche
+Mental Breakdown 10 Shattered Psyche
+My Little Friend 10 Shattered Psyche
+
+== Veteran ==
+Been There Did That 10 
+Dirty Connections 10 Literacy
+Knows A Guy 10 
+Owed Favors 10 
+Prior Enemies 10
+
+== Villon ==
+Protection Racket 10 Disguise
+Nimble Fingers 10 Pick Pockets
+Fence 10
+Running Numbers 10
+Well Shit 10
 
 == Strain Profession Restriction ==
 Baywalkers: Sawbones, Primitive, Thug

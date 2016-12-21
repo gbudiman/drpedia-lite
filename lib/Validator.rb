@@ -5,6 +5,7 @@ class Validator
   def initialize skill_list:, 
                  skill_group:, 
                  skill_cat:, 
+                 advanced_cat:,
                  strains:, 
                  professions:, 
                  strain_stats:, 
