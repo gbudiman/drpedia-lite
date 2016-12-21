@@ -15,6 +15,7 @@ class Validator
     @skill_list = skill_list
     @skill_group = skill_group
     @skill_cat = skill_cat
+    @advanced_cat = advanced_cat
     @strains = strains
     @professions = professions
     @strain_stats = strain_stats
@@ -23,11 +24,13 @@ class Validator
     @profession_advanced = profession_advanced
 
     validate_non_empty
-    validate_skill_name_matches
+    validate_skill_name_matches cat: @skill_cat
+    validate_skill_name_matches cat: @advanced_cat
     validate_stats
     validate_strain_specs
     validate_profession_concentrations
     validate_profession_advanced
+    validate_non_duplicate_skill_codes
   end
 
 private
@@ -68,13 +71,13 @@ private
     end
   end
 
-  def validate_skill_name_matches
+  def validate_skill_name_matches cat:
     mismatches = Array.new
-    @skill_cat.each do |skill_name, sdata|
+    cat.each do |skill_name, sdata|
       if !is_in_list?(skill_name)
-        puts "mismatch: #{skill_name}"
+        # puts "mismatch: #{skill_name}"
         mismatches << skill_name
-        ap @skill_cat[skill_name]
+        # ap @skill_cat[skill_name]
       end
 
       sdata.each do |stype, stdata|
@@ -93,6 +96,20 @@ private
             end
           end
         end
+      end
+    end
+  end
+
+  def validate_non_duplicate_skill_codes
+    existing_codes = Hash.new
+
+    @skill_list.each do |skill, code|
+      if existing_codes[code] == nil
+        existing_codes[code] = skill
+      else
+        puts "Duplicate skill code: #{code}"
+        puts "  Previously claimed by: #{existing_codes[code]}"
+        puts "  Ateempt to claim by:   #{skill}"
       end
     end
   end

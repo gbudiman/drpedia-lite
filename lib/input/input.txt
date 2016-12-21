@@ -46,152 +46,152 @@ Crafting and Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scav
 
 == Advanced Profession ==
 Apocatastian Templar: 
-  (and ((xp_sum 100) 
-        (stat_sum hp_or_mp 50) 
-        (p Priest) 
-        (p (Guard Officer))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50) 
+    (p Priest) 
+    (p (Guard Officer))))
 
 Avontuur: 
-  (and ((xp_sum 100) 
-        (stat_sum hp_or_mp 50) 
-        (p (Gambler Scavenger Teacher Jones))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50) 
+    (p (Gambler Scavenger Teacher Jones))))
 
 Bone Breaker: 
-  (and ((xp_sum 100) 
-        (stat_sum hp_or_mp 50) 
-        (p (Thug Pugilist))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50) 
+    (p (Thug Pugilist))))
 
 Entrepreneur: 
-  (and ((not (s "The Red Star")) 
-        (xp_sum 100)
-        (stat_sum hp_or_mp 50) 
-        (p (Caravan Driver "Hook-Up" Merchant Publican))))
+ (and ((not (s "The Red Star")) 
+    (xp_sum 100)
+    (stat_sum hp_or_mp 50) 
+    (p (Caravan Driver "Hook-Up" Merchant Publican))))
 
 Free Radical: 
-  (and ((s Retrograde) 
-        (xp_sum 100) 
-        (stat_sum hp_or_mp 50)))
+ (and ((s Retrograde) 
+    (xp_sum 100) 
+    (stat_sum hp_or_mp 50)))
 
 G-Man: 
-  (and ((or ((s "Pure Blood") 
-             (k "Lore - Strain - Pure Blood"))) 
-        (xp_sum 100) 
-        (stat_sum hp_or_mp 50) 
-        (k Literacy) 
-        (k "Lore - Pre-Fall History Modern") 
-        (k (Torture Interrogate))))
+ (and ((or ((s "Pure Blood") 
+       (k "Lore - Strain - Pure Blood"))) 
+    (xp_sum 100) 
+    (stat_sum hp_or_mp 50) 
+    (k Literacy) 
+    (k "Lore - Pre-Fall History Modern") 
+    (k (Torture Interrogate))))
 
 Gear Head: 
-  (and ((xp_sum 100) 
-        (stat_sum hp_or_mp 50) 
-        ((or (p (Caravan Driver "Hook-Up" Merchant Engineer "Mad Scientist")) 
-             (s ("Diesel Jock" Rover)))) 
-        (k ("Building Tomorrow" Brewing "Forging the Future"))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50) 
+    ((or (p (Caravan Driver "Hook-Up" Merchant Engineer "Mad Scientist")) 
+       (s ("Diesel Jock" Rover)))) 
+    (k ("Building Tomorrow" Brewing "Forging the Future"))))
 
 Grave Robber: 
-  (and ((xp_sum 100)
-        (stat_sum hp_or_mp 50)
-        (p (Doctor Sawbones)) 
-        (p (Scavenger Thief Assassin Jones))))
+ (and ((xp_sum 100)
+    (stat_sum hp_or_mp 50)
+    (p (Doctor Sawbones)) 
+    (p (Scavenger Thief Assassin Jones))))
 
 Marksman: 
-  (and ((xp_sum 100) 
-        (stat_sum hp_or_mp 50)
-        (p (Sniper "Gun Slinger"))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50)
+    (p (Sniper "Gun Slinger"))))
 
 Mercenary: 
-  (and ((xp_sum 100) 
-        (stat_sum hp_or_mp 50)
-        (p (Soldier Guard Officer Hunter))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50)
+    (p (Soldier Guard Officer Hunter))))
 
 Merican Ba-das: 
-  (and ((xp_sum 100) 
-        (stat_sum hp 50) 
-        (s Merican)
-        (p Priest) 
-        (p (Guard Officer "Gun Slinger" Hunter Primitive Pugilist Soldier Thug))))
+ (and ((xp_sum 100) 
+    (stat_sum hp 50) 
+    (s Merican)
+    (p Priest) 
+    (p (Guard Officer "Gun Slinger" Hunter Primitive Pugilist Soldier Thug))))
 
 Mind Killer: 
-  (and ((xp_sum 200) 
-        (stat_sum hp_or_mp 50) 
-        (k "Mind Resistance")))
+ (and ((xp_sum 200) 
+    (stat_sum hp_or_mp 50) 
+    (k "Mind Resistance")))
 
 Monk: 
-  (and ((xp_sum 100)
-        (stat_sum hp_or_mp 50) 
-        (p ("Martial Artist" Priest))))
+ (and ((xp_sum 100)
+    (stat_sum hp_or_mp 50) 
+    (p ("Martial Artist" Priest))))
 
 Mountebank: 
-  (and ((xp_sum 100) 
-        (stat_sum mp 100) 
-        (p (Charlatan Gambler Merchant Politician))))
+ (and ((xp_sum 100) 
+    (stat_sum mp 100) 
+    (p (Charlatan Gambler Merchant Politician))))
 
 Nephilim: 
-  (and ((xp_sum 200) 
-        (stat_sum mp 50) 
-        (s ("Nation of Accensor" Remnant))))
+ (and ((xp_sum 200) 
+    (stat_sum mp 50) 
+    (s ("Nation of Accensor" Remnant))))
 
 Oni: 
-  (and ((xp_sum 100)  
-        (stat_sum hp_or_mp 50)
-        (s "Red Star") 
-        (p Priest) 
-        (p (Guard Officer "Gun Slinger" Primitive Soldier))))
+ (and ((xp_sum 100) 
+    (stat_sum hp_or_mp 50)
+    (s "Red Star") 
+    (p Priest) 
+    (p (Guard Officer "Gun Slinger" Primitive Soldier))))
 
 Overlord:
-  (and ((xp_sum 100)
-        (stat_sum hp_or_mp 50) 
-        (p (Assassin Doctor Gambler "Mad Scientist" "Ring Leader" Engineer)) 
-        (p (Charlatan Entertainer Politician Priest Teacher))))
+ (and ((xp_sum 100)
+    (stat_sum hp_or_mp 50) 
+    (p (Assassin Doctor Gambler "Mad Scientist" "Ring Leader" Engineer)) 
+    (p (Charlatan Entertainer Politician Priest Teacher))))
 
 Reaper: 
-  (and ((xp_sum 100)
-        (p ("Gun Slinger" Hunter Primitive Soldier))))
+ (and ((xp_sum 100)
+    (p ("Gun Slinger" Hunter Primitive Soldier))))
 
 Sage:
-  (and ((xp_sum 100) 
-        (stat_sum mp 50) 
-        (p (Jones Printer Teacher)) 
-        (lore_type 4)))
+ (and ((xp_sum 100) 
+    (stat_sum mp 50) 
+    (p (Jones Printer Teacher)) 
+    (lore_type 4)))
 
 Saint: 
-  (and ((xp_sum 100)
-        (or ((p (Cook Doctor Priest Teacher))  
-             (s "Nation of Accensor"))) 
-        ((not (s "The Red Star")))))
+ (and ((xp_sum 100)
+    (or ((p (Cook Doctor Priest Teacher)) 
+       (s "Nation of Accensor"))) 
+    ((not (s "The Red Star")))))
 
 Shadow: 
-  (and ((xp_sum 200) 
-        (stat_sum hp_or_mp 50)
-        (p (Assassin Thief Spy))))
+ (and ((xp_sum 200) 
+    (stat_sum hp_or_mp 50)
+    (p (Assassin Thief Spy))))
 
 Shepherd of the Land: 
-  (and ((xp_sum 200) 
-        (stat_sum hp_or_mp 100) 
-        (p (Cook Brewer Teacher Entertainer Farmer Fishmonger))))
+ (and ((xp_sum 200) 
+    (stat_sum hp_or_mp 100) 
+    (p (Cook Brewer Teacher Entertainer Farmer Fishmonger))))
 
 Survivor: 
-  (and ((xp_sum 200) 
-        (stat_sum hp_and_mp 100)))
+ (and ((xp_sum 200) 
+    (stat_sum hp_and_mp 100)))
 
 Techno Savant:
-  (and ((xp_sum 100)
-        (stat_sum hp_or_mp 50) 
-        (p ("Mad Scientist" Tinker Engineer))))
+ (and ((xp_sum 100)
+    (stat_sum hp_or_mp 50) 
+    (p ("Mad Scientist" Tinker Engineer))))
 
 Thought Bender: 
-  (and ((xp_sum 100)  
-        (stat_sum mp 50) 
-        (p Psionist) 
-        (psionic_type advanced 2)))
+ (and ((xp_sum 100) 
+    (stat_sum mp 50) 
+    (p Psionist) 
+    (psionic_type advanced 2)))
 
 Veteran: 
-  (and ((xp_sum 200)
-        (k "Lore - Local Area")))
+ (and ((xp_sum 200)
+    (k "Lore - Local Area")))
 
 Villon:
-  (and ((xp_sum 100) 
-        (p (Thief Assassin Spy))))
+ (and ((xp_sum 100) 
+    (p (Thief Assassin Spy))))
 
 == Advanced Profession Skills ==
 
@@ -1395,3 +1395,168 @@ HN Unlock
 HO Vanish
 HP Weld
 HQ Wide Strike
+RA Shroud of Faith
+RB Guardian of the Order
+RC Pillar of Strength
+RD The Lone Guard
+RE Wrath of the Just
+RF Trademark Item
+RG Dust and Bones
+RH Trademark Item
+RI Side Kick
+RJ Smuggler's Run
+RK Trademark Item
+RL Don't Monologue
+RM Last Word
+RN Echoing Pain
+RO Strong Chin
+RP Tougher Than Metal
+RQ Ring Out
+RR New Horizons
+RS Bankrolling
+RT Cornered Market
+RU New Design
+RV Mini-Mall
+RW Atom Smasher
+RX Evolution
+RY Healthy Green Glow
+RZ s Broken Ladder
+SA Share the Love
+SB Evolution
+SC Arrest Warrant
+SD The Oath
+SE Bound By Law
+SF The Oath
+SG Forensic Rituals
+SH The Oath
+SI The Oath
+SJ Trained Inquisitor
+SK The Oath
+SL Eternal Forge
+SM Internal Hearth
+SN Hotrod Junkie
+SO The Outside Chance
+SP Servant of Iron
+SQ Trinkets of the Past
+SR Replacement Parts
+SS Gene Splicer: Lung Expansion
+ST Gene Splicer: Thick Skin
+SU Gene Splicer: Eau de Zombie
+SV Gene Splicer: Ice Veins
+SW Gene Splicer: Infectus Mordus
+SX Last Dance
+SY Magic Bullet
+SZ Bullet Dodger
+TA Vital Fire
+TB Gun-Fu
+TC Ricochet
+TD Gun-Fu
+TE Dispatch
+TF Hired Muscle
+TG In the Zone
+TH Interceptor
+TI Training Ground
+TJ Rebel Yell
+TK Cheeseburger and a Six Pack
+TL Hail of Bullets
+TM Walk It Off
+TN Dumb Luck
+TO Psionic Dissidence
+TP Burning Call
+TQ Fearless is the Still Mind
+TR The Culling Wall
+TS One True Reality
+TT Hundred Fist Strike
+TU Flesh of Iron
+TV Silent Introspection
+TW Shatter Strike
+TX Air Strike
+TY Mob Mentality
+TZ Broken Mirrors
+UA Gilded Daisy
+UB Hung Jury
+UC Windfall
+UD The Change
+UE Avenging Angel
+UF The Change
+UG Wrath
+UH The Change
+UI Broken Coils
+UJ The Change
+UK Meaning of Death
+UL The Change
+UM Wrath
+UN Memories of Many
+UO Memories of Many
+UP Guardian Spirit
+UQ Memories of Many
+UR Walking Reminder
+US Memories of Many
+UT Shared Strength
+UU Memories of Many
+UV Red Menace
+UW Memories of Many
+UX Henchman
+UY Lair of Solitude
+UZ Criminal Network
+VA Deus ex Machina
+VB Raise the Standard
+VC Aura of Hate
+VD Necessary Violence
+VE Killing Zone
+VF Dark Intentions
+VG Sociopath Stalk
+VH House of Cards
+VI Simple Deduction
+VJ Leap of Reason
+VK Simple Deduction
+VL Strategy
+VM Pure Genius
+VN Inner Peace
+VO Life Giver
+VP Live Again
+VQ Miracle Worker
+VR The Final Cause
+VS Live Again
+VT Unseen Hands
+VU Lurking Threat
+VV Inner Circle
+VW Guild Member
+VX Sandman
+VY Never Here
+VZ Breaking Point
+WA Gossip Hound
+WB Gracious Guest
+WC Helping Hand
+WD More To Give
+WE Calloused Hands
+WF Scarred Bones
+WG Jaded World View
+WH Iron Kidney
+WI Pack Mule
+WJ Elementary!
+WK Eureka!
+WL Elementary!
+WM Brilliant!
+WN Genius!
+WO Excelsior!
+WP Elementary!
+WQ Shattered Psyche
+WR Duality
+WS Shattered Psyche
+WT Grave Mind
+WU Shattered Psyche
+WV Mental Breakdown
+WW Shattered Psyche
+WX My Little Friend
+WY Shattered Psyche
+WZ Been There Did That
+XA Dirty Connections
+XB Knows A Guy
+XC Owed Favors
+XD Prior Enemies
+XE Protection Racket
+XF Nimble Fingers
+XG Fence
+XH Running Numbers
+XI Well Shit
