@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = 'drpedia_lite'
-  s.version       = '0.0.16'
+  s.version       = '0.0.17'
   s.date          = Date.today
   s.summary       = 'Extracts data from Dystopia Rising handbook'
   s.description   = 'Extracts skills, strains, profession, and requirement trees into JSON'
@@ -8,5 +8,5 @@ Gem::Specification.new do |s|
   s.email         = 'wahyu.g@gmail.com'
   s.files         = Dir.glob("lib/**/*.rb") + ['lib/input/input.txt']
   s.license       = 'MIT'
-  s.homepage      = 'https://drpedia.herokuapp.com'
+  s.homepage      = 'https://drpediabeta.herokuapp.com'
 end
