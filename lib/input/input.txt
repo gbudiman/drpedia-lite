@@ -104,7 +104,7 @@ Mercenary:
   (stat_sum hp_or_mp 50)
   (p (Soldier Guard Officer Hunter))))
 
-Merican Ba-das: 
+Merican Ba-Das: 
  (and ((xp_sum 100) 
   (stat_sum hp 50) 
   (s Merican)

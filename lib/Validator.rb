@@ -131,7 +131,7 @@ private
   end
 
   def is_in_profession? _x
-    if !@professions.include?(_x)
+    if !@professions.include?(_x) && !@profession_advanced.keys.include?(_x)
       puts "mismatched profession: #{_x}"
       return false
     end

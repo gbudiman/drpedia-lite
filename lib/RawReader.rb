@@ -280,10 +280,11 @@ private
       profession = profession_skills[:profession]
       cost = profession_skills[:cost]
       preq = profession_skills[:preq]
-      professions.add profession
+      
 
       case type
       when :basic
+        professions.add profession
         @skill_cat[skill] ||= Hash.new
         @skill_cat[skill][profession] = {
           cost: cost,
