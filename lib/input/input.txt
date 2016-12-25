@@ -129,7 +129,7 @@ Mountebank:
 Nephilim: 
  (and ((xp_sum 200) 
   (stat_sum mp 50) 
-  (s ("Nation of Accensor" Remnant))))
+  (s ("Nation of Accensor" Remnants))))
 
 Oni: 
  (and ((xp_sum 100) 
