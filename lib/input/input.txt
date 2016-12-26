@@ -286,7 +286,7 @@ Hundred Fist Strike 10
 Flesh of Iron 10
 Silent Introspection 10
 Shatter Strike 10 Brawling
-Air Strike 10 Brawling
+Air Strike 0 Brawling
 
 == Mountebank ==
 Mob Mentality 10
@@ -300,14 +300,14 @@ The Change 10
 Avenging Angel 10 The Change
 Wrath 10 The Change & Brawling
 Broken Coils 10 The Change
-Meaning of Death 10 The Change & Wrath
+Meaning of Death 0 The Change & Wrath
 
 == Oni ==
 Memories of Many 10 Memories of Many
 Guardian Spirit 10 Memories of Many
 Walking Reminder 10 Memories of Many
 Shared Strength 10 Memories of Many
-Red Menace 10 Memories of Many
+Red Menace 0 Memories of Many
 
 == Overlord ==
 Henchman 10
@@ -328,7 +328,7 @@ House of Cards 10
 Simple Deduction 10
 Leap of Reason 10 Simple Deduction
 Strategy 10 
-Pure Genius 10 Educated
+Pure Genius 0 Educated
 
 == Saint ==
 Inner Peace 10
@@ -370,7 +370,7 @@ Shattered Psyche 10
 Duality 10 Shattered Psyche
 Grave Mind 10 Shattered Psyche
 Mental Breakdown 10 Shattered Psyche
-My Little Friend 10 Shattered Psyche
+My Little Friend 0 Shattered Psyche
 
 == Veteran ==
 Been There Did That 10 
@@ -384,7 +384,7 @@ Protection Racket 10 Disguise
 Nimble Fingers 10 Pick Pockets
 Fence 10
 Running Numbers 10
-Well Shit 10
+Well Shit 0
 
 == Strain Profession Restriction ==
 Baywalkers: Sawbones, Primitive, Thug
