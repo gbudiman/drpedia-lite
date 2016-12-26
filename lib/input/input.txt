@@ -1,7 +1,7 @@
 == Advantage Skill ==
 Baywalkers: Analyze Creature, Double-Tap, First Aide, Instruct, Literacy, Parry
 Diesel Jocks: Balance, Bolt Action, Forging the Future, Patch Job, Trade Ties, Melee Weapon - Standard
-Full Dead: Big Dig, Check Quality, Income I, Income II, Income III, Income IV, Income V, Lie, Literacy, Torture
+Full Dead: Big Dig I, Big Dig II, Big Dig III, Big Dig IV, Big Dig V, Check Quality, Income I, Income II, Income III, Income IV, Income V, Lie, Literacy, Torture
 Genjian: Analyze Creature, Bow, Brawling, Lore - Mon Histories, Melee Weapon - Standard, Sailing, Throwing
 Iron Slaves: Brawling, Carry, Escape Bonds, Iron Fists, Refuse, Rescue, Scrounge
 Lascarians: Alert, Blind Fighting, Chase, Chop, Force Barricade, Melee Weapon - Small, Scrounge, Take Down
@@ -135,7 +135,6 @@ Oni:
  (and ((xp_sum 100) 
   (stat_sum hp_or_mp 50)
   (s "Red Star") 
-  (p Priest) 
   (p (Guard Officer "Gun Slinger" Primitive Soldier))))
 
 Overlord:
@@ -624,7 +623,11 @@ Throwing 3
 == Farmer ==
 Alert 3 
 Analyze Creature 3 
-Animal Handler 3 
+Animal Handler I 3 
+Animal Handler II 3 Animal Handler I
+Animal Handler III 3 Animal Handler II 
+Animal Handler IV 3 Animal Handler III 
+Animal Handler V 3 Animal Handler IV 
 Brawling 6
 Brewing 3 Crop Tending
 Carry 3 
@@ -744,7 +747,11 @@ Throwing - Javelins 3
 == Jones ==
 Attach 3 
 Balance 3
-Big Dig 3 Bomb Awareness
+Big Dig I 3 Bomb Awareness
+Big Dig II 3 Big Dig I
+Big Dig III 3 Big Dig II
+Big Dig IV 3 Big Dig III
+Big Dig V 3 Big Dig IV
 Bolt Action 6 
 Bomb Awareness 3 
 Brawling 6
@@ -1168,7 +1175,7 @@ Income
 AA Alert
 AB Analyze Compound
 AC Analyze Creature
-AD Animal Handler
+AD Animal Handler I
 AE Attach
 AF Avoid
 AG Backstab
@@ -1176,7 +1183,7 @@ AH Balance
 AI Bartender's Tongue
 AJ Barricade
 AK Beg For Life
-AL Big Dig
+AL Big Dig I
 AM Black Market Connections
 AN Bless Weapon
 AO Blind Fighting
@@ -1286,7 +1293,6 @@ EK Lore - Pre-Fall History Ancient, Lore
 EL Lore - Pre-Fall History Cultural, Lore
 EM Lore - Pre-Fall History Modern, Lore
 EN Lore - Pre-Fall History Religion, Lore
-EO Lore - Meditation, Lore
 EP Lore - Raider, Lore
 EQ Lore - Slaver Communities, Lore
 ER Lore - Strain - Nation of Accensor, Lore
@@ -1309,17 +1315,17 @@ FH Lore - Strain - Solestros, Lore
 FI Lore - Strain - Unborn of Teixiptla, Lore
 FJ Lore - Strain - Vegasians, Lore
 FK Lore - Strain - Yorker, Lore
-FL Lore - Tech - Combustion Power
-FM Lore - Tech - Natural Power
-FN Lore - Tech - Nuclear Power
-FO Lore - Zombie
-FP Lore - Techno Savant - Complex Electronics
-FQ Lore - Techno Savant - Doomsday Device
-FR Lore - Techno Savant - Tesla Electronics
-FS Lore - Techno Savant - Esoteric Cultural Anomalies
-FT Lore - Medicine - Biological Warfare
-FU Lore - Tech - Structural Anomalies
-FV Lore - Tech - Gizmos
+FL Lore - Tech - Combustion Power, Lore
+FM Lore - Tech - Natural Power, Lore
+FN Lore - Tech - Nuclear Power, Lore
+FO Lore - Zombie, Lore
+FP Lore - Techno Savant - Complex Electronics, Lore
+FQ Lore - Techno Savant - Doomsday Device, Lore
+FR Lore - Techno Savant - Tesla Electronics, Lore
+FS Lore - Techno Savant - Esoteric Cultural Anomalies, Lore
+FT Lore - Medicine - Biological Warfare, Lore
+FU Lore - Tech - Structural Anomalies, Lore
+FV Lore - Tech - Gizmos, Lore
 FW Mangle Limb
 FX Master Craftsman
 FY Medical Assistance
@@ -1370,6 +1376,14 @@ QG Mind of a Killer, Psionic Skill - Advanced
 QH Mind Shield, Psionic Skill - Advanced 
 QI Psychic Cleanse, Psionic Skill - Advanced 
 QJ Sundered Mind, Psionic Skill - Advanced
+QK Animal Handler II
+QL Animal Handler III
+QM Animal Handler IV
+QN Animal Handler V
+QO Big Dig II
+QP Big Dig III
+QQ Big Dig IV
+QR Big Dig V
 GS Refuse
 GT Repair
 GU Rescue
