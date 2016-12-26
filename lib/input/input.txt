@@ -1271,6 +1271,7 @@ DO Lore - Animals - Terra Firma, Lore
 DP Lore - Faith - Church of Darwin, Lore
 DQ Lore - Faith - Cult of Fallow Hopes, Lore
 DR Lore - Faith - Final Knight, Lore
+QS Lore - Faith - Kings Court, Lore
 DS Lore - Faith - Light of Hedon, Lore
 DT Lore - Faith - Minor Cults and Sects, Lore
 DU Lore - Faith - Nuclear Family, Lore
@@ -1283,7 +1284,7 @@ EA Lore - History - Fictional Literature, Lore
 EB Lore - History - Music, Lore
 EC Lore - Medical - Diseases and Plagues, Lore
 ED Lore - Medical - Grave Mind Infection, Lore
-EE Lore - Medical - Grave Robber Processesv
+EE Lore - Medical - Grave Robber Processes, Lore
 EF Lore - Metallurgy, Lore
 EG Lore - Mining, Lore
 EH Lore - Mon Histories, Lore
@@ -1293,6 +1294,7 @@ EK Lore - Pre-Fall History Ancient, Lore
 EL Lore - Pre-Fall History Cultural, Lore
 EM Lore - Pre-Fall History Modern, Lore
 EN Lore - Pre-Fall History Religion, Lore
+QT Lore - Radiation, Lore
 EP Lore - Raider, Lore
 EQ Lore - Slaver Communities, Lore
 ER Lore - Strain - Nation of Accensor, Lore
