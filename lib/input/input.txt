@@ -134,7 +134,7 @@ Nephilim:
 Oni: 
  (and ((xp_sum 100) 
   (stat_sum hp_or_mp 50)
-  (s "Red Star") 
+  (s "The Red Star") 
   (p (Guard Officer "Gun Slinger" Primitive Soldier))))
 
 Overlord:
