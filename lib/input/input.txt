@@ -1319,13 +1319,6 @@ FL Lore - Tech - Combustion Power, Lore
 FM Lore - Tech - Natural Power, Lore
 FN Lore - Tech - Nuclear Power, Lore
 FO Lore - Zombie, Lore
-FP Lore - Techno Savant - Complex Electronics, Lore
-FQ Lore - Techno Savant - Doomsday Device, Lore
-FR Lore - Techno Savant - Tesla Electronics, Lore
-FS Lore - Techno Savant - Esoteric Cultural Anomalies, Lore
-FT Lore - Medicine - Biological Warfare, Lore
-FU Lore - Tech - Structural Anomalies, Lore
-FV Lore - Tech - Gizmos, Lore
 FW Mangle Limb
 FX Master Craftsman
 FY Medical Assistance
