@@ -30,6 +30,10 @@ Full Dead: Income II: Income I
 Full Dead: Income III: Income II
 Full Dead: Income IV: Income III
 Full Dead: Income V: Income IV
+Full Dead: Big Dig II: Big Dig I
+Full Dead: Big Dig III: Big Dig II
+Full Dead: Big Dig IV: Big Dig III
+Full Dead: Big Dig V: Big Dig IV
 Pure Blood: Income II: Income I
 Pure Blood: Income III: Income II
 Pure Blood: Income IV: Income III
@@ -65,7 +69,7 @@ Entrepreneur:
  (and ((not (s "The Red Star")) 
   (xp_sum 100)
   (stat_sum hp_or_mp 50) 
-  (p (Caravan Driver "Hook-Up" Merchant Publican))))
+  (p ("Caravan Driver" "Hook-Up" Merchant Publican))))
 
 Free Radical: 
  (and ((s Retrograde) 
@@ -107,7 +111,7 @@ Mercenary:
 Merican Ba-Das: 
  (and ((xp_sum 100) 
   (stat_sum hp 50) 
-  (s Merican)
+  (s Mericans)
   (p Priest) 
   (p (Guard Officer "Gun Slinger" Hunter Primitive Pugilist Soldier Thug))))
 
@@ -370,7 +374,7 @@ Shattered Psyche 10
 Duality 10 Shattered Psyche
 Grave Mind 10 Shattered Psyche
 Mental Breakdown 10 Shattered Psyche
-My Little Friend 0 Shattered Psyche
+My Little Friend 10 Shattered Psyche
 
 == Veteran ==
 Been There Did That 10 
