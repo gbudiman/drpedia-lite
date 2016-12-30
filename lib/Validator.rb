@@ -6,6 +6,7 @@ class Validator
                  skill_group:, 
                  skill_cat:, 
                  advanced_cat:,
+                 concentration_cat:,
                  strains:, 
                  professions:, 
                  strain_stats:, 
@@ -16,6 +17,7 @@ class Validator
     @skill_group = skill_group
     @skill_cat = skill_cat
     @advanced_cat = advanced_cat
+    @concentration_cat = concentration_cat
     @strains = strains
     @professions = professions
     @strain_stats = strain_stats
@@ -23,9 +25,17 @@ class Validator
     @profession_concentrations = profession_concentrations
     @profession_advanced = profession_advanced
 
+    @profession_concentration_inverted = Hash.new
+    @profession_concentrations.each do |basic, data|
+      data.each do |conc|
+        @profession_concentration_inverted[conc] = true
+      end
+    end
+
     validate_non_empty
     validate_skill_name_matches cat: @skill_cat
     validate_skill_name_matches cat: @advanced_cat
+    validate_skill_name_matches cat: @concentration_cat
     validate_stats
     validate_strain_specs
     validate_profession_concentrations
@@ -73,6 +83,7 @@ private
 
   def validate_skill_name_matches cat:
     mismatches = Array.new
+
     cat.each do |skill_name, sdata|
       if !is_in_list?(skill_name)
         # puts "mismatch: #{skill_name}"
@@ -131,7 +142,9 @@ private
   end
 
   def is_in_profession? _x
-    if !@professions.include?(_x) && !@profession_advanced.keys.include?(_x)
+    if !@professions.include?(_x) && 
+       !@profession_advanced.keys.include?(_x) &&
+       !@profession_concentration_inverted.keys.include?(_x)
       puts "mismatched profession: #{_x}"
       return false
     end

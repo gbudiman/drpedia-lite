@@ -10,6 +10,7 @@ class Builder
                   skill_group: raw_reader.skill_group,
                   skill_cat: raw_reader.skill_cat,
                   advanced_cat: raw_reader.advanced_cat,
+                  concentration_cat: raw_reader.concentration_cat,
                   strains: raw_reader.strains,
                   professions: raw_reader.professions,
                   strain_stats: raw_reader.strain_stats,
@@ -22,6 +23,7 @@ class Builder
     File.open(File.join(base_output_path, 'strain_restriction.json'), 'w') { |f| f.write raw_reader.strain_restrictions.to_json }
     File.open(File.join(base_output_path, 'skill_cat.json'), 'w') { |f| f.write raw_reader.skill_cat.to_json }
     File.open(File.join(base_output_path, 'advanced_cat.json'), 'w') { |f| f.write raw_reader.advanced_cat.to_json }
+    File.open(File.join(base_output_path, 'concentration_cat.json'), 'w') { |f| f.write raw_reader.concentration_cat.to_json }
     File.open(File.join(base_output_path, 'skill_group.json'), 'w') { |f| f.write raw_reader.skill_group.to_json }
     File.open(File.join(base_output_path, 'skill_list.json'), 'w') { |f| f.write raw_reader.skill_list.to_json }
     File.open(File.join(base_output_path, 'strain_stats.json'), 'w') { |f| f.write raw_reader.strain_stats.to_json }

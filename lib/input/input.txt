@@ -44,9 +44,20 @@ Solestros: Income IV: Income III
 Solestros: Income V: Income IV
 
 == Profession Concentration ==
-Combat: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Solider, Thug
-Civilized Society: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hookup, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
-Crafting and Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
+Agility Combatant, Ranged Combatant, Short Range Combatant: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Solider, Thug
+Civil Servant, Socialite, Resource Manager: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hookup, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
+Consumable Producer, Quality Producer, Quantity Producer: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
+
+== Profession Concentration Skills ==
+Agility Combatant: Close The Distance, Disengage, Keen Eyes
+Ranged Combatant: Heavy Ordnance, Reloading is Stupid, Improvised Thrown Weapon
+Short Range Combatant: Pole-arm Weapon Mastery, Call for Phalanx, Improvised Weapon
+Civil Servant: Savior of Life, Bearer of the Banner, Bread and Circuses
+Socialite: Hosting the Gala Event, Life of the Party, Unwanted Guest
+Resource Manager: The Dead Market, Route Management, Financial Exchange
+Consumable Producer: Extra Mile, Make A Show Of It, Resourceful Mind
+Quality Producer: Made to Order, Custom Modification, Rushed Job
+Quantity Producer: Thousand Arms Crafter, A Stitch in Time, Tchotchkes for Miles
 
 == Advanced Profession ==
 Apocatastian Templar: 
@@ -1546,3 +1557,30 @@ WE Well Shit
 WF Windfall
 WG Wrath
 WH Wrath of the Just
+XA Close The Distance
+XB Disengage
+XC Keen Eyes
+XD Heavy Ordnance
+XE Reloading is Stupid
+XF Improvised Thrown Weapon
+XG Pole-arm Weapon Mastery
+XH Call for Phalanx
+XI Improvised Weapon
+XJ Savior of Life
+XK Bearer of the Banner
+XL Bread and Circuses
+XM Hosting the Gala Event
+XN Life of the Party
+XO Unwanted Guest
+XP The Dead Market
+XQ Route Management
+XR Financial Exchange
+XS Extra Mile
+XT Make A Show Of It
+XU Resourceful Mind
+XV Made to Order
+XW Custom Modification
+XX Rushed Job
+XY Thousand Arms Crafter
+XZ A Stitch in Time
+WI Tchotchkes for Miles

@@ -1,7 +1,7 @@
 require 'set'
 
 class RawReader
-  attr_reader :skill_list, :skill_cat, :skill_group, :advanced_cat,
+  attr_reader :skill_list, :skill_cat, :skill_group, :advanced_cat, :concentration_cat,
               :strains, :strain_restrictions, :strain_stats, :strain_specs,
               :professions, :profession_concentrations, :profession_advanced
 
@@ -10,7 +10,8 @@ class RawReader
     :innate        => { pattern: /== Disadvantage Skill ==/,              next: :strain_disadv },
     :strain_disadv => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
     :innate_preq   => { pattern: /== Profession Concentration ==/,        next: :prof_concent },
-    :prof_concent  => { pattern: /== Advanced Profession ==/,             next: :adv_prof },
+    :prof_concent  => { pattern: /== Profession Concentration Skills ==/, next: :conc_skills },
+    :conc_skills   => { pattern: /== Advanced Profession ==/,             next: :adv_prof },
     :adv_prof      => { pattern: /== Advanced Profession Skills ==/,      next: :adv_skills },
     :adv_skills    => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
     :strain_rtrs   => { pattern: /== Strain Stats ==/,                    next: :strain_stats }, 
@@ -27,6 +28,7 @@ class RawReader
     @skill_list = Hash.new
     @skill_cat = Hash.new
     @advanced_cat = Hash.new
+    @concentration_cat = Hash.new
     @strains = Set.new
     @strain_restrictions = Hash.new
     @skill_group = Hash.new
@@ -51,6 +53,8 @@ class RawReader
 
     #ap @skill_cat
     #ap @advanced_cat
+    #ap @profession_concentrations
+    #ap @concentration_cat
   end
 
 private
@@ -100,6 +104,7 @@ private
     when :strain_disadv then process_innate_skills line: line, disadvantage: true
     when :innate_preq then process_innate_preqs line: line
     when :prof_concent then process_profession_concentration line: line
+    when :conc_skills then process_profession_concentration_skills line: line
     when :adv_prof then process_advanced_professions line: line
     when :adv_skills then process_profession_skills line: line, profession: profession, type: :advanced
     when :strain_rtrs then process_strain_restrictions line: line
@@ -148,8 +153,24 @@ private
     clusters = line.split(/:/)
     right_cluster = clusters[1].split(/\,/)
 
-    @profession_concentrations[clusters[0].strip.to_sym] = right_cluster.collect{ |x| x.strip.to_sym }
+    right_cluster.each do |prof|
+      @profession_concentrations[prof.strip.to_sym] = clusters[0].split(/\,/).collect{ |x| x.strip.to_sym }
+    end
   end
+
+  def process_profession_concentration_skills line:
+    clusters = line.split(/:/)
+
+    # @concentration_cat[clusters[0].strip.to_sym] = clusters[1].split(/\,/).collect{ |x| x.strip.to_sym }
+
+    clusters[1].split(/\,/).each do |skill|
+      smart_insert profession_skills: { skill: skill.strip.to_sym,
+                                        profession: clusters[0].strip.to_sym,
+                                        cost: 0 },
+                   type: :concentration
+    end
+  end
+
 
   def process_advanced_professions line:
     if line.strip.length == 0
@@ -293,6 +314,12 @@ private
       when :advanced
         @advanced_cat[skill] ||= Hash.new
         @advanced_cat[skill][profession] = {
+          cost: cost,
+          preq: preq
+        }
+      when :concentration
+        @concentration_cat[skill] ||= Hash.new
+        @concentration_cat[skill][profession] = {
           cost: cost,
           preq: preq
         }
