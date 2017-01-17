@@ -1191,14 +1191,14 @@ Alert: Vanish, Fade In A Crowd, Whisper Walk, Cover of Night
 Analyze Compound: Disguise Contents
 Analyze Creature: | Disguise
 Attach: | Bomb Awareness
-Avoid: Concentrated Fire, Destroy Shield, Destroy Weapon, Disarming Shot, Scatter Shot, Sniped Shot, Knockout, Pray for Justice
-Balance: Knockdown, Take Down
+Avoid: Concentrated Fire, Destroy Shield, Destroy Weapon, Destroy Armor, Disarming Shot, Scatter Shot, Sniped Shot, Knockout, Pray for Justice, Gun Aficionado, Knock Down, Nail, Agony, Blood Scent
+Balance: Knock Down, Take Down
 Barricade: | Force Barricade
 Beg For Life: Killing Blows | Refuse
 Blind Fighting: Blinding
-Blinding: | Blind Fighting
+Blinding: | Blind Fighting, Parry
 Bomb Awareness: Attach
-Bounce: Concentrated Fire, Destroy Shield, Destroy Weapon, Sniped Shot, Scatter Shot
+Bounce: Concentrated Fire, Destroy Shield, Destroy Weapon, Destroy Armor, Sniped Shot, Scatter Shot, Disarming Shot, Gun Aficionado, Nail
 Break Armor: | Parry
 Break Shield: | Parry
 Break Weapon: | Parry
@@ -1209,6 +1209,7 @@ Chase: Escape, Rescue
 Cheat: | Check Your Sleeves
 Check Status: Feign Death
 Check Your Sleeves: Cheat
+Choking Blow: Challenge, Charisma
 Concentrated Fire: | Avoid, Bounce
 Cover of Night: | Alert
 Disguise: Analyze Creature
@@ -1219,65 +1220,70 @@ Disarming Blow: | Parry
 Disarming Shot: | Avoid, Bounce
 Disguise: Analyze Creature
 Disguise Contents: | Analyze Compound
+Entertain: | Refuse
 Escape: | Chase
 Escape Bonds: Tie Binds
-Fade in a Crowd: | Alert
+Fade In A Crowd: | Alert
 Fearful Glare: | Refuse
 Feign Death: | Check Status
+First Aide: Knockout
 Force Barricade: Barricade
 Frightening Force: | Parry
 Gun Aficionado: | Avoid, Bounce
-Interrogate: | Line
+Interrogate: | Lie
 Knock Down: | Balance, Avoid
 Knockout: | Avoid, First Aide
 Lie: Interrogate
 Mangle Limb: | Parry
-Mind Resistance: Toys in the Attic, Pyro, Enslavement, Body Puppet, Torture
+Mind Resistance: Toys in the Attic, Pyro, Enslavement, Body Puppet, Torture, Jolt, Limited Telekinesis, Memory Lapse, Mind Push, Nightmare, Paralysis, Seeing Double, Slowed Steps, Tranquility, Trickster's Mind, Berserker Mind, Body Lock, Body of Mind, Engulf, Living Death, Major Telekinesis, Propulsion, Psionic Surgeon, Sense of Sins, Maelstrom, Psychic Cleanse, Sundered Mind
 Nail: | Avoid, Bounce
 Nerve Punch: | Parry
-Parry: Break Armor, Break Weapon, Break Shield, Blinding, Charge, Disarm, Frightening Force, Mangle Limb, Nerve Punch, Sever, Slaughter, Take Down, Wide Strike
-Pray For Justice: | Avoid
-Refuse: Beg for Life, Challenge, Charisma, Entertain, Fear
+Parry: Break Armor, Break Weapon, Break Shield, Blinding, Charge, Disarming Blow, Frightening Force, Mangle Limb, Nerve Punch, Sever, Slaughter, Take Down, Wide Strike, Agony, Impale, Sunder Limb
+Pray for Justice: | Avoid
+Refuse: Beg For Life, Challenge, Charisma, Entertain, Fear, Fearful Glare, Agony
 Rescue: | Chase
 Scatter Shot: | Avoid, Bounce
 Sever: | Parry
 Sniped Shot: | Avoid, Bounce
 Take Down: | Balance, Parry
-Tie Bonds: | Escape Bonds
-Torture: | Mind Resist
+Tie Binds: | Escape Bonds
+Torture: | Mind Resistance
 Vanish: | Alert
 Wide Strike: | Parry
-Jolt: | Mind Resist
-Limited Telekinesis: | Mind Resist
-Memory Lapse: | Mind Resist
-Mind Push: | Mind Resist
-Nightmare: | Mind Resist
-Paralysis: | Mind Resist
-Pyro: | Mind Resist
-Seeing Double: | Mind Resist
-Slowed Steps: | Mind Resist
-Toys in the Attic: | Mind Resist
-Tranquility: | Mind Resist
-Trickster's Mind: | Mind Resist
-Berserker Mind: | Mind Resist
-Body Lock: | Mind Resist
-Body of Mind: | Mind Resist
-Body Puppet: | Mind Resist
-Engulf: | Mind Resist
-Living Death: | Mind Resist
-Major Telekinesis: | Mind Resist
-Propulsion: | Mind Resist
-Psionic Surgeon: | Mind Resist
-Sense of Sins: | Mind Resist
+Jolt: | Mind Resistance
+Limited Telekinesis: | Mind Resistance
+Memory Lapse: | Mind Resistance
+Mind Push: | Mind Resistance
+Nightmare: | Mind Resistance
+Paralysis: | Mind Resistance
+Pyro: | Mind Resistance
+Seeing Double: | Mind Resistance
+Slowed Steps: | Mind Resistance
+Toys in the Attic: | Mind Resistance
+Tranquility: | Mind Resistance
+Trickster's Mind: | Mind Resistance
+Berserker Mind: | Mind Resistance
+Body Lock: | Mind Resistance
+Body of Mind: | Mind Resistance
+Body Puppet: | Mind Resistance
+Engulf: | Mind Resistance
+Living Death: | Mind Resistance
+Major Telekinesis: | Mind Resistance
+Propulsion: | Mind Resistance
+Psionic Surgeon: | Mind Resistance
+Sense of Sins: | Mind Resistance
 Whisper Walk: | Alert
-Maelstrom: | Mind Resist
-Psychic Cleanse: | Mind Resist
-Sundered Mind: | Mind Resist
+Maelstrom: | Mind Resistance
+Psychic Cleanse: | Mind Resistance
+Sundered Mind: | Mind Resistance
 Agony: | Parry, Avoid, Refuse
 Blood Scent: | Avoid
 Fear: | Refuse
 Impale: | Parry
 Sunder Limb: | Parry
+Killing Blows: | Beg For Life
+Enslavement: | Mind Resistance
+Slaughter: | Parry
 
 == Skill List ==
 AA Alert
@@ -1459,7 +1465,7 @@ PL Seeing Double, Psionic Skill - Basic
 PM Slowed Steps, Psionic Skill - Basic
 PN Toys in the Attic, Psionic Skill - Basic
 PO Tranquility, Psionic Skill - Basic
-PQ Trickster’s Mind, Psionic Skill - Basic
+PQ Trickster's Mind, Psionic Skill - Basic
 PR Berserker Mind, Psionic Skill - Intermediate 
 PS Body Lock, Psionic Skill - Intermediate
 PT Body of Mind, Psionic Skill - Intermediate
@@ -1677,3 +1683,28 @@ XX Rushed Job
 XY Thousand Arms Crafter
 XZ A Stitch in Time
 WI Tchotchkes for Miles
+YA Killing Blows
+YB Absorb
+YC Animate
+YD Blood Scent
+YE Burrow
+YF Cleave
+YG Confuse
+YH Daze
+YI Devour
+YJ Diseased
+YK Enslavement
+YL Fear
+YM Flight
+YN Frenzy
+YO Gnaw
+YP Gnaw
+YQ Impale
+YR Melt
+YS Rip Through
+YT Shatter
+YU Slaughter
+YV Snare
+YW Sunder Limb
+YX Terror
+YY Agony

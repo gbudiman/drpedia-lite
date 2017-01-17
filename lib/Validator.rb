@@ -12,7 +12,9 @@ class Validator
                  strain_stats:, 
                  strain_specs:,
                  profession_concentrations:,
-                 profession_advanced:
+                 profession_advanced:,
+                 skill_counters:,
+                 skill_countered:
     @skill_list = skill_list
     @skill_group = skill_group
     @skill_cat = skill_cat
@@ -24,6 +26,8 @@ class Validator
     @strain_specs = strain_specs
     @profession_concentrations = profession_concentrations
     @profession_advanced = profession_advanced
+    @skill_counters = skill_counters
+    @skill_countered = skill_countered
 
     @profession_concentration_inverted = Hash.new
     @profession_concentrations.each do |basic, data|
@@ -41,6 +45,9 @@ class Validator
     validate_profession_concentrations
     validate_profession_advanced
     validate_non_duplicate_skill_codes
+    validate_skill_counters cat: @skill_counters
+    validate_skill_counters cat: @skill_countered
+    validate_skill_counter_bidirectional
   end
 
 private
@@ -123,6 +130,49 @@ private
         puts "  Ateempt to claim by:   #{skill}"
       end
     end
+  end
+
+  def validate_skill_counters cat:
+    cat.each do |s, ls|
+      if !is_in_list?(s)
+        puts "Mismatched skill counter: #{s}"
+      end
+
+      ls.each do |l|
+        if !is_in_list?(l)
+          puts "Mismatched skill counter member: #{l}"
+        end
+      end
+    end
+  end
+
+  def validate_skill_counter_bidirectional
+    @skill_counters.each do |skill_name, counters|
+      counters.each do |counter|
+        if !has_interaction? skill: skill_name, counter: counter, interaction: :a_counters_b
+          puts "Missing: skill #{skill_name} counters #{counter}, but skill #{counter} is not countered by #{skill_name}"
+        end
+      end
+    end
+
+    @skill_countered.each do |skill_name, countereds|
+      countereds.each do |countered|
+        if !has_interaction? skill: skill_name, counter: countered, interaction: :a_countered_by_b
+          puts "Missing: skill #{skill_name} is countered by #{countered}, but skill #{countered} does not counter #{skill_name}"
+        end
+      end
+    end
+  end
+
+  def has_interaction? skill:, counter:, interaction:
+    case interaction
+    when :a_counters_b
+      return true if @skill_countered[counter] && @skill_countered[counter].include?(skill)
+    when :a_countered_by_b
+      return true if @skill_counters[counter] && @skill_counters[counter].include?(skill)
+    end
+
+    return false
   end
 
   def is_in_list? _x

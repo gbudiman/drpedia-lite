@@ -3,7 +3,8 @@ require 'set'
 class RawReader
   attr_reader :skill_list, :skill_cat, :skill_group, :advanced_cat, :concentration_cat,
               :strains, :strain_restrictions, :strain_stats, :strain_specs,
-              :professions, :profession_concentrations, :profession_advanced
+              :professions, :profession_concentrations, :profession_advanced,
+              :skill_counters, :skill_countered
 
   STATE_TRANSITION = {
     :undef         => { pattern: /== Advantage Skill ==/,                 next: :innate },
@@ -58,8 +59,8 @@ class RawReader
     #ap @advanced_cat
     #ap @profession_concentrations
     #ap @concentration_cat
-    ap @skill_counters
-    ap @skill_countered
+    # ap @skill_counters
+    # ap @skill_countered
   end
 
 private
