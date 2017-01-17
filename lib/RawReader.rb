@@ -19,7 +19,8 @@ class RawReader
     :strain_specs  => { pattern: /== Open Skill ==/,                      next: :open },
     :open          => { pattern: /==/,                                    next: :profession },
     :profession    => { pattern: /== Skill Group ==/,                     next: :skill_group },
-    :skill_group   => { pattern: /== Skill List ==/,                      next: :list },
+    :skill_group   => { pattern: /== Skill Counters ==/,                  next: :skill_counter },
+    :skill_counter => { pattern: /== Skill List ==/,                      next: :list },
     :list          => { pattern: /./,                                     next: :list }
   }
 
@@ -32,6 +33,8 @@ class RawReader
     @strains = Set.new
     @strain_restrictions = Hash.new
     @skill_group = Hash.new
+    @skill_counters = Hash.new
+    @skill_countered = Hash.new
     @strain_specs = Hash.new
     @strain_stats = Hash.new
     @professions = Set.new
@@ -55,6 +58,8 @@ class RawReader
     #ap @advanced_cat
     #ap @profession_concentrations
     #ap @concentration_cat
+    ap @skill_counters
+    ap @skill_countered
   end
 
 private
@@ -113,6 +118,7 @@ private
     when :open then process_open_skills line: line
     when :profession then process_profession_skills line: line, profession: profession
     when :skill_group then process_skill_group line: line
+    when :skill_counter then process_skill_counters line: line
     when :list then process_list_skills line: line
     end
   end
@@ -171,6 +177,21 @@ private
     end
   end
 
+  def process_skill_counters line:
+    segments = line.split(':')
+    skill_name = segments[0].strip.to_sym
+    subsegs = segments[1].strip.split('|')
+
+    if subsegs[0].length > 0
+      counters = subsegs[0].strip
+      @skill_counters[skill_name] = counters.split(',').collect{ |x| x.strip.to_sym }
+    end
+
+    if subsegs[1]
+      countered_by = subsegs[1].strip
+      @skill_countered[skill_name] = countered_by.split(',').collect{ |x| x.strip.to_sym }
+    end
+  end
 
   def process_advanced_professions line:
     if line.strip.length == 0
