@@ -48,6 +48,11 @@ Agility Combatant, Ranged Combatant, Short Range Combatant: Assassin, Guard, Gun
 Civil Servant, Socialite, Resource Manager: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hookup, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
 Consumable Producer, Quality Producer, Quantity Producer: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
 
+== Concentration Hierarchy ==
+Combat: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Solder, Thug
+Society: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hook-Up, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
+Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
+
 == Profession Concentration Skills ==
 Agility Combatant: Close The Distance, Disengage, Keen Eyes
 Ranged Combatant: Heavy Ordnance, Reloading is Stupid, Improvised Thrown Weapon

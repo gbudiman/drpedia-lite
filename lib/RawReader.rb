@@ -4,6 +4,7 @@ class RawReader
   attr_reader :skill_list, :skill_cat, :skill_group, :advanced_cat, :concentration_cat,
               :strains, :strain_restrictions, :strain_stats, :strain_specs,
               :professions, :profession_concentrations, :profession_advanced,
+              :profession_concentration_hierarchy,
               :skill_counters, :skill_countered
 
   STATE_TRANSITION = {
@@ -11,7 +12,8 @@ class RawReader
     :innate        => { pattern: /== Disadvantage Skill ==/,              next: :strain_disadv },
     :strain_disadv => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
     :innate_preq   => { pattern: /== Profession Concentration ==/,        next: :prof_concent },
-    :prof_concent  => { pattern: /== Profession Concentration Skills ==/, next: :conc_skills },
+    :prof_concent  => { pattern: /== Concentration Hierarchy ==/,         next: :prof_hierarc },
+    :prof_hierarc  => { pattern: /== Profession Concentration Skills ==/, next: :conc_skills },
     :conc_skills   => { pattern: /== Advanced Profession ==/,             next: :adv_prof },
     :adv_prof      => { pattern: /== Advanced Profession Skills ==/,      next: :adv_skills },
     :adv_skills    => { pattern: /== Strain Profession Restriction ==/,   next: :strain_rtrs },
@@ -41,6 +43,7 @@ class RawReader
     @professions = Set.new
     @profession_concentrations = Hash.new
     @profession_advanced = Hash.new
+    @profession_concentration_hierarchy = Hash.new
 
     @mutiline_state = nil
 
@@ -61,6 +64,7 @@ class RawReader
     #ap @concentration_cat
     # ap @skill_counters
     # ap @skill_countered
+    ap @profession_concentration_hierarchy
   end
 
 private
@@ -110,6 +114,7 @@ private
     when :strain_disadv then process_innate_skills line: line, disadvantage: true
     when :innate_preq then process_innate_preqs line: line
     when :prof_concent then process_profession_concentration line: line
+    when :prof_hierarc then process_profession_concentration_hierarchy line: line
     when :conc_skills then process_profession_concentration_skills line: line
     when :adv_prof then process_advanced_professions line: line
     when :adv_skills then process_profession_skills line: line, profession: profession, type: :advanced
@@ -162,6 +167,15 @@ private
 
     right_cluster.each do |prof|
       @profession_concentrations[prof.strip.to_sym] = clusters[0].split(/\,/).collect{ |x| x.strip.to_sym }
+    end
+  end
+
+  def process_profession_concentration_hierarchy line:
+    clusters = line.split(/:/)
+    right_cluster = clusters[1].split(/\,/)
+
+    right_cluster.each do |prof|
+      @profession_concentration_hierarchy[prof.strip.to_sym] = clusters[0].strip.to_sym
     end
   end
 

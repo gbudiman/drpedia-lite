@@ -12,6 +12,7 @@ class Validator
                  strain_stats:, 
                  strain_specs:,
                  profession_concentrations:,
+                 profession_concentration_hierarchy:,
                  profession_advanced:,
                  skill_counters:,
                  skill_countered:
@@ -25,6 +26,7 @@ class Validator
     @strain_stats = strain_stats
     @strain_specs = strain_specs
     @profession_concentrations = profession_concentrations
+    @profession_concentration_hierarchy = profession_concentration_hierarchy
     @profession_advanced = profession_advanced
     @skill_counters = skill_counters
     @skill_countered = skill_countered
@@ -43,6 +45,7 @@ class Validator
     validate_stats
     validate_strain_specs
     validate_profession_concentrations
+    validate_profession_concentration_hierarchy
     validate_profession_advanced
     validate_non_duplicate_skill_codes
     validate_skill_counters cat: @skill_counters
@@ -57,6 +60,12 @@ private
 
   def validate_profession_advanced
     assert(@profession_advanced.length > 0)
+  end
+
+  def validate_profession_concentration_hierarchy
+    @profession_concentration_hierarchy.each do |prof, pc|
+      is_in_profession?(prof)
+    end
   end
 
   def validate_non_empty
