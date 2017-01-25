@@ -55,7 +55,7 @@ Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
 
 == Concentration Group ==
 Combat: Agility Combatant, Ranged Combatant, Short Range Combatant
-Civilized Society: Civil Servant, Sociality, Resource Manager
+Civilized Society: Civil Servant, Socialite, Resource Manager
 Crafting and Production: Consumable Producer, Quality Producer, Quantity Producer
 
 == Profession Concentration Skills ==
