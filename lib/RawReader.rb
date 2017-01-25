@@ -5,7 +5,7 @@ class RawReader
               :strains, :strain_restrictions, :strain_stats, :strain_specs,
               :professions, :profession_concentrations, :profession_advanced,
               :profession_concentration_hierarchy, :profession_concentration_group,
-              :skill_counters, :skill_countered
+              :skill_counters, :skill_countered, :skill_mp_cost
 
   STATE_TRANSITION = {
     :undef         => { pattern: /== Advantage Skill ==/,                 next: :innate },
@@ -46,6 +46,7 @@ class RawReader
     @profession_advanced = Hash.new
     @profession_concentration_hierarchy = Hash.new
     @profession_concentration_group = Hash.new
+    @skill_mp_cost = Hash.new
 
     @mutiline_state = nil
 
@@ -67,6 +68,8 @@ class RawReader
     # ap @skill_counters
     # ap @skill_countered
     # ap @profession_concentration_group
+    # ap @skill_list
+    # ap @skill_mp_cost
   end
 
 private
@@ -311,11 +314,22 @@ private
   end
 
   def process_list_skills line:
-    skill_code = line[0..1]
-    skill_clusters = line[3..-1].split(/\,/)
+    # skill_code = line[0..1]
+    # skill_clusters = line[3..-1].split(/\,/)
+    # skill_name = skill_clusters[0].strip.to_sym
+
+    # @skill_list[skill_name] = skill_code
+    # if skill_clusters[1]
+    #   @skill_group[skill_clusters[1].strip.to_sym][skill_name] = true
+    # end
+    line =~ /^([^\s]+)\s+([^\s]+)\s+(.*)$/
+    skill_code = $1
+    skill_mp_cost = $2
+    skill_clusters = $3.split(/\,/)
     skill_name = skill_clusters[0].strip.to_sym
 
     @skill_list[skill_name] = skill_code
+    @skill_mp_cost[skill_name] = skill_mp_cost
     if skill_clusters[1]
       @skill_group[skill_clusters[1].strip.to_sym][skill_name] = true
     end

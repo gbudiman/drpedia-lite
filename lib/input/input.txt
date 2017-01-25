@@ -290,7 +290,11 @@ Dispatch 10
 Hired Muscle 10
 In the Zone 10
 Interceptor 10
-Training Ground 10
+Training Ground I 10
+Training Ground II 10 Training Ground I
+Training Ground III 10 Training Ground II
+Training Ground IV 10 Training Ground III
+Training Ground V 10 Training Ground IV
 
 == Merican Ba-Das ==
 Rebel Yell 10 
@@ -1296,425 +1300,428 @@ Enslavement: | Mind Resistance
 Slaughter: | Parry
 
 == Skill List ==
-AA Alert
-AB Analyze Compound
-AC Analyze Creature
-AD Animal Handler I
-AE Attach
-AF Avoid
-AG Backstab
-AH Balance
-AI Bartender's Tongue
-AJ Barricade
-AK Beg For Life
-AL Big Dig I
-AM Black Market Connections
-AN Bless Weapon
-AO Blind Fighting
-AP Blinding
-AQ Bolt Action
-AR Bomb Awareness
-AS Bounce
-AT Bow
-AU Brawling
-AV Break Armor
-AW Break Shield
-AX Break Weapon
-AY Brew Master
-AZ Brewing
-BA Building Tomorrow
-BB Call The Almighty
-BC Carry
-BD Challenge
-BE Charge
-BF Charisma
-BG Chase
-BH Cheat
-BI Check Quality
-BJ Check Status
-BK Check Value
-BL Check Your Sleeves
-BM Choking Blow
-BN Chop
-BO Concentrated Fire
-BP Cover of Night
-BQ Crop Tending
-BR Cure Toxins
-BS Deep Pockets
-BT Destroy Armor
-BU Destroy Shield
-BV Destroy Weapon
-BW Disarming Blow
-BX Disarming Shot
-BY Disguise
-BZ Disguise Contents
-CA Double-Tap
-CB Educated
-CC Entertain
-CD Escape
-CE Escape Bonds
-CF Fade In A Crowd
-CG Faith Healing
-CH Fearful Glare
-CI Feign Death
-CJ First Aide
-CK Fishing
-CL Fix Limb
-CM Florentine
-CN Force Barricade
-CO Forging the Future
-CP Frightening Force
-CQ Guild Membership
-CR Gun Aficionado
-CS Head Shrink
-CT Healthy Feast
-CU Holy Rites
-CV Hunter's Mark
-CW Improved Armor/Shield
-CX Improved Pistol/Bow
-CY Improved Weapon
-CZ Income I, Income
-PA Income II, Income
-PB Income III, Income
-PC Income IV, Income
-PD Income V, Income
-DA Instruct
-DB Interfere
-DC Interrogate
-DD Iron Fists
-DE Knock Down
-DF Knockout
-DG Lie
-DH Literacy
-DJ Lore - Local Area, Lore
-DK Lore - Animals - Aquatic, Lore
-DL Lore - Animals - Aviary, Lore
-DM Lore - Animals - Mutated, Lore
-DN Lore - Animals - Subterranean, Lore
-DO Lore - Animals - Terra Firma, Lore
-DP Lore - Faith - Church of Darwin, Lore
-DQ Lore - Faith - Cult of Fallow Hopes, Lore
-DR Lore - Faith - Final Knight, Lore
-QS Lore - Faith - Kings Court, Lore
-DS Lore - Faith - Light of Hedon, Lore
-DT Lore - Faith - Minor Cults and Sects, Lore
-DU Lore - Faith - Nuclear Family, Lore
-DV Lore - Faith - Sainthood of Ashes, Lore
-DW Lore - Faith - Telling Visions, Lore
-DX Lore - Faith - Tribes of the Seasons, Lore
-DY Lore - Grave Mind, Lore
-DZ Lore - History - Cinema and Entertainment Television, Lore
-EA Lore - History - Fictional Literature, Lore
-EB Lore - History - Music, Lore
-EC Lore - Medical - Diseases and Plagues, Lore
-ED Lore - Medical - Grave Mind Infection, Lore
-EE Lore - Medical - Grave Robber Processes, Lore
-EF Lore - Metallurgy, Lore
-EG Lore - Mining, Lore
-EH Lore - Mon Histories, Lore
-EI Lore - Nature - Herbs, Lore
-EJ Lore - Nature - Minerals and Refined Materials, Lore
-EK Lore - Pre-Fall History Ancient, Lore
-EL Lore - Pre-Fall History Cultural, Lore
-EM Lore - Pre-Fall History Modern, Lore
-EN Lore - Pre-Fall History Religion, Lore
-QT Lore - Radiation, Lore
-EP Lore - Raider, Lore
-EQ Lore - Slaver Communities, Lore
-ER Lore - Strain - Nation of Accensor, Lore
-ES Lore - Strain - Baywalker, Lore
-ET Lore - Strain - Diesel Jock, Lore
-EU Lore - Strain - Full Dead, Lore
-EV Lore - Strain - Genjian, Lore
-EW Lore - Strain - Iron Slave, Lore
-EX Lore - Strain - Lascarian, Lore
-EY Lore - Strain - Merican, Lore
-EZ Lore - Strain - Natural One, Lore
-FA Lore - Strain - Pure Blood, Lore
-FB Lore - Strain - Reclaimers, Lore
-FC Lore - Strain - Red Star, Lore
-FD Lore - Strain - Remnant, Lore
-FE Lore - Strain - Retrograde, Lore
-FF Lore - Strain - Rover, Lore
-FG Lore - Strain - Salt Wise, Lore
-FH Lore - Strain - Solestros, Lore
-FI Lore - Strain - Unborn of Teixiptla, Lore
-FJ Lore - Strain - Vegasians, Lore
-FK Lore - Strain - Yorker, Lore
-FL Lore - Tech - Combustion Power, Lore
-FM Lore - Tech - Natural Power, Lore
-FN Lore - Tech - Nuclear Power, Lore
-FO Lore - Zombie, Lore
-FW Mangle Limb
-FX Master Craftsman
-FY Medical Assistance
-FZ Medical Genius
-GA Melee Weapon Expert
-GB Melee Weapon - Large
-GC Melee Weapon - Small
-GD Melee Weapon - Standard
-GE Melee Weapon - Two Handed
-GF Mind Resistance
-GG Murder Most Foul
-GH Nail
-GI Nerve Punch
-GJ Parry
-GK Patch Job
-GL Pick Pockets
-GM Pistol Whip
-GN Prepare Meal
-GO Pray for Justice
-PE Jolt, Psionic Skill - Basic
-PF Limited Telekinesis, Psionic Skill - Basic
-PG Memory Lapse, Psionic Skill - Basic
-PH Mind Push, Psionic Skill - Basic
-PI Nightmare, Psionic Skill - Basic
-PJ Paralysis, Psionic Skill - Basic
-PK Pyro, Psionic Skill - Basic
-PL Seeing Double, Psionic Skill - Basic
-PM Slowed Steps, Psionic Skill - Basic
-PN Toys in the Attic, Psionic Skill - Basic
-PO Tranquility, Psionic Skill - Basic
-PQ Trickster's Mind, Psionic Skill - Basic
-PR Berserker Mind, Psionic Skill - Intermediate 
-PS Body Lock, Psionic Skill - Intermediate
-PT Body of Mind, Psionic Skill - Intermediate
-PU Body Puppet, Psionic Skill - Intermediate 
-PV Echoes, Psionic Skill - Intermediate
-PW Engulf, Psionic Skill - Intermediate
-PX Living Death, Psionic Skill - Intermediate 
-PY Major Telekinesis, Psionic Skill - Intermediate
-PZ Propulsion, Psionic Skill - Intermediate
-QA Psionic Surgeon, Psionic Skill - Intermediate
-QB Sense of Sins, Psionic Skill - Intermediate
-QC Whisper Walk, Psionic Skill - Intermediate
-QD Maelstrom, Psionic Skill - Advanced
-QE Mental Armor, Psionic Skill - Advanced 
-QF Mental Glossary, Psionic Skill - Advanced 
-QG Mind of a Killer, Psionic Skill - Advanced 
-QH Mind Shield, Psionic Skill - Advanced 
-QI Psychic Cleanse, Psionic Skill - Advanced 
-QJ Sundered Mind, Psionic Skill - Advanced
-QK Animal Handler II
-QL Animal Handler III
-QM Animal Handler IV
-QN Animal Handler V
-QO Big Dig II
-QP Big Dig III
-QQ Big Dig IV
-QR Big Dig V
-GS Refuse
-GT Repair
-GU Rescue
-GV Sailing
-GW Scatter Shot
-GX SCIENCE!
-GY Scrounge
-GZ Sever
-HA Shield
-HB Smelt
-HC Sniped Shot
-HD Society Membership
-HE Take Down
-HF Teach
-HG Throwing
-HH Throwing - Javelins
-HI Tie Binds
-HJ Torture
-HK Trade Ties
-HL Transcribe
-HM Trap Making
-HN Unlock
-HO Vanish
-HP Weld
-HQ Wide Strike
-RA Air Strike
-RB Arrest Warrant
-RC Atom Smasher
-RD Aura of Hate
-RE Avenging Angel
-RF Bankrolling
-RG Been There Did That
-RH Bound By Law
-RI Breaking Point
-RJ Brilliant!
-RK Broken Coils
-RL Broken Mirrors
-RM Bullet Dodger
-RN Burning Call
-RO Calloused Hands
-RP Cheeseburger and a Six Pack
-RQ Cornered Market
-RR Criminal Network
-RS Dark Intentions
-RT Deus ex Machina
-RU Dirty Connections
-RV Dispatch
-RW Don't Monologue
-RX Duality
-RY Dumb Luck
-RZ Dust and Bones
-SA Echoing Pain
-SB Elementary!
-SC Eternal Forge
-SD Eureka!
-SE Evolution
-SF Excelsior!
-SG Fearless is the Still Mind
-SH Fence
-SI Flesh of Iron
-SJ Forensic Rituals
-SK Gene Splicer: Eau de Zombie
-SL Gene Splicer: Ice Veins
-SM Gene Splicer: Infectus Mordus
-SN Gene Splicer: Lung Expansion
-SO Gene Splicer: Thick Skin
-SP Genius!
-SQ Gilded Daisy
-SR Gossip Hound
-SS Gracious Guest
-ST Grave Mind
-SU Guardian of the Order
-SV Guardian Spirit
-SW Gun-Fu
-SX Hail of Bullets
-SY Healthy Green Glow
-SZ Helping Hand
-TA Henchman
-TB Hired Muscle
-TC Hotrod Junkie
-TD House of Cards
-TE Hundred Fist Strike
-TF Hung Jury
-TG In the Zone
-TH Inner Circle
-TI Inner Peace
-TJ Interceptor
-TK Internal Hearth
-TL Iron Kidney
-TM Jaded World View
-TN Killing Zone
-TO Knows A Guy
-TP Lair of Solitude
-TQ Last Dance
-TR Last Word
-TS Leap of Reason
-TT Life Giver
-TU Live Again
-TV Lurking Threat
-TW Magic Bullet
-TX Meaning of Death
-TY Memories of Many
-TZ Mental Breakdown
-UA Mini-Mall
-UB Miracle Worker
-UC Mob Mentality
-UD More To Give
-UE My Little Friend
-UF Necessary Violence
-UG Never Here
-UH New Design
-UI New Horizons
-UJ Nimble Fingers
-UK One True Reality
-UL Owed Favors
-UM Pack Mule
-UN Pillar of Strength
-UO Prior Enemies
-UP Protection Racket
-UQ Psionic Dissidence
-UR Pure Genius
-US Raise the Standard
-UT Rebel Yell
-UU Red Menace
-UV Replacement Parts
-UW Ricochet
-UX Ring Out
-UY Running Numbers
-UZ Jacob's Broken Ladder
-VA Sandman
-VB Scarred Bones
-VC Servant of Iron
-VD Share the Love
-VE Shared Strength
-VF Shatter Strike
-VG Shattered Psyche
-VH Shroud of Faith
-VI Side Kick
-VJ Silent Introspection
-VK Simple Deduction
-VL Smuggler's Run
-VM Sociopath Stalk
-VN Strategy
-VO Strong Chin
-VP The Change
-VQ The Culling Wall
-VR The Final Cause
-VS The Lone Guard
-VT The Oath
-VU The Outside Chance
-VV Tougher Than Metal
-VW Trademark Item
-VX Trained Inquisitor
-VY Training Ground
-VZ Trinkets of the Past
-WA Unseen Hands
-WB Vital Fire
-WC Walk It Off
-WD Walking Reminder
-WE Well Shit
-WF Windfall
-WG Wrath
-WH Wrath of the Just
-XA Close The Distance
-XB Disengage
-XC Keen Eyes
-XD Heavy Ordnance
-XE Reloading is Stupid
-XF Improvised Thrown Weapon
-XG Pole-arm Weapon Mastery
-XH Call for Phalanx
-XI Improvised Weapon
-XJ Savior of Life
-XK Bearer of the Banner
-XL Bread and Circuses
-XM Hosting the Gala Event
-XN Life of the Party
-XO Unwanted Guest
-XP The Dead Market
-XQ Route Management
-XR Financial Exchange
-XS Extra Mile
-XT Make A Show Of It
-XU Resourceful Mind
-XV Made to Order
-XW Custom Modification
-XX Rushed Job
-XY Thousand Arms Crafter
-XZ A Stitch in Time
-WI Tchotchkes for Miles
-YA Killing Blows
-YB Absorb
-YC Animate
-YD Blood Scent
-YE Burrow
-YF Cleave
-YG Confuse
-YH Daze
-YI Devour
-YJ Diseased
-YK Enslavement
-YL Fear
-YM Flight
-YN Frenzy
-YO Gnaw
-YP Gnaw
-YQ Impale
-YR Melt
-YS Rip Through
-YT Shatter
-YU Slaughter
-YV Snare
-YW Sunder Limb
-YX Terror
-YY Agony
+AA 5 Alert
+AB 1 Analyze Compound
+AC 1 Analyze Creature
+AD 0 Animal Handler I
+AE Var Attach
+AF 5 Avoid
+AG 5 Backstab
+AH 1/5 Balance
+AI 0 Bartender's Tongue
+AJ Var Barricade
+AK 1 Beg For Life
+AL 0 Big Dig I
+AM 0 Black Market Connections
+AN 5 Bless Weapon
+AO 1 Blind Fighting
+AP 5 Blinding
+AQ 0 Bolt Action
+AR 5 Bomb Awareness
+AS 1 Bounce
+AT 0 Bow
+AU 0 Brawling
+AV 10 Break Armor
+AW 5 Break Shield
+AX 5 Break Weapon
+AY Var Brew Master
+AZ Var Brewing
+BA Var Building Tomorrow
+BB 10 Call The Almighty
+BC Var Carry
+BD 5 Challenge
+BE 5 Charge
+BF 1 Charisma
+BG 5 Chase
+BH 5 Cheat
+BI 1 Check Quality
+BJ 1 Check Status
+BK 1 Check Value
+BL 1 Check Your Sleeves
+BM 5 Choking Blow
+BN 1 Chop
+BO 1 Concentrated Fire
+BP 5 Cover of Night
+BQ Var Crop Tending
+BR 5 Cure Toxins
+BS 0 Deep Pockets
+BT 10 Destroy Armor
+BU 5 Destroy Shield
+BV 5 Destroy Weapon
+BW 5 Disarming Blow
+BX 5 Disarming Shot
+BY 5 Disguise
+BZ 5 Disguise Contents
+CA 1 Double-Tap
+CB 0/10 Educated
+CC 1/5 Entertain
+CD 5 Escape
+CE 5 Escape Bonds
+CF 5 Fade In A Crowd
+CG Var Faith Healing
+CH 5 Fearful Glare
+CI 1 Feign Death
+CJ 0 First Aide
+CK 5 Fishing
+CL 5 Fix Limb
+CM 0 Florentine
+CN Var Force Barricade
+CO Var Forging the Future
+CP 10 Frightening Force
+CQ 0 Guild Membership
+CR 5 Gun Aficionado
+CS 10/20 Head Shrink
+CT Var Healthy Feast
+CU Var Holy Rites
+CV 15 Hunter's Mark
+CW Var Improved Armor/Shield
+CX Var Improved Pistol/Bow
+CY Var Improved Weapon
+CZ 0 Income I, Income
+PA 0 Income II, Income
+PB 0 Income III, Income
+PC 0 Income IV, Income
+PD 0 Income V, Income
+DA 1 Instruct
+DB 0 Interfere
+DC 5 Interrogate
+DD 0 Iron Fists
+DE 5 Knock Down
+DF 5 Knockout
+DG 5 Lie
+DH 0 Literacy
+DJ 0 Lore - Local Area, Lore
+DK 0 Lore - Animals - Aquatic, Lore
+DL 0 Lore - Animals - Aviary, Lore
+DM 0 Lore - Animals - Mutated, Lore
+DN 0 Lore - Animals - Subterranean, Lore
+DO 0 Lore - Animals - Terra Firma, Lore
+DP 0 Lore - Faith - Church of Darwin, Lore
+DQ 0 Lore - Faith - Cult of Fallow Hopes, Lore
+DR 0 Lore - Faith - Final Knight, Lore
+QS 0 Lore - Faith - Kings Court, Lore
+DS 0 Lore - Faith - Light of Hedon, Lore
+DT 0 Lore - Faith - Minor Cults and Sects, Lore
+DU 0 Lore - Faith - Nuclear Family, Lore
+DV 0 Lore - Faith - Sainthood of Ashes, Lore
+DW 0 Lore - Faith - Telling Visions, Lore
+DX 0 Lore - Faith - Tribes of the Seasons, Lore
+DY 0 Lore - Grave Mind, Lore
+DZ 0 Lore - History - Cinema and Entertainment Television, Lore
+EA 0 Lore - History - Fictional Literature, Lore
+EB 0 Lore - History - Music, Lore
+EC 0 Lore - Medical - Diseases and Plagues, Lore
+ED 0 Lore - Medical - Grave Mind Infection, Lore
+EE 0 Lore - Medical - Grave Robber Processes, Lore
+EF 0 Lore - Metallurgy, Lore
+EG 0 Lore - Mining, Lore
+EH 0 Lore - Mon Histories, Lore
+EI 0 Lore - Nature - Herbs, Lore
+EJ 0 Lore - Nature - Minerals and Refined Materials, Lore
+EK 0 Lore - Pre-Fall History Ancient, Lore
+EL 0 Lore - Pre-Fall History Cultural, Lore
+EM 0 Lore - Pre-Fall History Modern, Lore
+EN 0 Lore - Pre-Fall History Religion, Lore
+QT 0 Lore - Radiation, Lore
+EP 0 Lore - Raider, Lore
+EQ 0 Lore - Slaver Communities, Lore
+ER 0 Lore - Strain - Nation of Accensor, Lore
+ES 0 Lore - Strain - Baywalker, Lore
+ET 0 Lore - Strain - Diesel Jock, Lore
+EU 0 Lore - Strain - Full Dead, Lore
+EV 0 Lore - Strain - Genjian, Lore
+EW 0 Lore - Strain - Iron Slave, Lore
+EX 0 Lore - Strain - Lascarian, Lore
+EY 0 Lore - Strain - Merican, Lore
+EZ 0 Lore - Strain - Natural One, Lore
+FA 0 Lore - Strain - Pure Blood, Lore
+FB 0 Lore - Strain - Reclaimers, Lore
+FC 0 Lore - Strain - Red Star, Lore
+FD 0 Lore - Strain - Remnant, Lore
+FE 0 Lore - Strain - Retrograde, Lore
+FF 0 Lore - Strain - Rover, Lore
+FG 0 Lore - Strain - Salt Wise, Lore
+FH 0 Lore - Strain - Solestros, Lore
+FI 0 Lore - Strain - Unborn of Teixiptla, Lore
+FJ 0 Lore - Strain - Vegasians, Lore
+FK 0 Lore - Strain - Yorker, Lore
+FL 0 Lore - Tech - Combustion Power, Lore
+FM 0 Lore - Tech - Natural Power, Lore
+FN 0 Lore - Tech - Nuclear Power, Lore
+FO 0 Lore - Zombie, Lore
+FW 5 Mangle Limb
+FX Var Master Craftsman
+FY 1>3 Medical Assistance
+FZ 1>10 Medical Genius
+GA 5>2 Melee Weapon Expert
+GB 0 Melee Weapon - Large
+GC 0 Melee Weapon - Small
+GD 0 Melee Weapon - Standard
+GE 0 Melee Weapon - Two Handed
+GF 10 Mind Resistance
+GG 10 Murder Most Foul
+GH 5 Nail
+GI 5 Nerve Punch
+GJ 5 Parry
+GK 1/5 Patch Job
+GL 1 Pick Pockets
+GM 0 Pistol Whip
+GN Var Prepare Meal
+GO 5 Pray for Justice
+PE 5 Jolt, Psionic Skill - Basic
+PF 5 Limited Telekinesis, Psionic Skill - Basic
+PG 5 Memory Lapse, Psionic Skill - Basic
+PH 5 Mind Push, Psionic Skill - Basic
+PI 5 Nightmare, Psionic Skill - Basic
+PJ 5 Paralysis, Psionic Skill - Basic
+PK 5 Pyro, Psionic Skill - Basic
+PL 5 Seeing Double, Psionic Skill - Basic
+PM 5 Slowed Steps, Psionic Skill - Basic
+PN 5 Toys in the Attic, Psionic Skill - Basic
+PO 5 Tranquility, Psionic Skill - Basic
+PQ 5 Trickster's Mind, Psionic Skill - Basic
+PR 10 Berserker Mind, Psionic Skill - Intermediate 
+PS 10 Body Lock, Psionic Skill - Intermediate
+PT 10 Body of Mind, Psionic Skill - Intermediate
+PU 10 Body Puppet, Psionic Skill - Intermediate 
+PV 10 Echoes, Psionic Skill - Intermediate
+PW 10 Engulf, Psionic Skill - Intermediate
+PX 10 Living Death, Psionic Skill - Intermediate 
+PY 10 Major Telekinesis, Psionic Skill - Intermediate
+PZ 10 Propulsion, Psionic Skill - Intermediate
+QA 10 Psionic Surgeon, Psionic Skill - Intermediate
+QB 10 Sense of Sins, Psionic Skill - Intermediate
+QC 10 Whisper Walk, Psionic Skill - Intermediate
+QD 15 Maelstrom, Psionic Skill - Advanced
+QE 15 Mental Armor, Psionic Skill - Advanced 
+QF 15 Mental Glossary, Psionic Skill - Advanced 
+QG 15 Mind of a Killer, Psionic Skill - Advanced 
+QH 15 Mind Shield, Psionic Skill - Advanced 
+QI 15 Psychic Cleanse, Psionic Skill - Advanced 
+QJ 15 Sundered Mind, Psionic Skill - Advanced
+QK 0 Animal Handler II
+QL 0 Animal Handler III
+QM 0 Animal Handler IV
+QN 0 Animal Handler V
+QO 0 Big Dig II
+QP 0 Big Dig III
+QQ 0 Big Dig IV
+QR 0 Big Dig V
+GS 1 Refuse
+GT Var Repair
+GU 5 Rescue
+GV 0 Sailing
+GW 5 Scatter Shot
+GX Var SCIENCE!
+GY 1 Scrounge
+GZ 5 Sever
+HA 0 Shield
+HB 1 Smelt
+HC 5 Sniped Shot
+HD Var Society Membership
+HE 5 Take Down
+HF 0 Teach
+HG 0 Throwing
+HH 0 Throwing - Javelins
+HI 1 Tie Binds
+HJ 5 Torture
+HK 0 Trade Ties
+HL 5 Transcribe
+HM Var Trap Making
+HN Var Unlock
+HO 5 Vanish
+HP 5 Weld
+HQ 10 Wide Strike
+RA 5 Air Strike
+RB 15 Arrest Warrant
+RC 5 Atom Smasher
+RD 10 Aura of Hate
+RE 10 Avenging Angel
+RF 5 Bankrolling
+RG 10 Been There Did That
+RH 10 Bound By Law
+RI 10 Breaking Point
+RJ 5 Brilliant!
+RK 20 Broken Coils
+RL 20 Broken Mirrors
+RM 5 Bullet Dodger
+RN 10 Burning Call
+RO 0 Calloused Hands
+RP 10 Cheeseburger and a Six Pack
+RQ 15 Cornered Market
+RR 20 Criminal Network
+RS 20 Dark Intentions
+RT 10 Deus ex Machina
+RU 10 Dirty Connections
+RV 10 Dispatch
+RW 10 Don't Monologue
+RX 0 Duality
+RY 10 Dumb Luck
+RZ 0 Dust and Bones
+SA 5 Echoing Pain
+SB 5 Elementary!
+SC 0 Eternal Forge
+SD 20 Eureka!
+SE 1 Evolution
+SF 10 Excelsior!
+SG 0 Fearless is the Still Mind
+SH 0 Fence
+SI 0 Flesh of Iron
+SJ 10 Forensic Rituals
+SK 10 Gene Splicer: Eau de Zombie
+SL 10 Gene Splicer: Ice Veins
+SM 10 Gene Splicer: Infectus Mordus
+SN 10 Gene Splicer: Lung Expansion
+SO 10 Gene Splicer: Thick Skin
+SP 10 Genius!
+SQ 20 Gilded Daisy
+SR 10 Gossip Hound
+SS 20 Gracious Guest
+ST 20 Grave Mind
+SU 20 Guardian of the Order
+SV 20 Guardian Spirit
+SW 0 Gun-Fu
+SX 20 Hail of Bullets
+SY 0 Healthy Green Glow
+SZ 10 Helping Hand
+TA 20 Henchman
+TB 10 Hired Muscle
+TC 0 Hotrod Junkie
+TD 10 House of Cards
+TE 10 Hundred Fist Strike
+TF 10 Hung Jury
+TG 10 In the Zone
+TH 10 Inner Circle
+TI 0 Inner Peace
+TJ 5 Interceptor
+TK 20 Internal Hearth
+TL 5/10 Iron Kidney
+TM 0/10 Jaded World View
+TN 10 Killing Zone
+TO 20 Knows A Guy
+TP 20 Lair of Solitude
+TQ 20 Last Dance
+TR 10 Last Word
+TS 10 Leap of Reason
+TT 10 Life Giver
+TU 20 Live Again
+TV 20 Lurking Threat
+TW 5 Magic Bullet
+TX 0 Meaning of Death
+TY 0 Memories of Many
+TZ 0 Mental Breakdown
+UA 0 Mini-Mall
+UB 10 Miracle Worker
+UC 0 Mob Mentality
+UD 10 More To Give
+UE 20 My Little Friend
+UF 10 Necessary Violence
+UG 10 Never Here
+UH 5 New Design
+UI 5 New Horizons
+UJ 10 Nimble Fingers
+UK 20 One True Reality
+UL 20 Owed Favors
+UM 10 Pack Mule
+UN 20 Pillar of Strength
+UO 10 Prior Enemies
+UP 0 Protection Racket
+UQ 10 Psionic Dissidence
+UR 10 Pure Genius
+US 5 Raise the Standard
+UT 20 Rebel Yell
+UU 20 Red Menace
+UV 5 Replacement Parts
+UW 10 Ricochet
+UX 10 Ring Out
+UY 20 Running Numbers
+UZ 0 Jacob's Broken Ladder
+VA 20 Sandman
+VB 0 Scarred Bones
+VC 20 Servant of Iron
+VD 20 Share the Love
+VE 20 Shared Strength
+VF 20 Shatter Strike
+VG 0 Shattered Psyche
+VH 10 Shroud of Faith
+VI 20 Side Kick
+VJ 0 Silent Introspection
+VK 5 Simple Deduction
+VL 10 Smuggler's Run
+VM 10 Sociopath Stalk
+VN 20 Strategy
+VO 0 Strong Chin
+VP 20 The Change
+VQ 10 The Culling Wall
+VR 0 The Final Cause
+VS 20 The Lone Guard
+VT 0 The Oath
+VU 20 The Outside Chance
+VV 0/10 Tougher Than Metal
+VW 10 Trademark Item
+VX 20 Trained Inquisitor
+VY 0 Training Ground I
+WJ 0 Training Ground II
+WK 0 Training Ground III
+WL 0 Training Ground IV
+WM 0 Training Ground V
+VZ 10 Trinkets of the Past
+WA 10 Unseen Hands
+WB 10 Vital Fire
+WC 5 Walk It Off
+WD 20 Walking Reminder
+WE 30 Well Shit
+WF 0 Windfall
+WG 20 Wrath
+WH 10 Wrath of the Just
+XA 20 Close The Distance
+XB 20 Disengage
+XC 20 Keen Eyes
+XD 0 Heavy Ordnance
+XE 0 Reloading is Stupid
+XF 10 Improvised Thrown Weapon
+XG 0 Pole-arm Weapon Mastery
+XH 20 Call for Phalanx
+XI 10 Improvised Weapon
+XJ 5 Savior of Life
+XK 20 Bearer of the Banner
+XL 20 Bread and Circuses
+XM 5 Hosting the Gala Event
+XN 0 Life of the Party
+XO 20 Unwanted Guest
+XP 0 The Dead Market
+XQ 0 Route Management
+XR 0 Financial Exchange
+XS 20 Extra Mile
+XT 10 Make A Show Of It
+XU 20 Resourceful Mind
+XV 20 Made to Order
+XW 20 Custom Modification
+XX 10 Rushed Job
+XY 0 Thousand Arms Crafter
+XZ 0 A Stitch in Time
+WI Var Tchotchkes for Miles
+YA 0 Killing Blows
+YB 0 Absorb
+YC 0 Animate
+YD 0 Blood Scent
+YE 0 Burrow
+YF 0 Cleave
+YG 0 Confuse
+YH 0 Daze
+YI 0 Devour
+YJ 0 Diseased
+YK 0 Enslavement
+YL 0 Fear
+YM 0 Flight
+YN 0 Frenzy
+YO 0 Gnaw
+YQ 0 Impale
+YR 0 Melt
+YS 0 Rip Through
+YT 0 Shatter
+YU 0 Slaughter
+YV 0 Snare
+YW 0 Sunder Limb
+YX 0 Terror
+YY 0 Agony

@@ -38,5 +38,6 @@ class Builder
     File.open(File.join(base_output_path, 'profession_advanced.json'), 'w') { |f| f.write raw_reader.profession_advanced.to_json }
     File.open(File.join(base_output_path, 'skill_counters.json'), 'w') { |f| f.write raw_reader.skill_counters.to_json }
     File.open(File.join(base_output_path, 'skill_countered.json'), 'w') { |f| f.write raw_reader.skill_countered.to_json }
+    File.open(File.join(base_output_path, 'skill_mp_cost.json'), 'w') { |f| f.write raw_reader.skill_mp_cost.to_json }
   end
 end
