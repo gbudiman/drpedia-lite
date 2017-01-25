@@ -13,6 +13,7 @@ class Validator
                  strain_specs:,
                  profession_concentrations:,
                  profession_concentration_hierarchy:,
+                 profession_concentration_group:,
                  profession_advanced:,
                  skill_counters:,
                  skill_countered:
