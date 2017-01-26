@@ -54,9 +54,9 @@ Society: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hook-Up, Merch
 Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
 
 == Concentration Group ==
-Combat: Agility Combatant, Ranged Combatant, Short Range Combatant
+Combatant: Agility Combatant, Ranged Combatant, Short Range Combatant
 Civilized Society: Civil Servant, Socialite, Resource Manager
-Crafting and Production: Consumable Producer, Quality Producer, Quantity Producer
+Craft & Production: Consumable Producer, Quality Producer, Quantity Producer
 
 == Profession Concentration Skills ==
 Agility Combatant: Close The Distance, Disengage, Keen Eyes
