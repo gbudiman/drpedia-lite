@@ -5,6 +5,7 @@ class RawReader
               :strains, :strain_restrictions, :strain_stats, :strain_specs,
               :professions, :profession_concentrations, :profession_advanced,
               :profession_concentration_hierarchy, :profession_concentration_group,
+              :profession_extension,
               :skill_counters, :skill_countered, :skill_mp_cost
 
   STATE_TRANSITION = {
@@ -24,7 +25,8 @@ class RawReader
     :open          => { pattern: /==/,                                    next: :profession },
     :profession    => { pattern: /== Skill Group ==/,                     next: :skill_group },
     :skill_group   => { pattern: /== Skill Counters ==/,                  next: :skill_counter },
-    :skill_counter => { pattern: /== Skill List ==/,                      next: :list },
+    :skill_counter => { pattern: /== Profession Extension ==/,            next: :prof_ext },
+    :prof_ext      => { pattern: /== Skill List ==/,                      next: :list },
     :list          => { pattern: /./,                                     next: :list }
   }
 
@@ -46,6 +48,7 @@ class RawReader
     @profession_advanced = Hash.new
     @profession_concentration_hierarchy = Hash.new
     @profession_concentration_group = Hash.new
+    @profession_extension = Hash.new
     @skill_mp_cost = Hash.new
 
     @mutiline_state = nil
@@ -131,6 +134,7 @@ private
     when :profession then process_profession_skills line: line, profession: profession
     when :skill_group then process_skill_group line: line
     when :skill_counter then process_skill_counters line: line
+    when :prof_ext then process_profession_extension line: line
     when :list then process_list_skills line: line
     end
   end
@@ -293,6 +297,11 @@ private
                                       cost: cost, 
                                       preq: preq },
                  type: type
+  end
+
+  def process_profession_extension line:
+    clusters = line.split(/:/)
+    @profession_extension[clusters[0].strip.to_sym] = clusters[1].to_i
   end
 
   def process_preq_cluster cluster:

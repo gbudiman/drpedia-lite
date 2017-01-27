@@ -1299,6 +1299,10 @@ Killing Blows: | Beg For Life
 Enslavement: | Mind Resistance
 Slaughter: | Parry
 
+== Profession Extension ==
+Duality: 2
+Memories of Many: 2
+
 == Skill List ==
 AA 5 Alert
 AB 1 Analyze Compound
