@@ -727,7 +727,7 @@ Challenge 3
 Concentrated Fire 6 Bolt Action
 Destroy Shield 6 Bolt Action
 Destroy Weapon 6 Bolt Action
-Double-Tap 6 Bolt Action
+Double-Tap 3 Bolt Action
 Fearful Glare 3
 Gun Aficionado 6 Bolt Action
 Pistol Whip 3 
