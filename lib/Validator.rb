@@ -110,7 +110,7 @@ private
 
       sdata.each do |stype, stdata|
         case stype
-        when :innate, :innate_disadvantage
+        when :innate, :innate_disadvantage, :innate_disabled
           stdata.each do |strain|
             is_in_strain?(strain)
           end

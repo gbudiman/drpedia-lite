@@ -11,7 +11,8 @@ class RawReader
   STATE_TRANSITION = {
     :undef         => { pattern: /== Advantage Skill ==/,                 next: :innate },
     :innate        => { pattern: /== Disadvantage Skill ==/,              next: :strain_disadv },
-    :strain_disadv => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
+    :strain_disadv => { pattern: /== Disabled Innate Skill ==/,           next: :strain_block },
+    :strain_block  => { pattern: /== Innate Skill Prerequisite ==/,       next: :innate_preq },
     :innate_preq   => { pattern: /== Profession Concentration ==/,        next: :prof_concent },
     :prof_concent  => { pattern: /== Concentration Hierarchy ==/,         next: :prof_hierarc },
     :prof_hierarc  => { pattern: /== Concentration Group ==/,             next: :conc_group },
@@ -80,6 +81,7 @@ private
     @skill_cat.each do |_junk, data|
       data[:innate] = data[:innate].to_a
       data[:innate_disadvantage] = data[:innate_disadvantage].to_a
+      data[:innate_disabled] = data[:innate_disabled].to_a
     end
   end
 
@@ -120,6 +122,7 @@ private
     case state
     when :innate then process_innate_skills line: line
     when :strain_disadv then process_innate_skills line: line, disadvantage: true
+    when :strain_block then process_innate_skills line: line, disabled: true
     when :innate_preq then process_innate_preqs line: line
     when :prof_concent then process_profession_concentration line: line
     when :prof_hierarc then process_profession_concentration_hierarchy line: line
@@ -139,12 +142,12 @@ private
     end
   end
 
-  def process_innate_skills line:, disadvantage: false
+  def process_innate_skills line:, disadvantage: false, disabled: false
     innate_skill = line.split(/:/)
     strain = innate_skill[0].to_sym
     skills = innate_skill[1].split(/,/)
 
-    smart_insert strain: strain, skills: skills, disadvantage: disadvantage
+    smart_insert strain: strain, skills: skills, disadvantage: disadvantage, disabled: disabled
   end
 
   def process_innate_preqs line:
@@ -344,7 +347,7 @@ private
     end
   end
 
-  def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil, disadvantage: false, type: nil
+  def smart_insert strain: nil, skills: nil, open_skills: nil, profession_skills: nil, disadvantage: false, disabled: false, type: nil
     if strain and skills
       @strains.add strain
       skills.each do |_skill|
@@ -353,14 +356,27 @@ private
         @skill_cat[skill] ||= Hash.new
         @skill_cat[skill][:innate] ||= Set.new
         @skill_cat[skill][:innate_disadvantage] ||= Set.new
+        @skill_cat[skill][:innate_disabled] ||= Set.new
 
-        if !disadvantage
-          skill_cat_innate = @skill_cat[skill][:innate]
-          skill_cat_innate.add strain.to_sym
+        if disadvantage
+          @skill_cat[skill][:innate_disadvantage].add strain.to_sym
+        elsif disabled
+          @skill_cat[skill][:innate_disabled].add strain.to_sym
         else
-          skill_cat_innate = @skill_cat[skill][:innate_disadvantage]
-          skill_cat_innate.add strain.to_sym
+          @skill_cat[skill][:innate].add strain.to_sym
         end
+        # if !disadvantage
+        #   if !disabled
+        #     skill_cat_innate = @skill_cat[skill][:innate]
+        #     skill_cat_innate.add strain.to_sym
+        #   else
+        #     skill_cat_innate_disabled = @skill_cat[skill][:innate_disabled]
+        #     skill_cat_innate_disabled.add strain.to_sym
+        #   end
+        # else
+        #   skill_cat_innate = @skill_cat[skill][:innate_disadvantage]
+        #   skill_cat_innate.add strain.to_sym
+        # end
       end
     elsif open_skills
       @skill_cat[open_skills[:skill]] ||= Hash.new

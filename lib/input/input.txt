@@ -24,6 +24,9 @@ Yorker: Barricade, Bomb Awareness, Chase, Entertain, Interfere, Melee Weapon - S
 == Disadvantage Skill ==
 Natural Ones: Bolt Action, Scatter Shot, Gun Aficionado
 
+== Disabled Innate Skill ==
+The Red Star: Income I, Income II, Income III, Income IV, Income V
+
 == Innate Skill Prerequisite ==
 Iron Slaves: Iron Fists: Brawling
 Full Dead: Income II: Income I
