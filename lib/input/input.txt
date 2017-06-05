@@ -573,7 +573,7 @@ Throwing 3
 
 == Distiller ==
 Analyze Compound 3
-Bartender's Tongue
+Bartender's Tongue 6
 Brawling 3
 Brew Master 6 Brewing
 Brewing 6 Analyze Compound
@@ -1206,7 +1206,7 @@ Income
 == Skill Counters ==
 Alert: Vanish, Fade In A Crowd, Whisper Walk, Cover of Night
 Analyze Compound: Disguise Contents
-Analyze Creature: | Disguise
+Analyze Creature: Disguise
 Attach: | Bomb Awareness
 Avoid: Concentrated Fire, Destroy Shield, Destroy Weapon, Destroy Armor, Disarming Shot, Scatter Shot, Sniped Shot, Knockout, Pray for Justice, Gun Aficionado, Knock Down, Nail, Agony, Blood Scent
 Balance: Knock Down, Take Down
@@ -1229,13 +1229,13 @@ Check Your Sleeves: Cheat
 Choking Blow: Challenge, Charisma
 Concentrated Fire: | Avoid, Bounce
 Cover of Night: | Alert
-Disguise: Analyze Creature
+Disguise: | Analyze Creature
 Destroy Armor: | Avoid, Bounce
 Destroy Shield: | Avoid, Bounce
 Destroy Weapon: | Avoid, Bounce
 Disarming Blow: | Parry
 Disarming Shot: | Avoid, Bounce
-Disguise: Analyze Creature
+Disguise: | Analyze Creature
 Disguise Contents: | Analyze Compound
 Entertain: | Refuse
 Escape: | Chase
