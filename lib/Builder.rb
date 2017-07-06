@@ -2,6 +2,7 @@ require 'ap'
 require 'json'
 require_relative 'RawReader.rb'
 require_relative 'Validator.rb'
+require_relative 'RulebookReader.rb'
 
 class Builder
   def self.build input:, base_output_path:
@@ -40,5 +41,12 @@ class Builder
     File.open(File.join(base_output_path, 'skill_counters.json'), 'w') { |f| f.write raw_reader.skill_counters.to_json }
     File.open(File.join(base_output_path, 'skill_countered.json'), 'w') { |f| f.write raw_reader.skill_countered.to_json }
     File.open(File.join(base_output_path, 'skill_mp_cost.json'), 'w') { |f| f.write raw_reader.skill_mp_cost.to_json }
+
+    return raw_reader.skill_list
+  end
+
+  def self.parse_rulebook input1:, input2:, skill_list:
+    rb_reader = RulebookReader.new(input1: input1, input2: input2)
+    rb_reader.parse.crosscheck(skill_list)
   end
 end

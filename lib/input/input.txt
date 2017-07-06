@@ -96,7 +96,7 @@ Entrepreneur:
   (p ("Caravan Driver" "Hook-Up" Merchant Publican))))
 
 Free Radical: 
- (and ((s Retrograde) 
+ (and ((s Retrogrades) 
   (xp_sum 100) 
   (stat_sum hp_or_mp 50)))
 
@@ -112,8 +112,8 @@ G-Man:
 Gear Head: 
  (and ((xp_sum 100) 
   (stat_sum hp_or_mp 50) 
-  ((or (p (Caravan Driver "Hook-Up" Merchant Engineer "Mad Scientist")) 
-    (s ("Diesel Jock" Rover)))) 
+  ((or (p ("Caravan Driver" "Hook-Up" Merchant Engineer "Mad Scientist")) 
+    (s ("Diesel Jocks" Rovers)))) 
   (k ("Building Tomorrow" Brewing "Forging the Future"))))
 
 Grave Robber: 
@@ -335,7 +335,7 @@ Broken Coils 10 The Change
 Meaning of Death 0 The Change & Wrath
 
 == Oni ==
-Memories of Many 10 Memories of Many
+Memories of Many 10
 Guardian Spirit 10 Memories of Many
 Walking Reminder 10 Memories of Many
 Shared Strength 10 Memories of Many
