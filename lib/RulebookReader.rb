@@ -25,20 +25,27 @@ class RulebookReader
       'Melee Weapon, Standard': 'Melee Weapon - Standard',
       'Melee Weapon, Two Handed': 'Melee Weapon - Two Handed',
       'Throwing, Javelins': 'Throwing - Javelins',
-      'Tie Bonds': 'Tie Binds'
+      'Tie Bonds': 'Tie Binds',
+      'Lore - Strain - Geijian': 'Lore - Stain - Genjian'
     }
   end
 
   def parse
+    parse_basic_and_lores @reader1.pages[157..199]
+    parse_basic_and_lores @reader1.pages[203..217]
+
+    return self
+  end
+
+  def parse_basic_and_lores pages
     state = nil
     latch = Array.new
 
-    #218
-    @reader1.pages[157..218].each do |page|
+    pages.each do |page|
       lines = page.text.split(/[\n]+/)
       lines.each do |line|
-        if line =~ /([^\(]+)\(MP/ or line =~ /^Lore - /
-          captured = $1.strip.to_sym
+        if line =~ /([^\(]+)\(MP/ or line.strip =~ /^(Lore [-–] .+)/
+          captured = $1.gsub(/\:/, ' -').strip.to_sym
           rectified = captured
           if @lut[captured] != nil
             rectified = @lut[captured].to_sym
@@ -60,7 +67,7 @@ class RulebookReader
       end
     end
 
-    return self
+    @descs[state] = latch.join(' ')
   end
 
   def crosscheck skill_list
@@ -72,6 +79,7 @@ class RulebookReader
     other = master_list - intersection
 
     ap remainder
+    ap other
     dump_parsed
   end
 
