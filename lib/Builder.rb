@@ -46,7 +46,7 @@ class Builder
   end
 
   def self.parse_rulebook input1:, input2:, skill_list:
-    rb_reader = RulebookReader.new(input1: input1, input2: input2)
-    rb_reader.parse.crosscheck(skill_list)
+    rb_reader = RulebookReader.new(input1: input1, input2: input2, skill_list: skill_list)
+    rb_reader.parse.crosscheck
   end
 end
