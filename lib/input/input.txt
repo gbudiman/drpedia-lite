@@ -136,7 +136,6 @@ Merican Ba-Das:
  (and ((xp_sum 100) 
   (stat_sum hp 50) 
   (s Mericans)
-  (p Priest) 
   (p (Guard Officer "Gun Slinger" Hunter Primitive Pugilist Soldier Thug))))
 
 Mind Killer: 
@@ -467,7 +466,7 @@ Reclaimers: Dead Nerves | Selective Breeding
 The Red Star: Collective Pride | Reject Free Enterprise, Opiate of the Masses
 Remnants: Dabbler | Rootless, Love Me, Not Like the Others
 Retrogrades: Half-Life | Rot Face, Unfriendly Face
-Rovers: Bond of Salt | Word of Bond
+Rovers: Bond of Salt (adv) | Bond of Salt (dis), Word of Bond
 Saltwise: Oceanic Masters, Water Breathers | Ocean Bound, Debts Owed
 Semper Mort: Hunter's Claws, Mortal Bonds, Blood is the Life | Curse of Slumber, Predator's Need, Twisted Hands
 Solestros: Middle Manager | Second in Command, Glass Ceiling
@@ -1202,6 +1201,10 @@ Psionic Skill - Basic
 Psionic Skill - Intermediate
 Psionic Skill - Advanced
 Income
+Big Dig
+Animal Handler
+Gene Splicer
+NPC
 
 == Skill Counters ==
 Alert: Vanish, Fade In A Crowd, Whisper Walk, Cover of Night
@@ -1310,7 +1313,7 @@ Memories of Many: 2
 AA 5 Alert
 AB 1 Analyze Compound
 AC 1 Analyze Creature
-AD 0 Animal Handler I
+AD 0 Animal Handler I, Animal Handler
 AE Var Attach
 AF 5 Avoid
 AG 5 Backstab
@@ -1318,7 +1321,7 @@ AH 1/5 Balance
 AI 0 Bartender's Tongue
 AJ Var Barricade
 AK 1 Beg For Life
-AL 0 Big Dig I
+AL 0 Big Dig I, Big Dig
 AM 0 Black Market Connections
 AN 5 Bless Weapon
 AO 1 Blind Fighting
@@ -1506,14 +1509,14 @@ QG 15 Mind of a Killer, Psionic Skill - Advanced
 QH 15 Mind Shield, Psionic Skill - Advanced 
 QI 15 Psychic Cleanse, Psionic Skill - Advanced 
 QJ 15 Sundered Mind, Psionic Skill - Advanced
-QK 0 Animal Handler II
-QL 0 Animal Handler III
-QM 0 Animal Handler IV
-QN 0 Animal Handler V
-QO 0 Big Dig II
-QP 0 Big Dig III
-QQ 0 Big Dig IV
-QR 0 Big Dig V
+QK 0 Animal Handler II, Animal Handler
+QL 0 Animal Handler III, Animal Handler
+QM 0 Animal Handler IV, Animal Handler
+QN 0 Animal Handler V, Animal Handler
+QO 0 Big Dig II, Big Dig
+QP 0 Big Dig III, Big Dig
+QQ 0 Big Dig IV, Big Dig
+QR 0 Big Dig V, Big Dig
 GS 1 Refuse
 GT Var Repair
 GU 5 Rescue
@@ -1575,11 +1578,11 @@ SG 0 Fearless is the Still Mind
 SH 0 Fence
 SI 0 Flesh of Iron
 SJ 10 Forensic Rituals
-SK 10 Gene Splicer: Eau de Zombie
-SL 10 Gene Splicer: Ice Veins
-SM 10 Gene Splicer: Infectus Mordus
-SN 10 Gene Splicer: Lung Expansion
-SO 10 Gene Splicer: Thick Skin
+SK 10 Gene Splicer: Eau de Zombie, Gene Splicer
+SL 10 Gene Splicer: Ice Veins, Gene Splicer
+SM 10 Gene Splicer: Infectus Mordus, Gene Splicer
+SN 10 Gene Splicer: Lung Expansion, Gene Splicer
+SO 10 Gene Splicer: Thick Skin, Gene Splicer
 SP 10 Genius!
 SQ 20 Gilded Daisy
 SR 10 Gossip Hound
@@ -1708,27 +1711,27 @@ XX 10 Rushed Job
 XY 0 Thousand Arms Crafter
 XZ 0 A Stitch in Time
 WI Var Tchotchkes for Miles
-YA 0 Killing Blows
-YB 0 Absorb
-YC 0 Animate
-YD 0 Blood Scent
-YE 0 Burrow
-YF 0 Cleave
-YG 0 Confuse
-YH 0 Daze
-YI 0 Devour
-YJ 0 Diseased
-YK 0 Enslavement
-YL 0 Fear
-YM 0 Flight
-YN 0 Frenzy
-YO 0 Gnaw
-YQ 0 Impale
-YR 0 Melt
-YS 0 Rip Through
-YT 0 Shatter
-YU 0 Slaughter
-YV 0 Snare
-YW 0 Sunder Limb
-YX 0 Terror
-YY 0 Agony
+YA 0 Killing Blows, NPC
+YB 0 Absorb, NPC
+YC 0 Animate, NPC
+YD 0 Blood Scent, NPC
+YE 0 Burrow, NPC
+YF 0 Cleave, NPC
+YG 0 Confuse, NPC
+YH 0 Daze, NPC
+YI 0 Devour, NPC
+YJ 0 Diseased, NPC
+YK 0 Enslavement, NPC
+YL 0 Fear, NPC
+YM 0 Flight, NPC
+YN 0 Frenzy, NPC
+YO 0 Gnaw, NPC
+YQ 0 Impale, NPC
+YR 0 Melt, NPC
+YS 0 Rip Through, NPC
+YT 0 Shatter, NPC
+YU 0 Slaughter, NPC
+YV 0 Snare, NPC
+YW 0 Sunder Limb, NPC
+YX 0 Terror, NPC
+YY 0 Agony, NPC

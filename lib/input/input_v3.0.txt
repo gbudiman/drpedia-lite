@@ -1,0 +1,1737 @@
+== Advantage Skill ==
+Baywalkers: Analyze Creature, Double-Tap, First Aide, Literacy, Parry
+Diesel Jocks: Balance, Bolt Action, Forging the Future, Patch Job, Trade Ties
+Full Dead: Analyze Compound, Big Dig I, Big Dig II, Big Dig III, Big Dig IV, Big Dig V, Income I, Income II, Income III, Income IV, Income V, Lie, Torture
+Genjian: Analyze Creature, Bow, Brawling, Lore - Mon Histories, Sailing, SCIENCE!, Throwing
+Iron Slaves: Carry, Iron Fists, Refuse, Rescue, Scrounge
+Lascarians: Alert, Blind Fighting, Chase, Chop, Scrounge
+Mericans: Bolt Action, Brawling, Melee Weapon - Large, Melee Weapon - Two Handed, Throwing
+Nation of Accensor: Building Tomorrow, Challenge, First Aide, Holy Rites: Basic, Mind Resistance
+Natural Ones: Cure Toxins, Melee Weapon - Large, Melee Weapon - Small, Melee Weapon - Standard, Melee Weapon - Two Handed, Throwing, Throwing - Javelins
+Pure Blood: Backstab, Bolt Action, Charisma, Cheat, Check Value, Income I, Income II, Income III, Income IV, Income V, Literacy
+Reclaimers: Balance, Carry, Charge, Melee Weapon - Standard, Hunter's Mark, Avoid
+The Red Star: Avoid, Barricade, Bomb Awareness, Brewing, Fearful Glare, Frightening Force, Melee Weapon - Large
+Remnants: 
+Retrogrades: Barricade, Cover of Night, Disguise, Escape Bonds, Feign Death, Melee Weapon - Standard, Scrounge
+Rovers: Bartender's Tongue, Check Your Sleeves, Head Shrink, Melee Weapon - Small, Refuse, Scrounge
+Saltwise: Sailing, Fishing, Lore - Animals - Aquatic, Melee Weapon - Small, Guild Membership, Lie, Escape Bonds
+Semper Mort: Brawling, Charisma, Chase, Iron Fists, Nerve Punch, Tie Binds
+Solestros: Income I, Income II, Income III, Income IV, Income V, Deep Pockets, Literacy, Charisma, Balance, Melee Weapon - Standard, Refuse
+Unborn of Teixiptla: Melee Weapon - Two Handed, Psionic Skill - Basic, Throwing - Javelins
+Vegasians: Backstab, Black Market Connections, Cheat, Entertain, Lie, Literacy
+Yorker: Barricade, Bomb Awareness, Chase, Entertain, Interfere, Melee Weapon - Standard
+
+== Disadvantage Skill ==
+Natural Ones: Bolt Action, Scatter Shot, Gun Aficionado
+
+== Disabled Innate Skill ==
+The Red Star: Income I, Income II, Income III, Income IV, Income V
+
+== Innate Skill Prerequisite ==
+Iron Slaves: Iron Fists: Brawling
+Full Dead: Income II: Income I
+Full Dead: Income III: Income II
+Full Dead: Income IV: Income III
+Full Dead: Income V: Income IV
+Full Dead: Big Dig II: Big Dig I
+Full Dead: Big Dig III: Big Dig II
+Full Dead: Big Dig IV: Big Dig III
+Full Dead: Big Dig V: Big Dig IV
+Pure Blood: Income II: Income I
+Pure Blood: Income III: Income II
+Pure Blood: Income IV: Income III
+Pure Blood: Income V: Income IV
+Solestros: Income II: Income I
+Solestros: Income III: Income II
+Solestros: Income IV: Income III
+Solestros: Income V: Income IV
+
+== Profession Concentration ==
+Agility Combatant, Ranged Combatant, Short Range Combatant: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Solider, Thug
+Civil Servant, Socialite, Resource Manager: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hookup, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
+Consumable Producer, Quality Producer, Quantity Producer: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
+
+== Concentration Hierarchy ==
+Combat: Assassin, Guard, Gun Slinger, Hunter, Martial Artist, Officer, Primitive, Pugilist, Sniper, Soldier, Thug
+Society: Caravan Driver, Charlatan, Doctor, Entertainer, Gambler, Hook-Up, Merchant, Politician, Priest, Publican, Ring Leader, Sawbones, Scoundrel, Spy, Teacher, Thief
+Production: Cook, Distiller, Engineer, Mad Scientist, Printer, Scavenger, Tinker
+
+== Concentration Group ==
+Combatant: Agility Combatant, Ranged Combatant, Short Range Combatant
+Civilized Society: Civil Servant, Socialite, Resource Manager
+Craft & Production: Consumable Producer, Quality Producer, Quantity Producer
+
+== Profession Concentration Skills ==
+Agility Combatant: Close The Distance, Disengage, Keen Eyes
+Ranged Combatant: Heavy Ordnance, Reloading is Stupid, Improvised Thrown Weapon
+Short Range Combatant: Pole-arm Weapon Mastery, Call for Phalanx, Improvised Weapon
+Civil Servant: Savior of Life, Bearer of the Banner, Bread and Circuses
+Socialite: Hosting the Gala Event, Life of the Party, Unwanted Guest
+Resource Manager: The Dead Market, Route Management, Financial Exchange
+Consumable Producer: Extra Mile, Make A Show Of It, Resourceful Mind
+Quality Producer: Made to Order, Custom Modification, Rushed Job
+Quantity Producer: Thousand Arms Crafter, A Stitch in Time, Tchotchkes for Miles
+
+== Advanced Profession ==
+Apocatastian Templar: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50) 
+  (p Priest) 
+  (p (Guard Officer))))
+
+Avontuur: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50) 
+  (p (Gambler Scavenger Teacher Jones))))
+
+Bone Breaker: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50) 
+  (p (Thug Pugilist))))
+
+Entrepreneur: 
+ (and ((not (s "The Red Star")) 
+  (xp_sum 100)
+  (stat_sum hp_or_mp 50) 
+  (p ("Caravan Driver" "Hook-Up" Merchant Publican))))
+
+Free Radical: 
+ (and ((s Retrogrades) 
+  (xp_sum 100) 
+  (stat_sum hp_or_mp 50)))
+
+G-Man: 
+ (and ((or ((s "Pure Blood") 
+    (k "Lore - Strain - Pure Blood"))) 
+  (xp_sum 100) 
+  (stat_sum hp_or_mp 50) 
+  (k Literacy) 
+  (k "Lore - Pre-Fall History Modern") 
+  (k (Torture Interrogate))))
+
+Gear Head: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50) 
+  ((or (p ("Caravan Driver" "Hook-Up" Merchant Engineer "Mad Scientist")) 
+    (s ("Diesel Jocks" Rovers)))) 
+  (k ("Building Tomorrow" Brewing "Forging the Future"))))
+
+Grave Robber: 
+ (and ((xp_sum 100)
+  (stat_sum hp_or_mp 50)
+  (p (Doctor Sawbones)) 
+  (p (Scavenger Thief Assassin Jones))))
+
+Marksman: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50)
+  (p (Sniper "Gun Slinger"))))
+
+Mercenary: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50)
+  (p (Soldier Guard Officer Hunter))))
+
+Merican Ba-Das: 
+ (and ((xp_sum 100) 
+  (stat_sum hp 50) 
+  (s Mericans)
+  (p (Guard Officer "Gun Slinger" Hunter Primitive Pugilist Soldier Thug))))
+
+Mind Killer: 
+ (and ((xp_sum 200) 
+  (stat_sum hp_or_mp 50) 
+  (k "Mind Resistance")))
+
+Monk: 
+ (and ((xp_sum 100)
+  (stat_sum hp_or_mp 50) 
+  (p ("Martial Artist" Priest))))
+
+Mountebank: 
+ (and ((xp_sum 100) 
+  (stat_sum mp 100) 
+  (p (Charlatan Gambler Merchant Politician))))
+
+Nephilim: 
+ (and ((xp_sum 200) 
+  (stat_sum mp 50) 
+  (s ("Nation of Accensor" Remnants))))
+
+Oni: 
+ (and ((xp_sum 100) 
+  (stat_sum hp_or_mp 50)
+  (s "The Red Star") 
+  (p (Guard Officer "Gun Slinger" Primitive Soldier))))
+
+Overlord:
+ (and ((xp_sum 100)
+  (stat_sum hp_or_mp 50) 
+  (p (Assassin Doctor Gambler "Mad Scientist" "Ring Leader" Engineer)) 
+  (p (Charlatan Entertainer Politician Priest Teacher))))
+
+Reaper: 
+ (and ((xp_sum 100)
+  (p ("Gun Slinger" Hunter Primitive Soldier))))
+
+Sage:
+ (and ((xp_sum 100) 
+  (stat_sum mp 50) 
+  (p (Jones Printer Teacher)) 
+  (lore_type 4)))
+
+Saint: 
+ (and ((xp_sum 100)
+  (or ((p (Cook Doctor Priest Teacher)) 
+    (s "Nation of Accensor"))) 
+  ((not (s "The Red Star")))))
+
+Shadow: 
+ (and ((xp_sum 200) 
+  (stat_sum hp_or_mp 50)
+  (p (Assassin Thief Spy))))
+
+Shepherd of the Land: 
+ (and ((xp_sum 200) 
+  (stat_sum hp_or_mp 100) 
+  (p (Cook Brewer Teacher Entertainer Farmer Fishmonger))))
+
+Survivor: 
+ (and ((xp_sum 200) 
+  (stat_sum hp_or_mp 100)))
+
+Techno Savant:
+ (and ((xp_sum 100)
+  (stat_sum hp_or_mp 50) 
+  (p ("Mad Scientist" Tinker Engineer))))
+
+Thought Bender: 
+ (and ((xp_sum 100) 
+  (stat_sum mp 50) 
+  (p Psionist) 
+  (psionic_type advanced 2)))
+
+Veteran: 
+ (and ((xp_sum 200)
+  (k "Lore - Local Area")))
+
+Villon:
+ (and ((xp_sum 100) 
+  (p (Thief Assassin Spy))))
+
+== Advanced Profession Skills ==
+
+== Apocatastian Templar ==
+Shroud of Faith 10
+Guardian of the Order 10
+Pillar of Strength 10
+The Lone Guard 10
+Wrath of the Just 10
+
+== Avontuur ==
+Trademark Item 10
+Dust and Bones 10 Trademark Item
+Side Kick 10
+Smuggler's Run 10 Trademark Item
+Don't Monologue 10 Brawling
+
+== Bone Breaker ==
+Last Word 10
+Echoing Pain 10 
+Strong Chin 10
+Tougher Than Metal 10
+Ring Out 10
+
+== Entrepreneur ==
+New Horizons 10
+Bankrolling 10
+Cornered Market 10
+New Design 10
+Mini-Mall 10
+
+== Free Radical ==
+Atom Smasher 10 
+Evolution 10 
+Healthy Green Glow 10 
+Jacob's Broken Ladder 10 
+Share the Love 10 Evolution
+
+== G-Man ==
+Arrest Warrant 10 The Oath
+Bound By Law 10 The Oath
+Forensic Rituals 10 The Oath
+The Oath 10
+Trained Inquisitor 10 The Oath
+
+== Gear Head ==
+Eternal Forge 10 
+Internal Hearth 10 
+Hotrod Junkie 10 
+The Outside Chance 10 
+Servant of Iron 10
+
+== Grave Robber ==
+Trinkets of the Past 10 
+Replacement Parts 10
+Gene Splicer: Lung Expansion 5
+Gene Splicer: Thick Skin 5
+Gene Splicer: Eau de Zombie 5
+Gene Splicer: Ice Veins 5
+Gene Splicer: Infectus Mordus 5
+Last Dance 10
+
+== Marksman ==
+Magic Bullet 10
+Bullet Dodger 10
+Vital Fire 10
+Gun-Fu 10
+Ricochet 10 Gun-Fu
+
+== Mercenary ==
+Dispatch 10
+Hired Muscle 10
+In the Zone 10
+Interceptor 10
+Training Ground I 10
+Training Ground II 10 Training Ground I
+Training Ground III 10 Training Ground II
+Training Ground IV 10 Training Ground III
+Training Ground V 10 Training Ground IV
+
+== Merican Ba-Das ==
+Rebel Yell 10 
+Cheeseburger and a Six Pack 10
+Hail of Bullets 10 
+Walk It Off 10 
+Dumb Luck 10
+
+== Mind Killer ==
+Psionic Dissidence 10
+Burning Call 10
+Fearless is the Still Mind 10
+The Culling Wall 10
+One True Reality 10
+
+== Monk ==
+Hundred Fist Strike 10
+Flesh of Iron 10
+Silent Introspection 10
+Shatter Strike 10 Brawling
+Air Strike 0 Brawling
+
+== Mountebank ==
+Mob Mentality 10
+Broken Mirrors 10
+Gilded Daisy 10 
+Hung Jury 10
+Windfall 10
+
+== Nephilim ==
+The Change 10
+Avenging Angel 10 The Change
+Wrath 10 The Change & Brawling
+Broken Coils 10 The Change
+Meaning of Death 0 The Change & Wrath
+
+== Oni ==
+Memories of Many 10
+Guardian Spirit 10 Memories of Many
+Walking Reminder 10 Memories of Many
+Shared Strength 10 Memories of Many
+Red Menace 0 Memories of Many
+
+== Overlord ==
+Henchman 10
+Lair of Solitude 10
+Criminal Network 10
+Deus ex Machina 10 
+Raise the Standard 10
+
+== Reaper ==
+Aura of Hate 10
+Necessary Violence 10
+Killing Zone 10
+Dark Intentions 10 
+Sociopath Stalk 10
+
+== Sage ==
+House of Cards 10
+Simple Deduction 10
+Leap of Reason 10 Simple Deduction
+Strategy 10 
+Pure Genius 0 Educated
+
+== Saint ==
+Inner Peace 10
+Life Giver 10
+Live Again 10
+Miracle Worker 10
+The Final Cause 10 Live Again
+
+== Shadow ==
+Unseen Hands 10
+Lurking Threat 10
+Inner Circle 10 Guild Membership
+Sandman 10
+Never Here 10
+
+== Shepherd of the Land ==
+Breaking Point 10 
+Gossip Hound 10 
+Gracious Guest 10 
+Helping Hand 10 
+More To Give 10
+
+== Survivor ==
+Calloused Hands 10
+Scarred Bones 10
+Jaded World View 10
+Iron Kidney 10
+Pack Mule 10
+
+== Techno Savant ==
+Elementary! 10 
+Eureka! 10 Elementary!
+Brilliant! 10 
+Genius! 10 
+Excelsior! 10 Elementary!
+
+== Thought Bender ==
+Shattered Psyche 10
+Duality 10 Shattered Psyche
+Grave Mind 10 Shattered Psyche
+Mental Breakdown 10 Shattered Psyche
+My Little Friend 10 Shattered Psyche
+
+== Veteran ==
+Been There Did That 10 
+Dirty Connections 10 Literacy
+Knows A Guy 10 
+Owed Favors 10 
+Prior Enemies 10
+
+== Villon ==
+Protection Racket 10 Disguise
+Nimble Fingers 10 Pick Pockets
+Fence 10
+Running Numbers 10
+Well Shit 0
+
+== Strain Profession Restriction ==
+Baywalkers: Sawbones, Primitive, Thug
+Diesel Jocks: Farmer, Politician, Publican
+Lascarians: Charlatan, Entertainer, Gambler, Hook-Up, Merchant, Officer, Politician, Ring Leader
+Mericans: Martial Artist, Spy
+The Red Star: Caravan Driver, Charlatan, Entertainer, Gambler, Priest
+Semper Mort: Pugilist
+Unborn of Teixiptla: Engineer, Mad Scientist, Psionist
+Vegasians: Guard, Gun Slinger, Martial Artist, Officer
+Yorker: Charlatan, Officer, Politician
+
+== Strain Stats ==
+Baywalkers: 8, 10, 4
+Diesel Jocks: 10, 10, 3
+Full Dead: 20, 10, 1
+Genjian: 6, 6, 5
+Iron Slaves: 7, 4, 4
+Lascarians: 10, 5, 5
+Mericans: 13, 10, 2
+Nation of Accensor: 8, 8, 5
+Natural Ones: 10, 6, 4
+Pure Blood: 6, 12, 3
+Reclaimers: 8, 13, 2
+The Red Star: 6, 6, 6
+Remnants: 5, 5, 6
+Retrogrades: 10, 10, 4
+Rovers: 8, 8, 4
+Saltwise: 13, 8, 3
+Semper Mort: 10, 10, 3
+Solestros: 6, 6, 4
+Unborn of Teixiptla: 4, 4, 7
+Vegasians: 5, 10, 5
+Yorker: 15, 5, 4
+
+== Strain Specific Skills ==
+Baywalkers: Fast Learner, Old Wounds | Toxic Shock, A Tale of Two Cities, Too Clever
+Diesel Jocks: Need of Food | Road Bound, Endless Miles of Road
+Full Dead: Gnaw, Legion | One of Us, Grave Mind, Diverse Background
+Genjian: Social Observer, Know Your Enemy | The Long Walk, Honor Bound
+Iron Slaves: Able Helper, Strong Back | Bioluminescent, Humble Roots
+Lascarians: Cannibalism | Light Sensitivity, Savage Culture
+Mericans: Merican Mob | Social Pariah, Yeeee-Haaaaw!
+Nation of Accensor: Meditation, Blessed Life | Code of Ethics, First In Last Out
+Natural Ones: Natural Aim | Shun the Boomstick, Xenophobic, Backward
+Pure Blood: Investment | Weakness to Radiation, Peacocks
+Reclaimers: Dead Nerves | Selective Breeding
+The Red Star: Collective Pride | Reject Free Enterprise, Opiate of the Masses
+Remnants: Dabbler | Rootless, Love Me, Not Like the Others
+Retrogrades: Half-Life | Rot Face, Unfriendly Face
+Rovers: Bond of Salt (adv) | Bond of Salt (dis), Word of Bond
+Saltwise: Oceanic Masters, Water Breathers | Ocean Bound, Debts Owed
+Semper Mort: Hunter's Claws, Mortal Bonds, Blood is the Life | Curse of Slumber, Predator's Need, Twisted Hands
+Solestros: Middle Manager | Second in Command, Glass Ceiling
+Unborn of Teixiptla: Undead Hearts | Limited Potential, Called to the Grave
+Vegasians: Meat Market, Coward's Way Out (AKA Buddy Fucker) | Born Coward, Bad Rap, Shady Dealers
+Yorker: Pissed-Off Yorker | Commitment Issues, Angry Streak, Mean Streets
+
+== Open Skill ==
+Avoid 9 
+Barricade 9 
+Bolt Action 9 
+Brawling 9 
+Check Quality 9 
+Check Value 9 
+First Aide 9 
+Force Barricade 9 
+Literacy 6 
+Lore 6
+Melee Weapon - Small 6
+Melee Weapon - Standard 6
+Melee Weapon - Two Handed 6
+Parry 6
+Pistol Whip 9 
+Shield 6
+Teach 1 
+Throwing 6 
+Throwing - Javelins 6
+Tie Binds 6
+
+== Assassin ==
+Alert 3 
+Avoid 3 
+Backstab 3 
+Balance 3 
+Black Market Connections 6 Disguise
+Blinding 3 
+Choking Blow 3 
+Cover of Night 3 
+Disguise 3 
+Fade In A Crowd 3 
+Guild Membership 6 Backstab & Cover of Night
+Melee Weapon - Small 3 
+Murder Most Foul 6 Guild Membership
+Parry 3 
+Throwing 3 
+Vanish 3
+
+== Caravan Driver ==
+Bartender's Tongue 6 
+Bolt Action 3 
+Brawling 3 
+Charisma 3 
+Check Quality 3 
+Check Value 3 
+Feign Death 6 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Instruct 3 Teach
+Melee Weapon - Standard 3 
+Pistol Whip 3 
+Refuse 3 
+Teach 0 
+Trade Ties 3
+
+== Charlatan ==
+Alert 3 
+Avoid 6
+Beg For Life 6 Charisma
+Charisma 3 
+Cheat 3
+Cure Toxins 6 Educated
+Educated 3 Literacy
+Escape Bonds 6 Tie Binds
+Interrogate 3 
+Melee Weapon - Small 3 
+Mind Resistance 6 
+Tie Binds 3 
+Torture 3 
+Unlock 3
+
+== Cook ==
+Analyze Compound 3 
+Charisma 6
+Disguise Contents 3 Healthy Feast 
+Educated 3 Literacy
+Healthy Feast 3 Prepare Meal
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Instruct 3 Teach
+Literacy 3
+Nail 3 Throwing
+Prepare Meal 3 
+Rescue 3 
+Scrounge 6 
+Teach 0 
+Throwing 3
+
+== Distiller ==
+Analyze Compound 3
+Bartender's Tongue 6
+Brawling 3
+Brew Master 6 Brewing
+Brewing 6 Analyze Compound
+Check Quality 3 
+Cure Toxins 3
+Educated 6 Literacy
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Literacy 3 
+Melee Weapon - Large 3 
+Melee Weapon - Standard 3 
+Scrounge 3 
+Teach 0
+
+== Doctor ==
+Bolt Action 3
+Check Status 6 Educated
+Cure Toxins 6 Literacy
+Educated 6 Literacy
+First Aide 3 
+Fix Limb 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Literacy 3 
+Mangle Limb 3
+Medical Assistance 6 Literacy
+Medical Genius 6 Medical Assistance
+Melee Weapon - Small 3 
+Sever 3 
+Teach 0 
+Torture 3
+
+== Engineer ==
+Barricade 3
+Check Quality 3
+Chop 6
+Florentine 6
+Force Barricade 3
+Forging the Future 6
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Literacy 3
+Melee Weapon - Small 3
+Patch Job 3
+Repair 6
+SCIENCE! 6
+Smelt 3
+Weld 6
+
+== Entertainer ==
+Balance 3
+Bartender's Tongue 6 Cheat
+Bolt Action 3 
+Bomb Awareness 3
+Cheat 6 Lie
+Check Value 3
+Disarming Blow 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Entertain 6
+Head Shrink 6 Entertain
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Lie 3 
+Melee Weapon - Standard 3 
+Refuse 3 
+Throwing 3
+
+== Farmer ==
+Alert 3 
+Analyze Creature 3 
+Animal Handler I 3 
+Animal Handler II 3 Animal Handler I
+Animal Handler III 3 Animal Handler II 
+Animal Handler IV 3 Animal Handler III 
+Animal Handler V 3 Animal Handler IV 
+Brawling 6
+Brewing 3 Crop Tending
+Carry 3 
+Chase 3 
+Crop Tending 3 
+First Aide 3
+Income I 3 Crop Tending
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Melee Weapon - Standard 3
+Take Down 6 Brawling
+Throwing 3
+
+== Fishmonger ==
+Alert 3 
+Analyze Creature 3 Fishing
+Avoid 6 
+Bow 3 
+Brawling 3 
+Cheat 3 
+Fishing 6 
+Lie 3 
+Melee Weapon - Two Handed 3 
+Nail 3 Throwing - Javelins | Bow
+Sailing 3 
+Throwing - Javelins 3 
+Tie Binds 3
+
+== Gambler ==
+Backstab 6 Melee Weapon - Small
+Bartender's Tongue 6 
+Black Market Connections 3 
+Brawling 3 
+Charisma 3 
+Cheat 3 
+Check Your Sleeves 6 
+Disarming Blow 3 
+Feign Death 3 
+Lie 3 
+Melee Weapon - Small 3 
+Pick Pockets 6 
+Throwing 3 
+Unlock 3
+
+== Guard ==
+Barricade 3 
+Blind Fighting 6
+Bounce 6 Shield
+Break Shield 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Break Weapon 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Carry 3
+Fearful Glare 3 
+Force Barricade 3 
+Interfere 3
+Knock Down 6 Shield
+Mangle Limb 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Melee Weapon - Standard 3
+Parry 3 
+Shield 3
+Wide Strike 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+
+== Gun Slinger ==
+Blinding 6 
+Bolt Action 3 
+Challenge 3
+Concentrated Fire 6 Bolt Action
+Destroy Shield 6 Bolt Action
+Destroy Weapon 6 Bolt Action
+Double-Tap 3 Bolt Action
+Fearful Glare 3
+Gun Aficionado 6 Bolt Action
+Pistol Whip 3 
+Scatter Shot 3 
+Sniped Shot 6 Gun Aficionado
+Teach 0 
+Throwing 3
+
+== Hook-Up ==
+Attach 3 
+Bartender's Tongue 6 
+Black Market Connections 6 Bartender's Tongue
+Building Tomorrow 6 
+Check Quality 3 
+Check Value 3 
+Fade In A Crowd 3 
+Income I 6
+Income II 6 Income I
+Income III 6 Income II
+Income IV 6 Income III
+Income V 6 Income IV
+Patch Job 3 
+Rescue 3 
+SCIENCE! 6 Patch Job
+Scrounge 6 
+Trade Ties 3 
+Trap Making 6 
+Unlock 3
+
+== Hunter ==
+Alert 3 
+Bow 6 
+Carry 3 
+Charge 3 
+Chase 3 
+Double-Tap 6 
+Frightening Force 6 
+Hunter's Mark 6 Alert & Chase
+Melee Weapon Expert 6 Melee Weapon - Large
+Melee Weapon - Large 3 
+Melee Weapon - Small 3 
+Melee Weapon - Standard 3 
+Nail 6 Throwing - Javelins
+Throwing - Javelins 3
+
+== Jones ==
+Attach 3 
+Balance 3
+Big Dig I 3 Bomb Awareness
+Big Dig II 3 Big Dig I
+Big Dig III 3 Big Dig II
+Big Dig IV 3 Big Dig III
+Big Dig V 3 Big Dig IV
+Bolt Action 6 
+Bomb Awareness 3 
+Brawling 6
+Concentrated Fire 6 Disarming Shot
+Disarming Shot 3 Bolt Action
+Double-Tap 6 Disarming Shot
+Escape Bonds 3 
+Literacy 3
+Pistol Whip 6 Disarming Shot
+Scrounge 3 
+Teach 0
+Unlock 6 Bomb Awareness
+
+== Mad Scientist == 
+Black Market Connections 6 
+Bomb Awareness 6 Literacy
+Building Tomorrow 6 
+First Aide 3 
+Income I 6
+Income II 6 Income I
+Income III 6 Income II
+Income IV 6 Income III
+Income V 6 Income IV
+Literacy 3 
+Melee Weapon - Two Handed 3 
+Mind Resistance 6 
+Patch Job 3 
+Repair 3 
+SCIENCE! 6 Repair
+Scrounge 3 
+Teach 0 
+Torture 3
+
+== Martial Artist ==
+Avoid 6 
+Balance 3 
+Bow 3 
+Brawling 3 
+Carry 3
+Choking Blow 6 Brawling
+Escape Bonds 3 
+Iron Fists 6 Brawling
+Knockout 6 Iron Fists
+Literacy 3
+Nerve Punch 6 Brawling
+Take Down 3 Brawling
+Wide Strike 6 Brawling
+
+== Merchant ==
+Analyze Compound 3 
+Barricade 6 
+Bartender's Tongue 6 
+Beg For Life 6 Charisma
+Black Market Connections 6 
+Carry 3 
+Charisma 3 Lie
+Check Quality 3 
+Check Value 6 
+Check Your Sleeves 3 
+Disguise 6 
+Fade In A Crowd 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV 
+Lie 3
+
+== Officer ==
+Bolt Action 6 
+Brawling 3 
+Break Armor 3 
+Challenge 3
+Charge 6 Melee Weapon - Large
+Destroy Armor 6 
+Disarming Shot 6
+Fearful Glare 6 Break Armor
+Florentine 6 
+Frightening Force 6
+Instruct 3 Teach
+Literacy 3 
+Melee Weapon - Large 3 
+Teach 0
+
+== Politician ==
+Avoid 3 
+Backstab 6 Melee Weapon - Small
+Bartender's Tongue 6 
+Beg For Life 3 
+Charisma 3 
+Cheat 3 
+Check Your Sleeves 6 Cheat
+Educated 3 Literacy
+Entertain 6 
+Escape 3 
+Escape Bonds 3 
+Literacy 3 
+Melee Weapon - Small 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Lie 6 Income I
+
+== Priest == 
+Avoid 3
+Barricade 6 Faith Healing
+Bless Weapon 3 Pray for Justice
+Call The Almighty 6 
+Carry 3 
+Charisma 3
+Educated 3 Literacy
+Escape 3 
+Faith Healing 6
+Holy Rites 3 Educated
+Interfere 3 
+Literacy 3 
+Mind Resistance 3
+Pray for Justice 6 Faith Healing
+Refuse 3
+
+== Primitive ==
+Analyze Creature 3 
+Avoid 6 
+Bounce 6 Shield
+Bow 3 
+Brawling 3 
+Challenge 6 
+Chase 3 
+Chop 3 
+Mangle Limb 6 
+Melee Weapon - Two Handed 3 
+Melee Weapon Expert 3 
+Shield 3 
+Throwing 3 
+Tie Binds 3 
+Wide Strike 6 Melee Weapon - Two Handed
+
+== Printer ==
+Bartender's Tongue 3 
+Black Market Connections 3 
+Bolt Action 3 
+Charisma 6 
+Educated 3 Literacy
+Escape 6 
+Fade In A Crowd 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Instruct 3 
+Literacy 3 
+Mind Resistance 3 Educated
+Teach 0 
+Transcribe 3 Literacy
+
+== Psionist ==
+Alert 6 
+Blind Fighting 6 
+Blinding 6 
+Chase 3 
+Double-Tap 6 
+Lie 3 
+Literacy 3 
+Melee Weapon - Small 3 
+Mind Resistance 3
+Psionic Skill - Basic 3
+Psionic Skill - Intermediate 6
+Psionic Skill - Advanced 6
+Refuse 3 
+Throwing 3
+
+== Publican ==
+Bartender's Tongue 3 Charisma
+Beg For Life 3 
+Charisma 3
+Check Quality 3 Trade Ties
+Check Your Sleeves 6 
+Deep Pockets 6
+Entertain 6 Charisma
+First Aide 3 
+Income I 6
+Income II 6 Income I
+Income III 6 Income II
+Income IV 6 Income III
+Income V 6 Income IV
+Literacy 3
+Medical Assistance 6 First Aide
+Melee Weapon - Small 3
+Pick Pockets 3
+Trade Ties 6 Deep Pockets
+
+== Pugilist ==
+Black Market Connections 6 
+Blind Fighting 6 Brawling
+Brawling 3 
+Challenge 6 
+Charge 3 
+First Aide 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Iron Fists 6 Brawling
+Knockout 6 Take Down
+Nerve Punch 3 
+Parry 3 Brawling
+Pick Pockets 6 
+Take Down 3 Brawling
+Teach 0 
+Torture 6
+
+== Ring Leader ==
+Attach 3 
+Black Market Connections 6 Charisma
+Blinding 3 
+Bolt Action 3 
+Charisma 6 
+Cheat 3 
+Check Value 3 
+Chop 3 
+Disguise 3 
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Mangle Limb 6 Melee Weapon - Standard
+Melee Weapon - Standard 3 
+Scatter Shot 6 Bolt Action
+Trap Making 6
+
+== Sawbones ==
+Avoid 3 Rescue
+Black Market Connections 6 
+Brewing 6 Literacy
+Carry 3 
+Check Status 3 
+Cure Toxins 3 
+First Aide 3 
+Guild Membership 9 Black Market Connections & Interrogate
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Interfere 3 Rescue
+Interrogate 6 Melee Weapon - Small
+Literacy 3 
+Mangle Limb 6 
+Medical Assistance 3 
+Melee Weapon - Small 3 
+Rescue 3 
+Sever 3 Melee Weapon - Small
+
+== Scavenger ==
+Analyze Creature 3 
+Avoid 3 
+Barricade 3 
+Beg For Life 3 
+Brawling 3 
+Check Quality 3 
+Check Value 3 
+Chop 3 
+Cover of Night 6 
+Escape Bonds 3 
+Feign Death 3 
+Melee Weapon - Two Handed 3
+Patch Job 6 Chop
+Scrounge 3
+
+== Scoundrel ==
+Attach 3 
+Backstab 6 Melee Weapon - Small
+Black Market Connections 6 
+Blinding 6 
+Bolt Action 3 
+Brawling 3 
+Charisma 3 
+Cheat 6 Charisma
+Choking Blow 3 
+Disarming Blow 6 Melee Weapon - Small | Melee Weapon - Standard | Melee Weapon - Large | Melee Weapon - Two Handed
+Guild Membership 6 Backstab & Black Market Connections
+Interrogate 3 
+Lie 3 
+Melee Weapon - Small 3
+
+== Sniper ==
+Alert 3 
+Attach 3 
+Balance 3 
+Bolt Action 3
+Concentrated Fire 6 Bolt Action
+Cover of Night 6 
+Destroy Shield 3 
+Destroy Weapon 3 
+Disarming Shot 3
+Guild Membership 6 Murder Most Foul
+Gun Aficionado 6 Concentrated Fire
+Murder Most Foul 6 Sniped Shot
+Sniped Shot 6 Concentrated Fire
+Vanish 3
+
+== Soldier ==
+Avoid 3 
+Break Shield 6 
+Charge 6 
+Double-Tap 6 
+Florentine 6
+Force Barricade 6 Charge
+Interfere 3
+Melee Weapon Expert 6 Melee Weapon - Standard & Melee Weapon - Large
+Melee Weapon - Large 3
+Melee Weapon - Standard 3
+Nail 3
+Sever 3
+Shield 3 
+Throwing - Javelins 3
+
+== Spy ==
+Balance 3 
+Bartender's Tongue 6 
+Blinding 3 
+Chase 3 
+Cover of Night 6 
+Disguise 6 
+Escape 3 
+Escape Bonds 3 
+Fade In A Crowd 6 
+Feign Death 3 
+Guild Membership 6 Unlock & Lie
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Lie 3 
+Scrounge 6
+Unlock 3
+
+== Teacher ==
+Analyze Compound 3 Literacy
+Analyze Creature 3 Literacy
+Check Quality 3 Literacy
+Check Status 3 Literacy
+Check Your Sleeves 3
+Educated 3 Literacy
+Feign Death 6
+Head Shrink 6
+Instruct 3 Literacy
+Literacy 3
+Lore 3
+Patch Job 3 Educated
+Refuse 6 Check Your Sleeves
+Teach 0
+
+== Thief ==
+Avoid 6 
+Attach 3 
+Blinding 6
+Black Market Connections 6 Pick Pockets & Lie
+Disguise 6 
+Escape 3 
+Escape Bonds 6 
+Fade In A Crowd 6 
+Feign Death 3 
+Lie 3 
+Melee Weapon - Small 3 
+Pick Pockets 6 
+Scrounge 3 
+Trap Making 6 
+Unlock 3
+
+== Thug ==
+Barricade 3 
+Bolt Action 6 
+Brawling 3 
+Carry 3 
+Force Barricade 3 
+Frightening Force 6
+Melee Weapon Expert 3 Melee Weapon - Standard & Melee Weapon - Large
+Melee Weapon - Large 3
+Melee Weapon - Small 3
+Melee Weapon - Standard 3
+Patch Job 3
+Sever 6
+Shield 3
+Take Down 3 Brawling
+
+== Tinker ==
+Analyze Compound 3
+Building Tomorrow 6 Literacy
+Check Quality 3
+Chop 3
+Educated 3 Literacy
+Improved Armor/Shield 6 Educated
+Improved Pistol/Bow 6 Educated
+Improved Weapon 6 Educated
+Income I 3
+Income II 3 Income I
+Income III 3 Income II
+Income IV 3 Income III
+Income V 3 Income IV
+Literacy 3
+Master Craftsman 6 Improved Armor/Shield & Improved Pistol/Bow & Improved Weapon
+Patch Job 3 
+Repair 3
+SCIENCE! 6 Educated
+
+== Skill Group ==
+Lore
+Psionic Skill - Basic
+Psionic Skill - Intermediate
+Psionic Skill - Advanced
+Income
+Big Dig
+Animal Handler
+Gene Splicer
+NPC
+
+== Skill Counters ==
+Alert: Vanish, Fade In A Crowd, Whisper Walk, Cover of Night
+Analyze Compound: Disguise Contents
+Analyze Creature: Disguise
+Attach: | Bomb Awareness
+Avoid: Concentrated Fire, Destroy Shield, Destroy Weapon, Destroy Armor, Disarming Shot, Scatter Shot, Sniped Shot, Knockout, Pray for Justice, Gun Aficionado, Knock Down, Nail, Agony, Blood Scent
+Balance: Knock Down, Take Down
+Barricade: | Force Barricade
+Beg For Life: Killing Blows | Refuse
+Blind Fighting: Blinding
+Blinding: | Blind Fighting, Parry
+Bomb Awareness: Attach
+Bounce: Concentrated Fire, Destroy Shield, Destroy Weapon, Destroy Armor, Sniped Shot, Scatter Shot, Disarming Shot, Gun Aficionado, Nail
+Break Armor: | Parry
+Break Shield: | Parry
+Break Weapon: | Parry
+Challenge: | Refuse, Choking Blow
+Charge: | Parry
+Charisma: | Refuse, Choking Blow
+Chase: Escape, Rescue
+Cheat: | Check Your Sleeves
+Check Status: Feign Death
+Check Your Sleeves: Cheat
+Choking Blow: Challenge, Charisma
+Concentrated Fire: | Avoid, Bounce
+Cover of Night: | Alert
+Disguise: | Analyze Creature
+Destroy Armor: | Avoid, Bounce
+Destroy Shield: | Avoid, Bounce
+Destroy Weapon: | Avoid, Bounce
+Disarming Blow: | Parry
+Disarming Shot: | Avoid, Bounce
+Disguise: | Analyze Creature
+Disguise Contents: | Analyze Compound
+Entertain: | Refuse
+Escape: | Chase
+Escape Bonds: Tie Binds
+Fade In A Crowd: | Alert
+Fearful Glare: | Refuse
+Feign Death: | Check Status
+First Aide: Knockout
+Force Barricade: Barricade
+Frightening Force: | Parry
+Gun Aficionado: | Avoid, Bounce
+Interrogate: | Lie
+Knock Down: | Balance, Avoid
+Knockout: | Avoid, First Aide
+Lie: Interrogate
+Mangle Limb: | Parry
+Mind Resistance: Toys in the Attic, Pyro, Enslavement, Body Puppet, Torture, Jolt, Limited Telekinesis, Memory Lapse, Mind Push, Nightmare, Paralysis, Seeing Double, Slowed Steps, Tranquility, Trickster's Mind, Berserker Mind, Body Lock, Body of Mind, Engulf, Living Death, Major Telekinesis, Propulsion, Psionic Surgeon, Sense of Sins, Maelstrom, Psychic Cleanse, Sundered Mind
+Nail: | Avoid, Bounce
+Nerve Punch: | Parry
+Parry: Break Armor, Break Weapon, Break Shield, Blinding, Charge, Disarming Blow, Frightening Force, Mangle Limb, Nerve Punch, Sever, Slaughter, Take Down, Wide Strike, Agony, Impale, Sunder Limb
+Pray for Justice: | Avoid
+Refuse: Beg For Life, Challenge, Charisma, Entertain, Fear, Fearful Glare, Agony
+Rescue: | Chase
+Scatter Shot: | Avoid, Bounce
+Sever: | Parry
+Sniped Shot: | Avoid, Bounce
+Take Down: | Balance, Parry
+Tie Binds: | Escape Bonds
+Torture: | Mind Resistance
+Vanish: | Alert
+Wide Strike: | Parry
+Jolt: | Mind Resistance
+Limited Telekinesis: | Mind Resistance
+Memory Lapse: | Mind Resistance
+Mind Push: | Mind Resistance
+Nightmare: | Mind Resistance
+Paralysis: | Mind Resistance
+Pyro: | Mind Resistance
+Seeing Double: | Mind Resistance
+Slowed Steps: | Mind Resistance
+Toys in the Attic: | Mind Resistance
+Tranquility: | Mind Resistance
+Trickster's Mind: | Mind Resistance
+Berserker Mind: | Mind Resistance
+Body Lock: | Mind Resistance
+Body of Mind: | Mind Resistance
+Body Puppet: | Mind Resistance
+Engulf: | Mind Resistance
+Living Death: | Mind Resistance
+Major Telekinesis: | Mind Resistance
+Propulsion: | Mind Resistance
+Psionic Surgeon: | Mind Resistance
+Sense of Sins: | Mind Resistance
+Whisper Walk: | Alert
+Maelstrom: | Mind Resistance
+Psychic Cleanse: | Mind Resistance
+Sundered Mind: | Mind Resistance
+Agony: | Parry, Avoid, Refuse
+Blood Scent: | Avoid
+Fear: | Refuse
+Impale: | Parry
+Sunder Limb: | Parry
+Killing Blows: | Beg For Life
+Enslavement: | Mind Resistance
+Slaughter: | Parry
+
+== Profession Extension ==
+Duality: 2
+Memories of Many: 2
+
+== Skill List ==
+AA 5 Alert
+AB 1 Analyze Compound
+AC 1 Analyze Creature
+AD 0 Animal Handler I, Animal Handler
+AE Var Attach
+AF 5 Avoid
+AG 5 Backstab
+AH 1/5 Balance
+AI 0 Bartender's Tongue
+AJ Var Barricade
+AK 1 Beg For Life
+AL 0 Big Dig I, Big Dig
+AM 0 Black Market Connections
+AN 5 Bless Weapon
+AO 1 Blind Fighting
+AP 5 Blinding
+AQ 0 Bolt Action
+AR 5 Bomb Awareness
+AS 1 Bounce
+AT 0 Bow
+AU 0 Brawling
+AV 10 Break Armor
+AW 5 Break Shield
+AX 5 Break Weapon
+AY Var Brew Master
+AZ Var Brewing
+BA Var Building Tomorrow
+BB 10 Call The Almighty
+BC Var Carry
+BD 5 Challenge
+BE 5 Charge
+BF 1 Charisma
+BG 5 Chase
+BH 5 Cheat
+BI 1 Check Quality
+BJ 1 Check Status
+BK 1 Check Value
+BL 1 Check Your Sleeves
+BM 5 Choking Blow
+BN 1 Chop
+BO 1 Concentrated Fire
+BP 5 Cover of Night
+BQ Var Crop Tending
+BR 5 Cure Toxins
+BS 0 Deep Pockets
+BT 10 Destroy Armor
+BU 5 Destroy Shield
+BV 5 Destroy Weapon
+BW 5 Disarming Blow
+BX 5 Disarming Shot
+BY 5 Disguise
+BZ 5 Disguise Contents
+CA 1 Double-Tap
+CB 0/10 Educated
+CC 1/5 Entertain
+CD 5 Escape
+CE 5 Escape Bonds
+CF 5 Fade In A Crowd
+CG Var Faith Healing
+CH 5 Fearful Glare
+CI 1 Feign Death
+CJ 0 First Aide
+CK 5 Fishing
+CL 5 Fix Limb
+CM 0 Florentine
+CN Var Force Barricade
+CO Var Forging the Future
+CP 10 Frightening Force
+CQ 0 Guild Membership
+CR 5 Gun Aficionado
+CS 10/20 Head Shrink
+CT Var Healthy Feast
+CU Var Holy Rites
+CV 15 Hunter's Mark
+CW Var Improved Armor/Shield
+CX Var Improved Pistol/Bow
+CY Var Improved Weapon
+CZ 0 Income I, Income
+PA 0 Income II, Income
+PB 0 Income III, Income
+PC 0 Income IV, Income
+PD 0 Income V, Income
+DA 1 Instruct
+DB 0 Interfere
+DC 5 Interrogate
+DD 0 Iron Fists
+DE 5 Knock Down
+DF 5 Knockout
+DG 5 Lie
+DH 0 Literacy
+DJ 0 Lore - Local Area, Lore
+DK 0 Lore - Animals - Aquatic, Lore
+DL 0 Lore - Animals - Aviary, Lore
+DM 0 Lore - Animals - Mutated, Lore
+DN 0 Lore - Animals - Subterranean, Lore
+DO 0 Lore - Animals - Terra Firma, Lore
+DP 0 Lore - Faith - Church of Darwin, Lore
+DQ 0 Lore - Faith - Cult of Fallow Hopes, Lore
+DR 0 Lore - Faith - Final Knight, Lore
+QS 0 Lore - Faith - Kings Court, Lore
+DS 0 Lore - Faith - Light of Hedon, Lore
+DT 0 Lore - Faith - Minor Cults and Sects, Lore
+DU 0 Lore - Faith - Nuclear Family, Lore
+DV 0 Lore - Faith - Sainthood of Ashes, Lore
+DW 0 Lore - Faith - Telling Visions, Lore
+DX 0 Lore - Faith - Tribes of the Seasons, Lore
+DY 0 Lore - Grave Mind, Lore
+DZ 0 Lore - History - Cinema and Entertainment Television, Lore
+EA 0 Lore - History - Fictional Literature, Lore
+EB 0 Lore - History - Music, Lore
+EC 0 Lore - Medical - Diseases and Plagues, Lore
+ED 0 Lore - Medical - Grave Mind Infection, Lore
+EE 0 Lore - Medical - Grave Robber Processes, Lore
+EF 0 Lore - Metallurgy, Lore
+EG 0 Lore - Mining, Lore
+EH 0 Lore - Mon Histories, Lore
+EI 0 Lore - Nature - Herbs, Lore
+EJ 0 Lore - Nature - Minerals and Refined Materials, Lore
+EK 0 Lore - Pre-Fall History Ancient, Lore
+EL 0 Lore - Pre-Fall History Cultural, Lore
+EM 0 Lore - Pre-Fall History Modern, Lore
+EN 0 Lore - Pre-Fall History Religion, Lore
+QT 0 Lore - Radiation, Lore
+EP 0 Lore - Raider, Lore
+EQ 0 Lore - Slaver Communities, Lore
+ER 0 Lore - Strain - Nation of Accensor, Lore
+ES 0 Lore - Strain - Baywalker, Lore
+ET 0 Lore - Strain - Diesel Jock, Lore
+EU 0 Lore - Strain - Full Dead, Lore
+EV 0 Lore - Strain - Genjian, Lore
+EW 0 Lore - Strain - Iron Slave, Lore
+EX 0 Lore - Strain - Lascarian, Lore
+EY 0 Lore - Strain - Merican, Lore
+EZ 0 Lore - Strain - Natural One, Lore
+FA 0 Lore - Strain - Pure Blood, Lore
+FB 0 Lore - Strain - Reclaimers, Lore
+FC 0 Lore - Strain - Red Star, Lore
+FD 0 Lore - Strain - Remnant, Lore
+FE 0 Lore - Strain - Retrograde, Lore
+FF 0 Lore - Strain - Rover, Lore
+FG 0 Lore - Strain - Salt Wise, Lore
+FH 0 Lore - Strain - Solestros, Lore
+FI 0 Lore - Strain - Unborn of Teixiptla, Lore
+FJ 0 Lore - Strain - Vegasians, Lore
+FK 0 Lore - Strain - Yorker, Lore
+FL 0 Lore - Tech - Combustion Power, Lore
+FM 0 Lore - Tech - Natural Power, Lore
+FN 0 Lore - Tech - Nuclear Power, Lore
+FO 0 Lore - Zombie, Lore
+FW 5 Mangle Limb
+FX Var Master Craftsman
+FY 1>3 Medical Assistance
+FZ 1>10 Medical Genius
+GA 5>2 Melee Weapon Expert
+GB 0 Melee Weapon - Large
+GC 0 Melee Weapon - Small
+GD 0 Melee Weapon - Standard
+GE 0 Melee Weapon - Two Handed
+GF 10 Mind Resistance
+GG 10 Murder Most Foul
+GH 5 Nail
+GI 5 Nerve Punch
+GJ 5 Parry
+GK 1/5 Patch Job
+GL 1 Pick Pockets
+GM 0 Pistol Whip
+GN Var Prepare Meal
+GO 5 Pray for Justice
+PE 5 Jolt, Psionic Skill - Basic
+PF 5 Limited Telekinesis, Psionic Skill - Basic
+PG 5 Memory Lapse, Psionic Skill - Basic
+PH 5 Mind Push, Psionic Skill - Basic
+PI 5 Nightmare, Psionic Skill - Basic
+PJ 5 Paralysis, Psionic Skill - Basic
+PK 5 Pyro, Psionic Skill - Basic
+PL 5 Seeing Double, Psionic Skill - Basic
+PM 5 Slowed Steps, Psionic Skill - Basic
+PN 5 Toys in the Attic, Psionic Skill - Basic
+PO 5 Tranquility, Psionic Skill - Basic
+PQ 5 Trickster's Mind, Psionic Skill - Basic
+PR 10 Berserker Mind, Psionic Skill - Intermediate 
+PS 10 Body Lock, Psionic Skill - Intermediate
+PT 10 Body of Mind, Psionic Skill - Intermediate
+PU 10 Body Puppet, Psionic Skill - Intermediate 
+PV 10 Echoes, Psionic Skill - Intermediate
+PW 10 Engulf, Psionic Skill - Intermediate
+PX 10 Living Death, Psionic Skill - Intermediate 
+PY 10 Major Telekinesis, Psionic Skill - Intermediate
+PZ 10 Propulsion, Psionic Skill - Intermediate
+QA 10 Psionic Surgeon, Psionic Skill - Intermediate
+QB 10 Sense of Sins, Psionic Skill - Intermediate
+QC 10 Whisper Walk, Psionic Skill - Intermediate
+QD 15 Maelstrom, Psionic Skill - Advanced
+QE 15 Mental Armor, Psionic Skill - Advanced 
+QF 15 Mental Glossary, Psionic Skill - Advanced 
+QG 15 Mind of a Killer, Psionic Skill - Advanced 
+QH 15 Mind Shield, Psionic Skill - Advanced 
+QI 15 Psychic Cleanse, Psionic Skill - Advanced 
+QJ 15 Sundered Mind, Psionic Skill - Advanced
+QK 0 Animal Handler II, Animal Handler
+QL 0 Animal Handler III, Animal Handler
+QM 0 Animal Handler IV, Animal Handler
+QN 0 Animal Handler V, Animal Handler
+QO 0 Big Dig II, Big Dig
+QP 0 Big Dig III, Big Dig
+QQ 0 Big Dig IV, Big Dig
+QR 0 Big Dig V, Big Dig
+GS 1 Refuse
+GT Var Repair
+GU 5 Rescue
+GV 0 Sailing
+GW 5 Scatter Shot
+GX Var SCIENCE!
+GY 1 Scrounge
+GZ 5 Sever
+HA 0 Shield
+HB 1 Smelt
+HC 5 Sniped Shot
+HD Var Society Membership
+HE 5 Take Down
+HF 0 Teach
+HG 0 Throwing
+HH 0 Throwing - Javelins
+HI 1 Tie Binds
+HJ 5 Torture
+HK 0 Trade Ties
+HL 5 Transcribe
+HM Var Trap Making
+HN Var Unlock
+HO 5 Vanish
+HP 5 Weld
+HQ 10 Wide Strike
+RA 5 Air Strike
+RB 15 Arrest Warrant
+RC 5 Atom Smasher
+RD 10 Aura of Hate
+RE 10 Avenging Angel
+RF 5 Bankrolling
+RG 10 Been There Did That
+RH 10 Bound By Law
+RI 10 Breaking Point
+RJ 5 Brilliant!
+RK 20 Broken Coils
+RL 20 Broken Mirrors
+RM 5 Bullet Dodger
+RN 10 Burning Call
+RO 0 Calloused Hands
+RP 10 Cheeseburger and a Six Pack
+RQ 15 Cornered Market
+RR 20 Criminal Network
+RS 20 Dark Intentions
+RT 10 Deus ex Machina
+RU 10 Dirty Connections
+RV 10 Dispatch
+RW 10 Don't Monologue
+RX 0 Duality
+RY 10 Dumb Luck
+RZ 0 Dust and Bones
+SA 5 Echoing Pain
+SB 5 Elementary!
+SC 0 Eternal Forge
+SD 20 Eureka!
+SE 1 Evolution
+SF 10 Excelsior!
+SG 0 Fearless is the Still Mind
+SH 0 Fence
+SI 0 Flesh of Iron
+SJ 10 Forensic Rituals
+SK 10 Gene Splicer: Eau de Zombie, Gene Splicer
+SL 10 Gene Splicer: Ice Veins, Gene Splicer
+SM 10 Gene Splicer: Infectus Mordus, Gene Splicer
+SN 10 Gene Splicer: Lung Expansion, Gene Splicer
+SO 10 Gene Splicer: Thick Skin, Gene Splicer
+SP 10 Genius!
+SQ 20 Gilded Daisy
+SR 10 Gossip Hound
+SS 20 Gracious Guest
+ST 20 Grave Mind
+SU 20 Guardian of the Order
+SV 20 Guardian Spirit
+SW 0 Gun-Fu
+SX 20 Hail of Bullets
+SY 0 Healthy Green Glow
+SZ 10 Helping Hand
+TA 20 Henchman
+TB 10 Hired Muscle
+TC 0 Hotrod Junkie
+TD 10 House of Cards
+TE 10 Hundred Fist Strike
+TF 10 Hung Jury
+TG 10 In the Zone
+TH 10 Inner Circle
+TI 0 Inner Peace
+TJ 5 Interceptor
+TK 20 Internal Hearth
+TL 5/10 Iron Kidney
+TM 0/10 Jaded World View
+TN 10 Killing Zone
+TO 20 Knows A Guy
+TP 20 Lair of Solitude
+TQ 20 Last Dance
+TR 10 Last Word
+TS 10 Leap of Reason
+TT 10 Life Giver
+TU 20 Live Again
+TV 20 Lurking Threat
+TW 5 Magic Bullet
+TX 0 Meaning of Death
+TY 0 Memories of Many
+TZ 0 Mental Breakdown
+UA 0 Mini-Mall
+UB 10 Miracle Worker
+UC 0 Mob Mentality
+UD 10 More To Give
+UE 20 My Little Friend
+UF 10 Necessary Violence
+UG 10 Never Here
+UH 5 New Design
+UI 5 New Horizons
+UJ 10 Nimble Fingers
+UK 20 One True Reality
+UL 20 Owed Favors
+UM 10 Pack Mule
+UN 20 Pillar of Strength
+UO 10 Prior Enemies
+UP 0 Protection Racket
+UQ 10 Psionic Dissidence
+UR 10 Pure Genius
+US 5 Raise the Standard
+UT 20 Rebel Yell
+UU 20 Red Menace
+UV 5 Replacement Parts
+UW 10 Ricochet
+UX 10 Ring Out
+UY 20 Running Numbers
+UZ 0 Jacob's Broken Ladder
+VA 20 Sandman
+VB 0 Scarred Bones
+VC 20 Servant of Iron
+VD 20 Share the Love
+VE 20 Shared Strength
+VF 20 Shatter Strike
+VG 0 Shattered Psyche
+VH 10 Shroud of Faith
+VI 20 Side Kick
+VJ 0 Silent Introspection
+VK 5 Simple Deduction
+VL 10 Smuggler's Run
+VM 10 Sociopath Stalk
+VN 20 Strategy
+VO 0 Strong Chin
+VP 20 The Change
+VQ 10 The Culling Wall
+VR 0 The Final Cause
+VS 20 The Lone Guard
+VT 0 The Oath
+VU 20 The Outside Chance
+VV 0/10 Tougher Than Metal
+VW 10 Trademark Item
+VX 20 Trained Inquisitor
+VY 0 Training Ground I
+WJ 0 Training Ground II
+WK 0 Training Ground III
+WL 0 Training Ground IV
+WM 0 Training Ground V
+VZ 10 Trinkets of the Past
+WA 10 Unseen Hands
+WB 10 Vital Fire
+WC 5 Walk It Off
+WD 20 Walking Reminder
+WE 30 Well Shit
+WF 0 Windfall
+WG 20 Wrath
+WH 10 Wrath of the Just
+XA 20 Close The Distance
+XB 20 Disengage
+XC 20 Keen Eyes
+XD 0 Heavy Ordnance
+XE 0 Reloading is Stupid
+XF 10 Improvised Thrown Weapon
+XG 0 Pole-arm Weapon Mastery
+XH 20 Call for Phalanx
+XI 10 Improvised Weapon
+XJ 5 Savior of Life
+XK 20 Bearer of the Banner
+XL 20 Bread and Circuses
+XM 5 Hosting the Gala Event
+XN 0 Life of the Party
+XO 20 Unwanted Guest
+XP 0 The Dead Market
+XQ 0 Route Management
+XR 0 Financial Exchange
+XS 20 Extra Mile
+XT 10 Make A Show Of It
+XU 20 Resourceful Mind
+XV 20 Made to Order
+XW 20 Custom Modification
+XX 10 Rushed Job
+XY 0 Thousand Arms Crafter
+XZ 0 A Stitch in Time
+WI Var Tchotchkes for Miles
+YA 0 Killing Blows, NPC
+YB 0 Absorb, NPC
+YC 0 Animate, NPC
+YD 0 Blood Scent, NPC
+YE 0 Burrow, NPC
+YF 0 Cleave, NPC
+YG 0 Confuse, NPC
+YH 0 Daze, NPC
+YI 0 Devour, NPC
+YJ 0 Diseased, NPC
+YK 0 Enslavement, NPC
+YL 0 Fear, NPC
+YM 0 Flight, NPC
+YN 0 Frenzy, NPC
+YO 0 Gnaw, NPC
+YQ 0 Impale, NPC
+YR 0 Melt, NPC
+YS 0 Rip Through, NPC
+YT 0 Shatter, NPC
+YU 0 Slaughter, NPC
+YV 0 Snare, NPC
+YW 0 Sunder Limb, NPC
+YX 0 Terror, NPC
+YY 0 Agony, NPC

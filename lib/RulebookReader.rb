@@ -2,12 +2,13 @@ require 'set'
 require 'pdf-reader'
 
 class RulebookReader
+  attr_reader :descs
+
   @reader1 = nil
   @reader2 = nil
   @descs = {}
   @skill_list = {}
   
-
   def initialize input1:, input2:, skill_list:
     @reader1 = PDF::Reader.new(input1)
     @reader2 = PDF::Reader.new(input2)
@@ -33,11 +34,21 @@ class RulebookReader
   end
 
   def parse
-    #parse_basic_and_lores @reader1.pages[157..199]
-    #parse_basic_and_lores @reader1.pages[203..217]
+    #parse_strain @reader1.pages[72..112]
+    parse_basic_and_lores @reader1.pages[157..199]
+    parse_basic_and_lores @reader1.pages[203..217]
     parse_psionics @reader1.pages[220..225]
 
     return self
+  end
+
+  def parse_strain pages
+    pages.each do |page|
+      lines = page.text.split(/[\n]+/)
+      lines.each do |line|
+        puts line
+      end
+    end
   end
 
   def parse_basic_and_lores pages
@@ -111,9 +122,9 @@ class RulebookReader
     remainder = desc_list - intersection
     other = master_list - intersection
 
-    ap remainder
-    ap other
-    dump_parsed
+    #ap remainder
+    #ap other
+    #dump_parsed
   end
 
   def dump_parsed
@@ -123,5 +134,7 @@ class RulebookReader
       puts '--------------------'
       puts desc
     end
+
+    ap @descs.keys
   end
 end

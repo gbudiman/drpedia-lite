@@ -45,8 +45,10 @@ class Builder
     return raw_reader.skill_list
   end
 
-  def self.parse_rulebook input1:, input2:, skill_list:
+  def self.parse_rulebook input1:, input2:, skill_list:, base_output_path:
     rb_reader = RulebookReader.new(input1: input1, input2: input2, skill_list: skill_list)
     rb_reader.parse.crosscheck
+
+    File.open(File.join(base_output_path, 'skill_desc.json'), 'w') { |f| f.write JSON.pretty_generate(rb_reader.descs) }
   end
 end
